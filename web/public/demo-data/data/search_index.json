@@ -1,0 +1,22 @@
+[
+  {"text": "Demo select line 1 — the warrior steps forward.", "champion": "Alpha Warrior", "event": "Select", "skin": "Default"},
+  {"text": "Demo attack line 1 — strike true.", "champion": "Alpha Warrior", "event": "Attack", "skin": "Default"},
+  {"text": "Demo joke line 1 — a small chuckle on the battlefield.", "champion": "Alpha Warrior", "event": "Joke", "skin": "Default"},
+  {"text": "Demo taunt line 1 — come and try.", "champion": "Alpha Warrior", "event": "Taunt", "skin": "Default"},
+  {"text": "Demo move line 1 — steady steps.", "champion": "Alpha Warrior", "event": "Move", "skin": "Default"},
+  {"text": "Demo select line 1 — the mage studies the wind.", "champion": "Beta Mage", "event": "Select", "skin": "Default"},
+  {"text": "Demo attack line 1 — a quiet arc of light.", "champion": "Beta Mage", "event": "Attack", "skin": "Default"},
+  {"text": "Demo joke line 1 — even mages sleep.", "champion": "Beta Mage", "event": "Joke", "skin": "Default"},
+  {"text": "Demo move line 1 — across the stones.", "champion": "Beta Mage", "event": "Move", "skin": "Default"},
+  {"text": "Demo select line 1 — the ranger nocks an arrow.", "champion": "Gamma Ranger", "event": "Select", "skin": "Default"},
+  {"text": "Demo attack line 1 — straight and true.", "champion": "Gamma Ranger", "event": "Attack", "skin": "Default"},
+  {"text": "Demo taunt line 1 — out of range?", "champion": "Gamma Ranger", "event": "Taunt", "skin": "Default"},
+  {"text": "Demo move line 1 — quiet on the path.", "champion": "Gamma Ranger", "event": "Move", "skin": "Default"},
+  {"text": "Demo select line 1 — the sentinel stands firm.", "champion": "Delta Sentinel", "event": "Select", "skin": "Default"},
+  {"text": "Demo attack line 1 — heavy but measured.", "champion": "Delta Sentinel", "event": "Attack", "skin": "Default"},
+  {"text": "Demo joke line 1 — shields do not rust.", "champion": "Delta Sentinel", "event": "Joke", "skin": "Default"},
+  {"text": "Demo move line 1 — slow, but never late.", "champion": "Delta Sentinel", "event": "Move", "skin": "Default"},
+  {"text": "Demo select line 1 — the bard tunes the strings.", "champion": "Echo Bard", "event": "Select", "skin": "Default"},
+  {"text": "Demo joke line 1 — a wrong note on purpose.", "champion": "Echo Bard", "event": "Joke", "skin": "Default"},
+  {"text": "Demo move line 1 — humming as you walk.", "champion": "Echo Bard", "event": "Move", "skin": "Default"}
+]

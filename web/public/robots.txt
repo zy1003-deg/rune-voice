@@ -1,0 +1,11 @@
+# Static robots.txt — production deployments should override this with their own.
+# We deliberately do NOT hard-code a production hostname here.
+#
+# To customise per-deployment, either:
+#   1. Replace this file at build time, or
+#   2. Override the Sitemap: line in your web server / hosting config.
+#
+# See README.md "Getting started" for the full deploy instructions.
+
+User-agent: *
+Allow: /

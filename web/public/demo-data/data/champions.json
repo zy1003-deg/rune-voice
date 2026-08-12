@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Alpha Warrior",
+    "alias": "alpha",
+    "quoteCount": 5,
+    "skins": ["Default"],
+    "file": "alpha.json",
+    "role": "fighter"
+  },
+  {
+    "name": "Beta Mage",
+    "alias": "beta",
+    "quoteCount": 4,
+    "skins": ["Default"],
+    "file": "beta.json",
+    "role": "mage"
+  },
+  {
+    "name": "Gamma Ranger",
+    "alias": "gamma",
+    "quoteCount": 4,
+    "skins": ["Default"],
+    "file": "gamma.json",
+    "role": "marksman"
+  },
+  {
+    "name": "Delta Sentinel",
+    "alias": "delta",
+    "quoteCount": 4,
+    "skins": ["Default"],
+    "file": "delta.json",
+    "role": "tank"
+  },
+  {
+    "name": "Echo Bard",
+    "alias": "echo",
+    "quoteCount": 3,
+    "skins": ["Default"],
+    "file": "echo.json",
+    "role": "support"
+  }
+]

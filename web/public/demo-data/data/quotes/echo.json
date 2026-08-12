@@ -1,0 +1,23 @@
+[
+  {
+    "skin": "Default",
+    "event": "Select",
+    "text": "Demo select line 1 — the bard tunes the strings.",
+    "file": "demo_echo_select_1.mp3",
+    "dir": "echo/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Joke",
+    "text": "Demo joke line 1 — a wrong note on purpose.",
+    "file": "demo_echo_joke_1.mp3",
+    "dir": "echo/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Move",
+    "text": "Demo move line 1 — humming as you walk.",
+    "file": "demo_echo_move_1.mp3",
+    "dir": "echo/Default"
+  }
+]

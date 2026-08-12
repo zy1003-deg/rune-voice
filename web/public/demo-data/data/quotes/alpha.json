@@ -1,0 +1,37 @@
+[
+  {
+    "skin": "Default",
+    "event": "Select",
+    "text": "Demo select line 1 — the warrior steps forward.",
+    "file": "demo_alpha_select_1.mp3",
+    "dir": "alpha/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Attack",
+    "text": "Demo attack line 1 — strike true.",
+    "file": "demo_alpha_attack_1.mp3",
+    "dir": "alpha/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Joke",
+    "text": "Demo joke line 1 — a small chuckle on the battlefield.",
+    "file": "demo_alpha_joke_1.mp3",
+    "dir": "alpha/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Taunt",
+    "text": "Demo taunt line 1 — come and try.",
+    "file": "demo_alpha_taunt_1.mp3",
+    "dir": "alpha/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Move",
+    "text": "Demo move line 1 — steady steps.",
+    "file": "demo_alpha_move_1.mp3",
+    "dir": "alpha/Default"
+  }
+]

@@ -1,0 +1,50 @@
+name: CI · Frontend
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "web/**"
+      - ".github/workflows/ci-frontend.yml"
+  pull_request:
+    branches: [main, master]
+    paths:
+      - "web/**"
+      - ".github/workflows/ci-frontend.yml"
+
+jobs:
+  build:
+    name: Build & test (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["20", "22"]
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Build production bundle
+        run: npm run build
+
+      - name: Upload build artifacts
+        if: matrix.node == '20'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ matrix.node }}
+          path: web/dist
+          retention-days: 7

@@ -1,0 +1,30 @@
+[
+  {
+    "skin": "Default",
+    "event": "Select",
+    "text": "Demo select line 1 — the mage studies the wind.",
+    "file": "demo_beta_select_1.mp3",
+    "dir": "beta/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Attack",
+    "text": "Demo attack line 1 — a quiet arc of light.",
+    "file": "demo_beta_attack_1.mp3",
+    "dir": "beta/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Joke",
+    "text": "Demo joke line 1 — even mages sleep.",
+    "file": "demo_beta_joke_1.mp3",
+    "dir": "beta/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Move",
+    "text": "Demo move line 1 — across the stones.",
+    "file": "demo_beta_move_1.mp3",
+    "dir": "beta/Default"
+  }
+]

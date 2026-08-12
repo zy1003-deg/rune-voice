@@ -1,0 +1,30 @@
+[
+  {
+    "skin": "Default",
+    "event": "Select",
+    "text": "Demo select line 1 — the sentinel stands firm.",
+    "file": "demo_delta_select_1.mp3",
+    "dir": "delta/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Attack",
+    "text": "Demo attack line 1 — heavy but measured.",
+    "file": "demo_delta_attack_1.mp3",
+    "dir": "delta/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Joke",
+    "text": "Demo joke line 1 — shields do not rust.",
+    "file": "demo_delta_joke_1.mp3",
+    "dir": "delta/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Move",
+    "text": "Demo move line 1 — slow, but never late.",
+    "file": "demo_delta_move_1.mp3",
+    "dir": "delta/Default"
+  }
+]

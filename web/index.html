@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rune Voice · 符文之声</title>
+    <meta name="description" content="Rune Voice — an open-source platform for indexing, searching, browsing and playing voice content through structured metadata. A fan project, not affiliated with any game publisher." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#F4F6F8" />
+    <!--
+      VITE_SITE_URL is set per-deployment via web/.env.production
+      (and overridable on the command line with `VITE_SITE_URL=... npm run build`).
+      Default for local dev: http://localhost:5173
+      The %SITE_URL% placeholder (no VITE_ prefix) is substituted by an
+      inline Vite plugin in web/vite.config.js, avoiding Vite's native
+      HTML env replacement which would resolve to an empty string when
+      VITE_SITE_URL is unset.
+    -->
+    <link rel="canonical" href="%SITE_URL%/" />
+    <meta property="og:title" content="Rune Voice · 符文之声" />
+    <meta property="og:description" content="An open-source voice archive and exploration platform. Fan project." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%SITE_URL%" />
+    <meta property="og:site_name" content="Rune Voice" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rune Voice · 符文之声" />
+    <meta name="twitter:description" content="An open-source voice archive and exploration platform. Fan project." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Rune Voice",
+      "url": "%SITE_URL%/",
+      "description": "An open-source voice archive and exploration platform. Fan project; not affiliated with any game publisher.",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "%SITE_URL%/#/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Rune Voice requires JavaScript.</noscript>
+    <script>
+      // 主题初始化（避免刷新闪屏）：在 React 加载前应用 data-theme
+      (function () {
+        try {
+          var saved = localStorage.getItem('rune-voice-theme');
+          var theme = saved === 'light' || saved === 'dark'
+            ? saved
+            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

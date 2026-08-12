@@ -1,0 +1,29 @@
+[
+  {
+    "text": "Demo select line 1 — the warrior steps forward.",
+    "champion": "Alpha Warrior",
+    "dir": "alpha/Default",
+    "file": "demo_alpha_select_1.mp3",
+    "skin": "Default",
+    "event": "Select",
+    "featured": true
+  },
+  {
+    "text": "Demo attack line 1 — a quiet arc of light.",
+    "champion": "Beta Mage",
+    "dir": "beta/Default",
+    "file": "demo_beta_attack_1.mp3",
+    "skin": "Default",
+    "event": "Attack",
+    "featured": true
+  },
+  {
+    "text": "Demo joke line 1 — shields do not rust.",
+    "champion": "Delta Sentinel",
+    "dir": "delta/Default",
+    "file": "demo_delta_joke_1.mp3",
+    "skin": "Default",
+    "event": "Joke",
+    "featured": true
+  }
+]

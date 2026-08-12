@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rune-voice-crawler"
+version = "0.2.0"
+description = "Async crawler and data pipeline for the Rune Voice open-source voice-content indexing platform."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Rune Voice Maintainers" },
+]
+keywords = ["crawler", "voice", "audio", "metadata", "search", "indexing", "fan-project", "web"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+  "httpx>=0.27.0",
+  "aiofiles>=24.1.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+]
+lint = [
+  "ruff>=0.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/zy1003-deg/rune-voice"
+Issues = "https://github.com/zy1003-deg/rune-voice/issues"
+
+[tool.setuptools]
+py-modules = ["config", "main"]
+
+[tool.setuptools.packages.find]
+include = ["core*", "store*", "utils*"]
+exclude = ["tests*", "docs*", "web*"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# Keep the rule set conservative — this is a pre-existing codebase; we only
+# catch the most common foot-guns.
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # bugbear (subset)
+]
+ignore = [
+  "E501", # line length (kept simple; ruff formatter isn't enforced)
+  "B008", # function-call-in-default-argument (e.g. Path() in signatures)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]  # asserts are fine in tests

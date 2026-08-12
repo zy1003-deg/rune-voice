@@ -1,0 +1,9 @@
+# Runtime dependencies for the Rune Voice Python crawler.
+# Mirrors the [project.dependencies] table in pyproject.toml.
+# Install with: pip install -r requirements.txt
+httpx>=0.27.0
+aiofiles>=24.1.0
+
+# Optional extras (uncomment to install):
+# pip install -e .[test]   # pytest, pytest-asyncio
+# pip install -e .[lint]   # ruff

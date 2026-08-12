@@ -1,0 +1,30 @@
+[
+  {
+    "skin": "Default",
+    "event": "Select",
+    "text": "Demo select line 1 — the ranger nocks an arrow.",
+    "file": "demo_gamma_select_1.mp3",
+    "dir": "gamma/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Attack",
+    "text": "Demo attack line 1 — straight and true.",
+    "file": "demo_gamma_attack_1.mp3",
+    "dir": "gamma/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Taunt",
+    "text": "Demo taunt line 1 — out of range?",
+    "file": "demo_gamma_taunt_1.mp3",
+    "dir": "gamma/Default"
+  },
+  {
+    "skin": "Default",
+    "event": "Move",
+    "text": "Demo move line 1 — quiet on the path.",
+    "file": "demo_gamma_move_1.mp3",
+    "dir": "gamma/Default"
+  }
+]
