@@ -1,490 +1,587 @@
-import { useState, useMemo, useEffect, useCallback } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { useState, useMemo, useEffect, useCallback, useRef } from 'react'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import RoleTabs, { filterByRole } from './components/RoleTabs'
 import ChampionCard from './components/ChampionCard'
 import ChampionDetail from './components/ChampionDetail'
 import PlayerBar from './components/PlayerBar'
+import QuoteRow from './components/QuoteRow'
+import Footer from './components/Footer'
+import Icon from './components/Icon'
 import { useAudioPlayer } from './hooks/useAudioPlayer'
 import { useDebouncedValue } from './hooks/useDebouncedValue'
 import { useTheme } from './hooks/useTheme'
-import { API_BASE, buildAudioUrl, buildAvatarUrl } from './utils/audioUrl'
-import { searchQuotes, resolveAudioForSearchResult, loadFeaturedQuotes } from './utils/search'
+import { useFavorites } from './hooks/useFavorites'
+import { DATA_BASE, buildAudioUrl } from './utils/audioUrl'
+import {
+  searchQuotes,
+  resolveAudioForSearchResult,
+  loadFeaturedQuotes,
+} from './utils/search'
+import { normalizeQuote, quoteId, chooseFeaturedSlots } from './utils/quotes'
+
+function readRoute() {
+  const hash = window.location.hash
+  const match = hash.match(/^#\/champion\/([^?]+)/)
+  let name = null
+  try {
+    if (match) name = decodeURIComponent(match[1])
+  } catch {
+    /* Ignore malformed links. */
+  }
+  const params = new URLSearchParams(hash.split('?')[1] || '')
+  return {
+    name,
+    view: hash.startsWith('#/favorites')
+      ? 'favorites'
+      : hash.startsWith('#/heroes')
+        ? 'heroes'
+        : 'discover',
+    search: params.get('q') || '',
+  }
+}
 
 export default function App() {
+  const [route, setRoute] = useState(readRoute)
   const [champions, setChampions] = useState([])
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState(route.search)
   const [activeRole, setActiveRole] = useState('all')
-  const [selectedChampion, setSelectedChampion] = useState(null)
+  const [loadState, setLoadState] = useState('loading')
+  const [loadVersion, setLoadVersion] = useState(0)
   const [allQuotes, setAllQuotes] = useState([])
-  const {
-    playingId, currentQuote, isPlaying, progress, duration, currentTime, volume,
-    hasPrev, hasNext,
-    play, togglePlay, seek, stop, setVolume, playNext, playPrev, updatePlaylist,
-  } = useAudioPlayer()
+  const [quotesState, setQuotesState] = useState('loading')
+  const [quoteVersion, setQuoteVersion] = useState(0)
+  const [featured, setFeatured] = useState([])
+  const [featuredState, setFeaturedState] = useState('loading')
+  const [featuredIndices, setFeaturedIndices] = useState([])
+  const [featuredVersion, setFeaturedVersion] = useState(0)
+  const [searchResults, setSearchResults] = useState([])
+  const [searchState, setSearchState] = useState('idle')
+  const [searchVersion, setSearchVersion] = useState(0)
+  const [resolvingId, setResolvingId] = useState(null)
+  const [notice, setNotice] = useState('')
+  const playRequest = useRef(0)
+  const player = useAudioPlayer()
   const { theme, toggleTheme } = useTheme()
+  const { favorites, toggleFavorite } = useFavorites()
+  const savedIds = useMemo(() => new Set(favorites.map(quoteId)), [favorites])
+  const selectedChampion = champions.find((c) => c.name === route.name)
+  const debouncedSearch = useDebouncedValue(search, 250)
 
-  // Load champion list
   useEffect(() => {
-    fetch(`${API_BASE}/data/champions.json`)
-      .then((r) => r.json())
+    let cancelled = false
+    setLoadState('loading')
+    fetch(`${DATA_BASE}/data/champions.json`)
+      .then((r) => {
+        if (!r.ok) throw new Error('champions')
+        return r.json()
+      })
       .then((data) => {
-        setChampions(data)
-        // Restore champion from URL hash on initial load
-        const hash = window.location.hash
-        const match = hash.match(/^#\/champion\/(.+)$/)
-        if (match) {
-          const champName = decodeURIComponent(match[1])
-          const champ = data.find((c) => c.name === champName)
-          if (champ) setSelectedChampion(champ)
+        if (!cancelled) {
+          setChampions(data)
+          setLoadState('ready')
         }
       })
-      .catch(console.error)
+      .catch(() => {
+        if (!cancelled) setLoadState('error')
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [loadVersion])
+
+  useEffect(() => {
+    const sync = () => {
+      const next = readRoute()
+      setRoute(next)
+      setSearch(next.search)
+    }
+    window.addEventListener('popstate', sync)
+    window.addEventListener('hashchange', sync)
+    return () => {
+      window.removeEventListener('popstate', sync)
+      window.removeEventListener('hashchange', sync)
+    }
   }, [])
 
-  // Listen for browser back/forward navigation
   useEffect(() => {
-    const handlePopState = () => {
-      const hash = window.location.hash
-      const match = hash.match(/^#\/champion\/(.+)$/)
-      if (match) {
-        const champName = decodeURIComponent(match[1])
-        const champ = champions.find((c) => c.name === champName)
-        if (champ) {
-          setSelectedChampion(champ)
-          setSearch('')
+    let cancelled = false
+    setAllQuotes([])
+    if (!selectedChampion) return
+    setQuotesState('loading')
+    fetch(
+      `${DATA_BASE}/data/quotes/${encodeURIComponent(selectedChampion.file)}`,
+    )
+      .then((r) => {
+        if (!r.ok) throw new Error('quotes')
+        return r.json()
+      })
+      .then((data) => {
+        if (!cancelled) {
+          setAllQuotes(data.map((q) => normalizeQuote(q, selectedChampion)))
+          setQuotesState('ready')
         }
-      } else {
-        // Back to home
-        stop()
-        setSelectedChampion(null)
-        setAllQuotes([])
-        setSearch('')
-      }
+      })
+      .catch(() => {
+        if (!cancelled) setQuotesState('error')
+      })
+    return () => {
+      cancelled = true
     }
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
-  }, [champions, stop])
+  }, [selectedChampion, quoteVersion])
 
-  // Load all quotes for selected champion
   useEffect(() => {
-    if (!selectedChampion) { setAllQuotes([]); return }
-    fetch(`${API_BASE}/data/quotes/${selectedChampion.file}`)
-      .then((r) => r.json())
-      .then(setAllQuotes)
-      .catch(console.error)
-  }, [selectedChampion])
+    if (!champions.length) return
+    let cancelled = false
+    setFeaturedState('loading')
+    loadFeaturedQuotes()
+      .then((data) => {
+        const map = new Map(champions.map((c) => [c.name, c]))
+        const seen = new Set()
+        const list = data
+          .filter((q) => q.text && q.dir && q.file && map.has(q.champion))
+          .map((q) => normalizeQuote(q, map.get(q.champion)))
+          .filter((q) => {
+            const id = quoteId(q)
+            if (seen.has(id)) return false
+            seen.add(id)
+            return true
+          })
+        if (!cancelled) {
+          setFeatured(list)
+          setFeaturedIndices(chooseFeaturedSlots(list))
+          setFeaturedState('ready')
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setFeaturedState('error')
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [champions, featuredVersion])
 
-  // Total quote count across all champions
-  const totalQuoteCount = useMemo(() => {
-    return champions.reduce((sum, c) => sum + (c.quoteCount || 0), 0)
-  }, [champions])
+  useEffect(() => {
+    if (
+      !debouncedSearch.trim() ||
+      route.name ||
+      route.view === 'favorites' ||
+      !champions.length
+    ) {
+      setSearchResults([])
+      setSearchState('idle')
+      return
+    }
+    let cancelled = false
+    setSearchState('loading')
+    searchQuotes(debouncedSearch, champions, { limit: 80 })
+      .then((data) => {
+        if (!cancelled) {
+          setSearchResults(data)
+          setSearchState('ready')
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setSearchState('error')
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [debouncedSearch, champions, route.name, route.view, searchVersion])
 
-  // 全局键盘快捷键：空格=播放/暂停，←/→=上下首，Esc=关闭播放器
-  // 输入框聚焦时不响应（避免和搜索框冲突）
+  const navigate = (view, champion = null) => {
+    const hash = champion
+      ? `#/champion/${encodeURIComponent(champion.name)}`
+      : view === 'discover'
+        ? '#/'
+        : `#/${view}`
+    window.history.pushState(null, '', hash)
+    setRoute({ view, name: champion?.name || null, search: '' })
+    setSearch('')
+    setNotice('')
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }
+
+  const playQuote = useCallback(
+    async (quote, list = []) => {
+      const request = ++playRequest.current
+      const id = quoteId(quote)
+      setNotice('')
+      setResolvingId(id)
+      try {
+        const url =
+          quote.dir && quote.file
+            ? buildAudioUrl(quote.dir, quote.file)
+            : await resolveAudioForSearchResult(quote)
+        if (request !== playRequest.current) return
+        if (!url) {
+          setNotice('这条台词暂时没有可播放的音频，请试试其他台词。')
+          return
+        }
+        const queue = list
+          .filter((q) => q.dir && q.file)
+          .map((q) => ({
+            id: quoteId(q),
+            url: buildAudioUrl(q.dir, q.file),
+            info: q,
+          }))
+        const index = queue.findIndex((q) => q.id === id)
+        player.updatePlaylist(
+          index >= 0 ? queue : [{ id, url, info: quote }],
+          Math.max(index, 0),
+        )
+        player.play(id, url, quote)
+      } catch {
+        if (request === playRequest.current)
+          setNotice('音频加载失败，请稍后重试。')
+      } finally {
+        if (request === playRequest.current) setResolvingId(null)
+      }
+    },
+    [player.play, player.updatePlaylist],
+  )
+
   useEffect(() => {
     const handler = (e) => {
-      const tag = (e.target?.tagName || '').toLowerCase()
-      if (tag === 'input' || tag === 'textarea' || e.target?.isContentEditable) return
-      if (!currentQuote) return
-      switch (e.key) {
-        case ' ':
-        case 'Spacebar':
-          e.preventDefault()
-          togglePlay()
-          break
-        case 'ArrowRight':
-          if (hasNext) { e.preventDefault(); playNext() }
-          break
-        case 'ArrowLeft':
-          if (hasPrev) { e.preventDefault(); playPrev() }
-          break
-        case 'Escape':
-          stop()
-          break
-        default:
-          break
+      if (
+        e.target?.closest?.(
+          'input,textarea,select,button,a,[role="button"],[contenteditable="true"]',
+        ) ||
+        !player.currentQuote
+      )
+        return
+      if (e.key === ' ') {
+        e.preventDefault()
+        player.togglePlay()
+      }
+      if (e.key === 'ArrowRight' && player.hasNext) {
+        e.preventDefault()
+        player.playNext()
+      }
+      if (e.key === 'ArrowLeft' && player.hasPrev) {
+        e.preventDefault()
+        player.playPrev()
+      }
+      if (e.key === 'Escape') {
+        ++playRequest.current
+        setResolvingId(null)
+        player.stop()
       }
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
-  }, [currentQuote, togglePlay, playNext, playPrev, stop, hasNext, hasPrev])
+  }, [
+    player.currentQuote,
+    player.togglePlay,
+    player.playNext,
+    player.playPrev,
+    player.stop,
+    player.hasNext,
+    player.hasPrev,
+  ])
 
-  // Filter champions by role + search
   const filteredChampions = useMemo(() => {
-    let list = filterByRole(champions, activeRole)
-    if (search.trim()) {
-      const term = search.toLowerCase()
-      list = list.filter((c) =>
-        c.name.toLowerCase().includes(term) ||
-        c.alias.toLowerCase().includes(term)
-      )
-    }
-    return list
+    const list = search.trim() ? champions : filterByRole(champions, activeRole)
+    const term = search.trim().toLowerCase()
+    return list.filter(
+      (c) => !term || `${c.name} ${c.alias}`.toLowerCase().includes(term),
+    )
   }, [champions, activeRole, search])
-
-  // Search across all quotes (when search is active and no champion selected)
-  // 使用 search_index.json（一次性加载，单例缓存）+ 防抖，避免逐英雄 fetch。
-  const [searchResults, setSearchResults] = useState([])
-  const [searching, setSearching] = useState(false)
-  const [resolvingId, setResolvingId] = useState(null)
-  const debouncedSearch = useDebouncedValue(search, 250)
-
-  useEffect(() => {
-    const term = debouncedSearch.trim()
-    if (!term || selectedChampion) {
-      setSearchResults([])
-      setSearching(false)
-      return
-    }
-    let cancelled = false
-    setSearching(true)
-    searchQuotes(term, champions, { limit: 80 })
-      .then((results) => {
-        if (cancelled) return
-        setSearchResults(results)
-        setSearching(false)
-      })
-      .catch((err) => {
-        if (cancelled) return
-        console.error('Search failed:', err)
-        setSearchResults([])
-        setSearching(false)
-      })
-    return () => { cancelled = true }
-  }, [debouncedSearch, champions, selectedChampion])
-
-  // Surprise Me — 从社区评选的"经典台词"候选池中随机一条
-  const handleSurprise = useCallback(async () => {
-    if (champions.length === 0) return
-    const champMap = new Map(champions.map((c) => [c.name, c]))
-
-    // 先尝试经典台词池（featured_quotes.json，含 dir/file 可直接播放）
-    try {
-      const featured = await loadFeaturedQuotes()
-      if (featured && featured.length > 0) {
-        // 避免连续抽到同一条：若上一条是 featured，本轮避开
-        const lastId = currentQuote ? `${currentQuote.championName}|${currentQuote.text}` : null
-        const pool = featured.length > 1
-          ? featured.filter((q) => `${q.champion}|${q.text}` !== lastId)
-          : featured
-        const pick = pool[Math.floor(Math.random() * pool.length)]
-        const champ = champMap.get(pick.champion) || { name: pick.champion, alias: '' }
-        const quoteId = `${pick.champion}|${pick.text}|${pick.skin}`
-        const audioUrl = buildAudioUrl(pick.dir, pick.file)
-        play(quoteId, audioUrl, {
-          championName: pick.champion,
-          championAlias: champ.alias,
-          text: pick.text,
-          skin: pick.skin,
-        })
-        return
-      }
-    } catch (e) {
-      console.warn('Featured pool unavailable, fallback to random champion:', e)
-    }
-
-    // Fallback: 随机英雄 + 该英雄的台词（原逻辑）
-    const randChamp = champions[Math.floor(Math.random() * champions.length)]
-    try {
-      const r = await fetch(`${API_BASE}/data/quotes/${randChamp.file}`)
-      const quotes = await r.json()
-      const playable = quotes.filter((q) => q.dir && q.file)
-      if (playable.length === 0) return
-
-      let pool = playable.filter((q) => {
-        const t = q.text || ''
-        if (t.includes('（') || t.includes('(')) return false
-        if (t.length < 15) return false
-        if (['攻击', '移动', '阵亡', '暴击', '大笑', '玩笑'].includes(q.event)) return false
-        return true
-      })
-
-      if (pool.length === 0) {
-        pool = playable.filter((q) => {
-          const t = q.text || ''
-          return !(t.includes('（') || t.includes('(')) && t.length >= 8
-        })
-      }
-      if (pool.length === 0) {
-        pool = playable.filter((q) => !(q.text || '').includes('（') && !(q.text || '').includes('('))
-      }
-      if (pool.length === 0) pool = playable
-
-      const randQuote = pool[Math.floor(Math.random() * pool.length)]
-      const quoteId = `${randChamp.name}|${randQuote.text}|${randQuote.skin}`
-      const audioUrl = buildAudioUrl(randQuote.dir, randQuote.file)
-      play(quoteId, audioUrl, {
-        championName: randChamp.name,
-        championAlias: randChamp.alias,
-        text: randQuote.text,
-        skin: randQuote.skin,
-      })
-    } catch (e) {
-      console.error('Surprise failed:', e)
-    }
-  }, [champions, play, currentQuote])
-
-  // Select champion for detail view
-  const handleSelectChampion = (champ) => {
-    stop()
-    setSelectedChampion(champ)
-    setSearch('')
-    window.history.pushState({ champion: champ.name }, '', `#/champion/${encodeURIComponent(champ.name)}`)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const handleBack = () => {
-    stop()
-    setSelectedChampion(null)
-    setAllQuotes([])
-    setSearch('')
-    window.history.pushState(null, '', '#/')
-  }
+  const totalQuoteCount = champions.reduce(
+    (sum, c) => sum + (c.quoteCount || 0),
+    0,
+  )
+  const row = (q, list, showChampion = true) => (
+    <QuoteRow
+      key={quoteId(q)}
+      quote={q}
+      selected={player.playingId === quoteId(q)}
+      isPlaying={player.isPlaying}
+      busy={resolvingId === quoteId(q)}
+      favorite={savedIds.has(quoteId(q))}
+      onFavorite={toggleFavorite}
+      onPlay={() => playQuote(q, list)}
+      showChampion={showChampion}
+      term={search}
+    />
+  )
+  const favoriteResults = favorites.filter((q) =>
+    `${q.text} ${q.championName} ${q.skin}`
+      .toLowerCase()
+      .includes(search.trim().toLowerCase()),
+  )
+  const isSearching = search.trim() && !route.name && route.view !== 'favorites'
+  const errorMessage = notice || player.error
 
   return (
-    <div className={`min-h-screen ${currentQuote ? 'pb-20' : 'pb-8'}`}>
-      {/* Navbar */}
-      <Navbar search={search} onSearchChange={setSearch} theme={theme} onToggleTheme={toggleTheme} />
-
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* ========== HOME VIEW ========== */}
-        {!selectedChampion && (
+    <div className={`app-shell ${player.currentQuote ? 'has-player' : ''}`}>
+      <a
+        className="skip-link"
+        href="#main-content"
+        onClick={(e) => {
+          e.preventDefault()
+          document.getElementById('main-content')?.focus()
+        }}
+      >
+        跳到主要内容
+      </a>
+      <Navbar
+        search={search}
+        onSearchChange={setSearch}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+        view={route.view}
+        onNavigate={navigate}
+        selectedChampion={selectedChampion}
+      />
+      <main id="main-content" tabIndex={-1} className="page-container">
+        {loadState === 'error' && (
+          <div className="empty-state" role="alert">
+            <h1>英雄目录加载失败</h1>
+            <p>请检查网络连接后重试。</p>
+            <button
+              className="outline-button"
+              onClick={() => setLoadVersion((v) => v + 1)}
+            >
+              重新加载
+            </button>
+          </div>
+        )}
+        {loadState === 'loading' && (
+          <div className="empty-state" role="status">
+            正在加载英雄语音…
+          </div>
+        )}
+        {loadState === 'ready' && (
           <>
-            {/* Hero Section */}
-            <HeroSection
-              onSurprise={handleSurprise}
-              championCount={champions.length}
-              quoteCount={totalQuoteCount}
-            />
-
-            {/* Search Results */}
-            {search.trim() && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mb-8"
-              >
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  {/* Left: Matched Champions */}
-                  <div className="lg:col-span-1">
-                    <p className="text-xs text-hex-text-dim uppercase tracking-wider mb-3">
-                      找到 {filteredChampions.length} 位英雄
-                    </p>
-                    {filteredChampions.length > 0 ? (
-                      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-                        <AnimatePresence mode="popLayout">
-                          {filteredChampions.map((champ, i) => (
-                            <ChampionCard
-                              key={champ.name}
-                              champion={champ}
-                              index={i}
-                              onSelect={handleSelectChampion}
-                            />
-                          ))}
-                        </AnimatePresence>
-                      </div>
-                    ) : (
-                      <div className="text-center py-8 bg-hex-navy/20 rounded-lg border border-hex-gold/5">
-                        <p className="text-xs text-hex-text-dim">无匹配英雄</p>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Right: Matched Quotes */}
-                  <div className="lg:col-span-2">
-                    <p className="text-xs text-hex-text-dim uppercase tracking-wider mb-3">
-                      找到 {searchResults.length} 条台词
-                      {searching && <span className="ml-2 text-hex-cyan animate-pulse">搜索中...</span>}
-                    </p>
-                    {searchResults.length > 0 ? (
-                      <div className="space-y-2">
-                        {searchResults.slice(0, 50).map((q, i) => {
-                          const quoteId = `${q.championName}|${q.text}|${q.skin}`
-                          const isPlayingQuote = playingId === quoteId
-                          const isResolving = resolvingId === quoteId
-                          return (
-                            <motion.div
-                              key={`${q.championName}-${q.text}-${i}`}
-                              initial={{ opacity: 0, y: 5 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: Math.min(i * 0.02, 0.3) }}
-                              onClick={async () => {
-                                if (isResolving) return
-                                setResolvingId(quoteId)
-                                try {
-                                  const audioUrl = await resolveAudioForSearchResult(q)
-                                  if (!audioUrl) return
-                                  play(quoteId, audioUrl, {
-                                    championName: q.championName,
-                                    championAlias: q.championAlias,
-                                    text: q.text,
-                                    skin: q.skin,
-                                  })
-                                } finally {
-                                  setResolvingId(null)
-                                }
-                              }}
-                              className={`quote-row ${isPlayingQuote ? 'playing' : ''}`}
-                            >
-                              <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 border border-hex-gold/20">
-                                <img
-                                  src={buildAvatarUrl(q.championAlias)}
-                                  alt={q.championName}
-                                  className="w-full h-full object-cover"
-                                  onError={(e) => { e.target.style.display = 'none' }}
-                                />
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <p className={`text-sm truncate ${isPlayingQuote ? 'text-hex-cyan' : 'text-hex-text'}`}>
-                                  {q.text}
-                                </p>
-                                <p className="text-xs text-hex-text-dim truncate">
-                                  {q.championName} {q.skin ? `· ${q.skin}` : ''}
-                                </p>
-                              </div>
-                              <div className={`
-                                w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0
-                                ${isPlayingQuote ? 'bg-hex-cyan text-hex-dark' : 'bg-hex-gold/10 text-hex-gold/40'}
-                              `}>
-                                {isPlayingQuote ? (
-                                  <div className="sound-wave">
-                                    <span /><span /><span /><span />
-                                  </div>
-                                ) : (
-                                  <svg className="w-3 h-3 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" />
-                                  </svg>
-                                )}
-                              </div>
-                            </motion.div>
-                          )
-                        })}
-                      </div>
-                    ) : (
-                      <div className="text-center py-12">
-                        <div className="text-5xl mb-3 opacity-20">🔇</div>
-                        <p className="text-sm text-hex-text-dim">
-                          {!searching ? `未找到"${search}"相关结果` : '搜索中...'}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            )}
-
-            {/* Role Tabs + Champion Grid — only when not searching */}
-            {!search.trim() && (
-              <>
-                <RoleTabs
-                  activeRole={activeRole}
-                  onRoleChange={setActiveRole}
-                  champions={champions}
+            {route.name ? (
+              selectedChampion ? (
+                <ChampionDetail
+                  key={selectedChampion.name}
+                  champion={selectedChampion}
+                  quotes={allQuotes}
+                  state={quotesState}
+                  onRetry={() => setQuoteVersion((v) => v + 1)}
+                  search={search}
+                  playingId={player.playingId}
+                  isPlaying={player.isPlaying}
+                  onPlay={playQuote}
+                  onBack={() => navigate('heroes')}
+                  savedIds={savedIds}
+                  onFavorite={toggleFavorite}
                 />
-
-                <p className="text-xs text-hex-text-dim/60 text-center mb-6">
-                  {filteredChampions.length} 位英雄
-                </p>
-
-                {/* Champion Avatar Grid */}
-                <div className="grid grid-cols-2 min-[420px]:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4">
-                  {filteredChampions.map((champ, i) => (
-                    <ChampionCard
-                      key={champ.name}
-                      champion={champ}
-                      index={i}
-                      onSelect={handleSelectChampion}
-                    />
-                  ))}
+              ) : (
+                <div className="empty-state">
+                  <h1>没有找到这位英雄</h1>
+                  <button
+                    className="outline-button"
+                    onClick={() => navigate('heroes')}
+                  >
+                    返回英雄目录
+                  </button>
                 </div>
-
-                {filteredChampions.length === 0 && (
-                  <div className="text-center py-20">
-                    <div className="text-6xl mb-4 opacity-20">🔇</div>
-                    <p className="text-sm text-hex-text-dim">没有找到英雄</p>
+              )
+            ) : route.view === 'favorites' ? (
+              <section className="collection-section">
+                <div className="section-heading">
+                  <div>
+                    <h1>我的收藏</h1>
+                    <p>收藏的台词会保存在当前浏览器中。</p>
                   </div>
+                  <span>{favorites.length} 条台词</span>
+                </div>
+                {favoriteResults.length ? (
+                  <div className="quote-list">
+                    {favoriteResults.map((q) => row(q, favoriteResults))}
+                  </div>
+                ) : (
+                  <div className="empty-state">
+                    <Icon name="heart" size={34} />
+                    <h2>{search ? '没有匹配的收藏' : '还没有收藏台词'}</h2>
+                    <p>点击台词旁边的爱心，即可在这里再次聆听。</p>
+                    <button
+                      className="outline-button"
+                      onClick={() => navigate('discover')}
+                    >
+                      去听台词
+                    </button>
+                  </div>
+                )}
+              </section>
+            ) : (
+              <>
+                {route.view === 'discover' && !isSearching && (
+                  <HeroSection
+                    quotes={featured}
+                    indices={featuredIndices}
+                    onShuffle={(slot) =>
+                      setFeaturedIndices((previous) =>
+                        chooseFeaturedSlots(featured, previous, slot),
+                      )
+                    }
+                    onPlay={playQuote}
+                    playingId={player.playingId}
+                    isPlaying={player.isPlaying}
+                    loading={featuredState === 'loading'}
+                    error={
+                      featuredState === 'error'
+                        ? '推荐台词加载失败，英雄目录仍可浏览。'
+                        : ''
+                    }
+                    onRetry={() => setFeaturedVersion((v) => v + 1)}
+                    championCount={champions.length}
+                    quoteCount={totalQuoteCount}
+                  />
+                )}
+                {isSearching ? (
+                  <section className="search-section">
+                    <div className="section-heading">
+                      <div>
+                        <h1>搜索结果</h1>
+                        <p>查找“{search}”相关的英雄与台词</p>
+                      </div>
+                      <button
+                        className="text-button"
+                        onClick={() => setSearch('')}
+                      >
+                        清空搜索
+                      </button>
+                    </div>
+                    <div className="search-layout">
+                      <div>
+                        <h2 className="subheading">
+                          英雄 <span>{filteredChampions.length}</span>
+                        </h2>
+                        {filteredChampions.length ? (
+                          <div className="search-hero-grid">
+                            {filteredChampions.map((c) => (
+                              <ChampionCard
+                                key={c.name}
+                                champion={c}
+                                onSelect={(champ) => navigate('heroes', champ)}
+                              />
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="muted">没有匹配的英雄，试试英文名。</p>
+                        )}
+                      </div>
+                      <div>
+                        <h2 className="subheading">
+                          台词{' '}
+                          <span>
+                            {searchResults.length >= 80
+                              ? '80+'
+                              : searchResults.length}
+                          </span>
+                        </h2>
+                        {searchState === 'loading' ||
+                        debouncedSearch !== search ? (
+                          <p role="status" className="muted">
+                            正在搜索…
+                          </p>
+                        ) : searchState === 'error' ? (
+                          <div role="alert">
+                            <p>搜索加载失败。</p>
+                            <button
+                              className="outline-button"
+                              onClick={() => setSearchVersion((v) => v + 1)}
+                            >
+                              重新搜索
+                            </button>
+                          </div>
+                        ) : searchResults.length ? (
+                          <>
+                            <div className="quote-list">
+                              {searchResults.map((q) => row(q, searchResults))}
+                            </div>
+                            {searchResults.length >= 80 && (
+                              <p className="muted">
+                                已显示前 80 条，输入更具体的词可以缩小范围。
+                              </p>
+                            )}
+                          </>
+                        ) : (
+                          <div className="empty-state">
+                            <h2>没有找到相关台词</h2>
+                            <p>试试较短的关键词，例如“风”或“命运”。</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </section>
+                ) : (
+                  <section className="heroes-section" id="heroes">
+                    <div className="heroes-toolbar">
+                      <div className="section-heading">
+                        <h2>
+                          {route.view === 'heroes' ? '英雄目录' : '选择英雄'}
+                        </h2>
+                        <span className="section-diamond" aria-hidden="true" />
+                      </div>
+                      <RoleTabs
+                        activeRole={activeRole}
+                        onRoleChange={setActiveRole}
+                        champions={champions}
+                      />
+                      <span className="hero-count">
+                        {filteredChampions.length} 位英雄
+                      </span>
+                    </div>
+                    <div className="champion-grid">
+                      {filteredChampions.map((c) => (
+                        <ChampionCard
+                          key={c.name}
+                          champion={c}
+                          onSelect={(champ) => navigate('heroes', champ)}
+                        />
+                      ))}
+                    </div>
+                    {!filteredChampions.length && (
+                      <div className="empty-state">
+                        这个职业暂时没有英雄，试试“全部”。
+                      </div>
+                    )}
+                  </section>
                 )}
               </>
             )}
           </>
         )}
-
-        {/* ========== CHAMPION DETAIL VIEW ========== */}
-        {selectedChampion && (
-          <ChampionDetail
-            champion={selectedChampion}
-            quotes={allQuotes}
-            playingId={playingId}
-            onPlay={play}
-            onBack={handleBack}
-            onSetPlaylist={updatePlaylist}
-          />
-        )}
       </main>
-
-      {/* Footer (global, non-endorsement) */}
-      <footer className="mt-16 border-t border-hex-gold/10 pt-8 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-px w-12 bg-hex-gold/20" />
-            <div className="w-1.5 h-1.5 rotate-45 bg-hex-gold/30" />
-            <div className="h-px w-12 bg-hex-gold/20" />
-          </div>
-          <p className="text-sm text-hex-text mb-3">Rune Voice &middot; 符文之声</p>
-
-          {/* Riot Games official Third Party / Fan Project boilerplate */}
-          <p className="text-xs leading-relaxed max-w-3xl mx-auto text-hex-text-dim">
-            Rune Voice isn't endorsed by Riot Games and doesn't reflect the
-            views or opinions of Riot Games or anyone officially involved in
-            producing or managing Riot Games properties.
-          </p>
-          <p className="text-xs leading-relaxed max-w-3xl mx-auto mt-2 text-hex-text-dim">
-            Riot Games and all associated properties are trademarks or
-            registered trademarks of Riot Games, Inc.
-          </p>
-
-          {/* Project's own License note (MIT scope clarification) */}
-          <p className="text-xs leading-relaxed max-w-3xl mx-auto mt-4 text-hex-text-dim/90">
-            The MIT License in this repository applies only to the
-            project's original source code and project-authored materials.
-            Riot-owned assets, audio, images, trademarks, transcripts, and
-            other third-party content are not licensed under MIT.
-          </p>
-
-          <p className="text-xs mt-4 text-hex-text-dim/80">
-            Source code: <a href="https://github.com/zy1003-deg/rune-voice" className="underline hover:text-hex-gold">MIT License</a>
-            {' '}&middot;{' '}
-            <a href="/NOTICE.html" className="underline hover:text-hex-gold">NOTICE</a>
-            {' '}&middot;{' '}
-            Operator-supplied data: subject to that operator's own rights and licenses.
-          </p>
+      {errorMessage && (
+        <div className="notice" role="alert">
+          <span>{errorMessage}</span>
+          <button
+            className="icon-button"
+            aria-label="关闭提示"
+            onClick={() => {
+              setNotice('')
+              player.clearError()
+            }}
+          >
+            <Icon name="close" size={16} />
+          </button>
         </div>
-      </footer>
-
-      {/* Global Player Bar */}
-      <AnimatePresence>
-        {currentQuote && (
-          <PlayerBar
-            currentQuote={currentQuote}
-            isPlaying={isPlaying}
-            progress={progress}
-            duration={duration}
-            currentTime={currentTime}
-            volume={volume}
-            onTogglePlay={togglePlay}
-            onPrev={playPrev}
-            onNext={playNext}
-            onVolumeChange={setVolume}
-            onSeek={seek}
-            onStop={stop}
-            hasPrev={hasPrev}
-            hasNext={hasNext}
-          />
-        )}
-      </AnimatePresence>
+      )}
+      <Footer />
+      {player.currentQuote && (
+        <PlayerBar
+          {...player}
+          favorite={savedIds.has(quoteId(player.currentQuote))}
+          onFavorite={toggleFavorite}
+          onPlayQueue={(entry, index) => {
+            ++playRequest.current
+            player.updatePlaylist(player.playlist, index)
+            player.play(entry.id, entry.url, entry.info)
+          }}
+          onStop={() => {
+            ++playRequest.current
+            setResolvingId(null)
+            player.stop()
+          }}
+        />
+      )}
     </div>
   )
 }

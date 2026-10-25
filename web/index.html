@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rune Voice · 符文之声</title>
-    <meta name="description" content="Rune Voice — an open-source platform for indexing, searching, browsing and playing voice content through structured metadata. A fan project, not affiliated with any game publisher." />
+    <title>英雄联盟语音 — 台词搜索与在线播放</title>
+    <meta name="description" content="搜索英雄联盟英雄台词，按英雄、皮肤和事件浏览，支持在线播放与收藏。非官方玩家项目。" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#F4F6F8" />
+    <meta name="theme-color" content="#09121E" />
     <!--
       VITE_SITE_URL is set per-deployment via web/.env.production
       (and overridable on the command line with `VITE_SITE_URL=... npm run build`).
@@ -17,15 +17,15 @@
       VITE_SITE_URL is unset.
     -->
     <link rel="canonical" href="%SITE_URL%/" />
-    <meta property="og:title" content="Rune Voice · 符文之声" />
-    <meta property="og:description" content="An open-source voice archive and exploration platform. Fan project." />
+    <meta property="og:title" content="英雄联盟语音 — 台词搜索与在线播放" />
+    <meta property="og:description" content="搜索英雄台词，在线听语音。非官方玩家项目。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="%SITE_URL%" />
-    <meta property="og:site_name" content="Rune Voice" />
+    <meta property="og:site_name" content="英雄联盟语音" />
     <meta property="og:locale" content="zh_CN" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rune Voice · 符文之声" />
-    <meta name="twitter:description" content="An open-source voice archive and exploration platform. Fan project." />
+    <meta name="twitter:title" content="英雄联盟语音 — 台词搜索与在线播放" />
+    <meta name="twitter:description" content="搜索英雄台词，在线听语音。非官方玩家项目。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -33,9 +33,9 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Rune Voice",
+      "name": "英雄联盟语音",
       "url": "%SITE_URL%/",
-      "description": "An open-source voice archive and exploration platform. Fan project; not affiliated with any game publisher.",
+      "description": "搜索英雄台词，在线听语音。非官方玩家项目。",
       "inLanguage": "zh-CN",
       "potentialAction": {
         "@type": "SearchAction",
@@ -47,18 +47,21 @@
   </head>
   <body>
     <div id="root"></div>
-    <noscript>Rune Voice requires JavaScript.</noscript>
+    <noscript>请启用 JavaScript 以搜索和播放英雄语音。</noscript>
     <script>
       // 主题初始化（避免刷新闪屏）：在 React 加载前应用 data-theme
       (function () {
         try {
-          var saved = localStorage.getItem('rune-voice-theme');
-          var theme = saved === 'light' || saved === 'dark'
-            ? saved
-            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          var theme = 'dark';
+          var keys = ['rune-voice-theme', 'runic-echoes-theme'];
+          for (var i = 0; i < keys.length; i++) {
+            var saved = localStorage.getItem(keys[i]);
+            if (saved === 'light' || saved === 'dark') { theme = saved; break; }
+          }
           document.documentElement.setAttribute('data-theme', theme);
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#09121E' : '#F3F5F7');
         } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.setAttribute('data-theme', 'dark');
         }
       })();
     </script>

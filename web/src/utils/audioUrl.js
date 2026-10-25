@@ -6,6 +6,12 @@
 // 生产环境通过 web/.env.production 设置 `VITE_API_BASE` 为真实数据集
 // 所在的对象存储桶/CDN 公网 URL，覆盖默认值即可。
 export const API_BASE = import.meta.env.VITE_API_BASE || '/demo-data'
+// The production bucket restricts CORS to the live site. The local Vite
+// server proxies JSON requests without changing the production audio URLs.
+export const DATA_BASE =
+  import.meta.env.DEV && /^https?:\/\//.test(API_BASE)
+    ? '/archive-data'
+    : API_BASE
 
 /**
  * 拼接音频文件的可访问 URL，正确处理中文路径段编码。
@@ -15,10 +21,7 @@ export const API_BASE = import.meta.env.VITE_API_BASE || '/demo-data'
  */
 export function buildAudioUrl(dir, file) {
   if (!dir || !file) return ''
-  const encodedDir = dir
-    .split('/')
-    .map(encodeURIComponent)
-    .join('/')
+  const encodedDir = dir.split('/').map(encodeURIComponent).join('/')
   return `${API_BASE}/${encodedDir}/${encodeURIComponent(file)}`
 }
 
@@ -38,4 +41,13 @@ export function buildAvatarUrl(alias) {
   if (!alias) return ''
   const base = import.meta.env.VITE_AVATAR_BASE || '/champion'
   return `${base.replace(/\/$/, '')}/${encodeURIComponent(alias)}.png`
+}
+
+// Splash artwork is operator-configurable; fall back to existing portraits.
+export function buildSplashUrl(alias) {
+  if (!alias) return ''
+  const base = import.meta.env.VITE_SPLASH_BASE
+  return base
+    ? `${base.replace(/\/$/, '')}/${encodeURIComponent(alias)}_0.jpg`
+    : buildAvatarUrl(alias)
 }

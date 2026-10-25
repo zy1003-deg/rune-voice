@@ -1,0 +1,46 @@
+{
+  "reviewed_on": "2026-10-25",
+  "policy": "只选已阅读的玩家讨论和高分汇总中明确出现、且能匹配现有英雄音频的台词。不把二手汇总中的分数当作当前虎扑评分；不纳入其他游戏、未匹配台词或随机扩充条目。",
+  "sources": {
+    "hupu": {
+      "title": "虎扑：你最喜欢的LOL英雄台词是？",
+      "url": "https://bbs.hupu.com/623685488.html",
+      "kind": "player_discussion",
+      "note": "已阅读原帖及高亮回帖，可直接看到玩家推荐和点赞；不是评分榜。"
+    },
+    "roundup": {
+      "title": "知乎：虎扑评价前十高分英雄联盟台词",
+      "url": "https://zhuanlan.zhihu.com/p/663193080",
+      "kind": "historical_rating_roundup",
+      "note": "2023-10-25发布的二手高分台词汇总，自述转自B站；已阅读正文，未独立核验原虎扑评分，不显示实时分数。"
+    }
+  },
+  "selections": [
+    { "alias": "Camille", "contains": ["谎言不会伤人", "真相才是快刀"], "sources": ["hupu", "roundup"] },
+    { "alias": "Jhin", "contains": ["我于杀戮之中盛放", "黎明中的花朵"], "sources": ["hupu", "roundup"] },
+    { "alias": "Taliyah", "contains": ["命数如织", "磐石"], "transcript_note": "社区写作当如磐石，现有音频元数据为当为磐石，展示保留现有录音文字。", "sources": ["hupu", "roundup"] },
+    { "alias": "MasterYi", "contains": ["真正的大师", "学徒的心"], "sources": ["hupu", "roundup"] },
+    { "alias": "Sett", "contains": ["爱你", "老妈", "明天见"], "sources": ["hupu", "roundup"] },
+    { "alias": "Talon", "contains": ["刀下生", "刀下死"], "sources": ["hupu"] },
+    { "alias": "Sylas", "contains": ["永别了", "牢笼"], "sources": ["hupu"] },
+    { "alias": "Camille", "contains": ["世界既不黑也不白", "精致的灰"], "sources": ["roundup"] },
+    { "alias": "Ekko", "contains": ["我宁愿犯错", "什么都不做"], "sources": ["roundup"] },
+    { "alias": "Taric", "contains": ["我曾踏足山巅", "进入低谷", "受益良多"], "sources": ["roundup"] },
+    { "alias": "Yasuo", "contains": ["如果真相带来痛苦", "谎言只会雪上加霜"], "sources": ["roundup"] },
+    { "alias": "Yasuo", "contains": ["天下万般兵刃", "过往伤人最深"], "sources": ["roundup"] },
+    { "alias": "Aphelios", "contains": ["厄斐琉斯", "千万利器", "信念"], "transcript_note": "汇总写千万利剑，现有录音文字为千万利器，保留录音元数据的用词。", "sources": ["roundup"] },
+    { "alias": "Riven", "contains": ["断剑重铸之日", "归来之时"], "sources": ["roundup"] },
+    { "alias": "Viego", "contains": ["永失吾爱", "举目破败"], "sources": ["roundup"] },
+    { "alias": "Ekko", "contains": ["时间不在于你拥有多少", "怎样使用"], "sources": ["roundup"] },
+    { "alias": "Aatrox", "contains": ["像英雄一样战斗", "懦夫一样死去"], "sources": ["roundup"] },
+    { "alias": "Ryze", "contains": ["灾难始终慢我一步"], "sources": ["roundup"] },
+    { "alias": "Viego", "contains": ["爱何其残忍", "征服万物"], "sources": ["roundup"] },
+    { "alias": "Yasuo", "contains": ["何以与君识", "无言泪千行"], "sources": ["roundup"] },
+    { "alias": "Leona", "contains": ["无论刮风还是下雨", "太阳照常升起"], "sources": ["roundup"] },
+    { "alias": "Zoe", "contains": ["时光", "潮水", "带走一切"], "sources": ["roundup"] },
+    { "alias": "Pantheon", "contains": ["翻过一座山", "高过一座山"], "sources": ["roundup"] },
+    { "alias": "FiddleSticks", "contains": ["生日快乐"], "skin_contains": "惊悚", "sources": ["roundup"] },
+    { "alias": "Darius", "contains": ["国王", "世袭", "诺克萨斯", "站起来"], "sources": ["roundup"] },
+    { "alias": "Nunu", "contains": ["我知道我该高兴的", "威朗普", "孤单"], "sources": ["roundup"] }
+  ]
+}

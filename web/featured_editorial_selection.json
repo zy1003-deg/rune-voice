@@ -1,0 +1,2875 @@
+{
+  "reviewed_on": "2026-10-25",
+  "target_count": 500,
+  "note": "按用户授权在原有22条基础上补选478条，先做去重和转写筛查，再人工阅读和替换；不声称新增条目有社区评分。页面不显示推荐来源或类型。此清单用原文和音频路径哈希固定实际选择。",
+  "selections": [
+    {
+      "alias": "Neeko",
+      "text_sha256": "879708c3d4f0f5615eaa5395bd0d6a347f35f64f14e32d197e4a3a1ce4eec448",
+      "audio_path_sha256": "6d4e7d89795a957d47b3a8e8298ea79379242bb6e56963dfd8086114a2b483d8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Neeko",
+      "text_sha256": "06a86ffc52c65be6de3bda14e40e456f5d05f2eaf349bba9381e2d4216b51b9e",
+      "audio_path_sha256": "db3a9cbb01aa7ed2b02fa705e92eb080593afd2845b0c711d9d0b78b0402f057",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Skarner",
+      "text_sha256": "e1c171da461e5e1c76e32b20a77acb50a7b9f43922515abb2c07955711c6bdb0",
+      "audio_path_sha256": "bcdd439aa676bcee60c2fe4bcbe93a23af9d3cb2f6f8d2b0adfcdd4cfb729d48",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Skarner",
+      "text_sha256": "2458e7a70a9a327d079b0a3385b398c2aecfad27611eb1ae8f046ba1bbc06240",
+      "audio_path_sha256": "9ca69229e79e6a96bc2f5fe734c20a43e2bf0fa4643ad87e801d9578bbadb52a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Skarner",
+      "text_sha256": "e7f6768df85ecce219be3bbccdd7d1a4f7976a61265ab1c1233b3dc84088b4f9",
+      "audio_path_sha256": "c581f38e9785e7e8be1af2ad9323f11032a76afd2fb6ad8fb15754e5da359332",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Skarner",
+      "text_sha256": "fd1036b8044ed51208fd8e07e8879f7abef8b4186a5b359f1ab5bb94a4c41009",
+      "audio_path_sha256": "aa63daa780672e42972f4f8461f1bfacbc16ee2b3a161d96ba3bbde5c044fcbb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Pantheon",
+      "text_sha256": "06ae38703bb6a4cbf53d3dab2dbc71dc60583b7a2d13e59fb4038100a66cefdb",
+      "audio_path_sha256": "ddc82f5e1b1a507cce43bdd6b9656a61d973fce3e6702d79c8c95f74caacfea4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Pantheon",
+      "text_sha256": "dea69cfafdc3a4249fdaec653c8502cc54f7e22b6c6052b8d61084d35ffa9ffd",
+      "audio_path_sha256": "6787ad096de51fa16379f193f322bfd4eff3cccf8cca05a60fa96902ac498ffb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Pantheon",
+      "text_sha256": "8ec768a7890056a694b5409f1d3dadf767fbf315b78a49cb8a625a451b34407e",
+      "audio_path_sha256": "33a57b6e27ea770d8f46dc3ab554f5af6e902d3f5cd131157e6830bd0acf2c03",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Volibear",
+      "text_sha256": "4b44fab00c9a362457c8eefbd4dad488dec257a6e5a3c3e06ee3c1216cc44315",
+      "audio_path_sha256": "d6e35a5078898882798196732fffc049723abb622494fe12e4239debb36203cb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Volibear",
+      "text_sha256": "a31a9458a20006afa6798323da5e057f1345fe0a12d8016371f09b41afa39536",
+      "audio_path_sha256": "caa5d8bd240e1f6aa15c50694ec1a8efd3a14d0e9bc1526c6e9c99ca36098077",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Volibear",
+      "text_sha256": "53199280a81a436092d06fa91cbaf52acfe0b46453c3d8821afd0a72ad639ca7",
+      "audio_path_sha256": "4fbc4cf57fc79b63d594a00ca4b0b37acef6d7e40cb6058e793df5311b593046",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Volibear",
+      "text_sha256": "690419dd9ba92c833d6b7859eb0954d96f13573129b820e1769253c3b466a7cb",
+      "audio_path_sha256": "ed52d99acd23755861b90fb32c8ae1766ce3932d98364bc866fd3aea2eec7061",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Yunara",
+      "text_sha256": "d72a14edd57f54b532dd8e3b3efad5d6c99468cc0cd999644a8e9371ab7869cb",
+      "audio_path_sha256": "5c432b71a2d80fbdb6001309aeda92e693a76c3646fc67a6932775e4a7ff3fd0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yunara",
+      "text_sha256": "e66dd923404913b00bfef874ce421a82b68eabab3180c3a52c4bd77339afa932",
+      "audio_path_sha256": "f777c3d66e395852c0170b65a02b71c3c6ca312a786949cb150e1024951aa1da",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yunara",
+      "text_sha256": "363c43a2b4de7b9e0a2d0f98ce2bcb4f840e07135c3f65e833550414852cda00",
+      "audio_path_sha256": "93ae61dd459f43fd07d8f0fd6764c24351aef89e0295c6bd04e8866fa438290d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yunara",
+      "text_sha256": "6519c2dbb07ca949b36a0e0bc3ea86cce327c6b93105c5b5139fc5b9b4f5a095",
+      "audio_path_sha256": "12ee1441090e464f0d455241be76d37cd7a127eee4765843695055709b65b97b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Katarina",
+      "text_sha256": "e84f7404a78353eebe39bc32d7394953e439822d2fb33806df4fcd24dc6ced63",
+      "audio_path_sha256": "6e58f7a5fcf539fa2ffc8b720cf37735756ef1c3cb4fd18966966ee72ea828b4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Katarina",
+      "text_sha256": "36db22f2797a6f167266d0ab2012d23da68bfb712fe5cd56ad8066091be5b0b2",
+      "audio_path_sha256": "b82bbcd0e0a89314915456d2903375681af510ba41c097997c442fbf728d8cd2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nilah",
+      "text_sha256": "b7be9a6d95aeec49a10f65aeaf65cf98251596ce2ed400d8855ed3c23faaca15",
+      "audio_path_sha256": "defcc8572506c3ba38edd2967b9cf0bda5facb0278d1b9b4730e84f15c39e0dd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nilah",
+      "text_sha256": "fa25b91ded2903256b942be5630d2863a29980545db24ce65fff868e3304ad00",
+      "audio_path_sha256": "d739bc0e7a1eea13e0cee1ad16571b815aa33110eaf96101e7858c1dc9aee23d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nilah",
+      "text_sha256": "6c04a629f60a877916996952a84e9abd75118d2244b902418aa33780361bbdb6",
+      "audio_path_sha256": "1b59683533e5093083315e5555a57f73ea5b0f40abc83f025b6df8e8532a9cc5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zaahen",
+      "text_sha256": "1156780d253efd75b886527e081e423adf861175e3c2ecb3f561564a3ed15987",
+      "audio_path_sha256": "22cd47b2b9903548f89c76de074ae94d2d876c72cd8268fa2a102f9c1b056c16",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zaahen",
+      "text_sha256": "3bf8f9f3b9bfc318f4f1d64dde009120d33f23f8040a4cad7b0ece93dedb6591",
+      "audio_path_sha256": "57d32fb4305f4e9d14ca5ac66f5d88290c3cc558847e190653fd61311800b66f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zaahen",
+      "text_sha256": "13379b46775364114f34a893532c68c712187f25b0ea97d48320194c77de5141",
+      "audio_path_sha256": "f17c51e5e3ce2ead7a3692b4df37d41b75ba532d2a8627fc103570509ba66fa6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zaahen",
+      "text_sha256": "a1dcca290bcffda1a8d120851594b2e6a2d3ae37b20c24cc0e7c95fa5f39bb82",
+      "audio_path_sha256": "1989fd4b0dd4e8cad810579a46d0edbf9e2c5eeec0917955b31eb0031fca9828",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ahri",
+      "text_sha256": "ffa6c2412be4e0f02daccc3270348d8d9144b55741a5ad246a6abe01e017d164",
+      "audio_path_sha256": "3cbd4168ac22efe0369c126e8b74ce789ab11b6f3aad97314bdd76578a798fd3",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ahri",
+      "text_sha256": "11753461bcbd99dbb192b770c995a40f4daee0258919ffbfa54757c8e5e33c01",
+      "audio_path_sha256": "ae952e147861b06c2293ef2bfc836c4ca4b2fc6e2d16eecaafb4f55998b3f048",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ahri",
+      "text_sha256": "a4b22d118aec563922c2ad855792981fdabd4a1f66cd29e5622efa07cdf7fa79",
+      "audio_path_sha256": "63ecd19c26dd6cac906ec67601ca8d1b700172a69df28b1b73bb661e590c7748",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ahri",
+      "text_sha256": "949ff9a782119bd46f6df87ca570f9ccb9ba069d3de49802d0ff22099766cdd1",
+      "audio_path_sha256": "3530f00160500fe236ff83dec98d5513de6d52cb60615712f5a466a8144a5b05",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sion",
+      "text_sha256": "324be0e81b0d7675d2475445d5fd875429b8f4c87f11ce16714664af79966c32",
+      "audio_path_sha256": "3d275591dd70f9f95295a56d4cf00726e3fa7ab012acc5b6e8e4eb9cb2c42238",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sion",
+      "text_sha256": "50c962c6d83115d8a5839aafafee637a6bed2cec2d36c7d013880176b9475c0e",
+      "audio_path_sha256": "15b2f8c4130226a6d36821ca0645656f1c8e7237569b3dcf5926948f0b27aad9",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sion",
+      "text_sha256": "eb0c20b21924b0a8cee6557d4730cbab1dfc2fff359f12fc4b1b6ce135d4ae92",
+      "audio_path_sha256": "84b6d2c05d4f265a6c2c0bd4450a70ff46a30aacd5addfd822e8d281c0ef447b",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Soraka",
+      "text_sha256": "63ef4a67a20501ff4228f4c91ccdfa041258efe1d19ec9186e7e0a1a76bc8f98",
+      "audio_path_sha256": "16bd58ca769fe240b518b25f123c7ffcb48abb4a557d56d7a00096dcd4ac3397",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Rengar",
+      "text_sha256": "2f044cd0d83bc79a2c4088ac04cef117ccbb2a0219a356f27531663500784077",
+      "audio_path_sha256": "89e8f610354ff0a9617e9f65408e52e1b9f3cfb2b2396c469c745a09cc7491df",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rengar",
+      "text_sha256": "c67db2265dca3379be814599c4dade1c4915495a651288b153f837579147ce52",
+      "audio_path_sha256": "a1c4ea1a109a16e330bec1510eb4eb9b4f064977557025d5a2369966f504fd10",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Qiyana",
+      "text_sha256": "683fa5a6b527a02d1256c174b64c85df44e6837e00d5bd8081fc426627476ae1",
+      "audio_path_sha256": "69f344870122955a436d77447e6792f9d07392aa5f4b344da8971c76f0731be9",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Qiyana",
+      "text_sha256": "86b6a3011956cb70bded0474506eb9ded95aa5c6168340f6a9b0cafff882107b",
+      "audio_path_sha256": "8a12685a08c003e8e117a7acf7aae5a0871d911ba9055fc6017812ec31ea74c1",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Qiyana",
+      "text_sha256": "27676c75e3217ccba35ba8440bc77868db6d187f0eed616bd1673b35e5664263",
+      "audio_path_sha256": "9fe6ef03ec0f7524311aa63cf58d2d935d273a87129dfe8c2481290fe239070f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Qiyana",
+      "text_sha256": "9e0e1a73f731310e1548c7f5ed29049993ed87a9096ca3009703991f9eb3a15f",
+      "audio_path_sha256": "5e0401f4fe254b5e1501b4625f489b36829e077956cdd0b96d433fa9ceff3160",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lux",
+      "text_sha256": "0fcfc372528d694e6ee7b89dfa98703cabe7769718f6f2a99764fb05c6bb538b",
+      "audio_path_sha256": "bab932947c84dfcf1fc4f2015215183c174ab56fbd7f7159a253bcbbe12a86af",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lux",
+      "text_sha256": "7e3b9060afab1f44ccf81e8ef27848d9803a943251faffb59cf1723c54978e21",
+      "audio_path_sha256": "ac1f57354ab874513f0e1192d18f812f9f48b5a261df82bbfb08fda1870c9187",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lux",
+      "text_sha256": "db577a842b259f0965aaf8b8f0eed77766aa794ff5471430d9c5f78db366da45",
+      "audio_path_sha256": "d7a134fe2b016a1b786b85ed8cbc0362ce60efae528121386c7968cda90e36a4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Udyr",
+      "text_sha256": "3a63f0426f0f19fdd5a88072fb0b159d92e81ab700fb46c7fcac6f113e437bce",
+      "audio_path_sha256": "dd0042b96c8b3f6b37d81bc14bd0ae32d8879f20c742a55f33c2e8400d196c10",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Udyr",
+      "text_sha256": "403ba4fe4a2f94d1093f729c5d91243f3bb42b56269cbe145103df16a2980d80",
+      "audio_path_sha256": "8f684551f073caec0f318559779964b5fab3ca7f965e04ba5ce3baec69c753b7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Udyr",
+      "text_sha256": "53bc62ca3911019b9ba2adee918fedcd265782d327e03285bed5898c51ece573",
+      "audio_path_sha256": "04ab1e78e2c7701f7aeb6b308679b1af48551802f35c28fea58567563ccff28f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Udyr",
+      "text_sha256": "f16c026871dda4f573f18e56c0857a208e6f7a2b6a2337d9e304e1dd268f6f0e",
+      "audio_path_sha256": "92f4f0e4a3b6476d9e77f822c36b02f16fb5cb726cccd77bdf9907e206b670d4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Anivia",
+      "text_sha256": "5f43953f48a447df9e4f38b999498b5bea7e31c8752a08bb49c3dd9c27239e06",
+      "audio_path_sha256": "5557381d8dc7cc3820b69774bc12000889912447de98c1b316d048a875515e68",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Anivia",
+      "text_sha256": "4ce39cd0d9ea0c700ea189ec33005057b7418e6d1c335fb204cbcf7ee6a48c49",
+      "audio_path_sha256": "ef1d2e52ca214a11c67dd0e6764e9b9dacd2d7965d98b0f8e707c14890a49e00",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Lissandra",
+      "text_sha256": "64a3e6282a74cf2197cc35db41ec190252e76cc7a8aa8fa2a9d2ac8ad25bd9c1",
+      "audio_path_sha256": "dd3af268a53cf99f8178468729fa630e7abee1a1b4cba7a3e8249cd6330d17d0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lissandra",
+      "text_sha256": "0787b4de1ecfd5b1d36e78db724d6696976dc14a8f193f9329e601ad59eec19d",
+      "audio_path_sha256": "6eb223d975504aff9938ea2ac9f52fdd0fc9f180ecebb510923034c3eadf799b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lissandra",
+      "text_sha256": "160d0019a949db301674157e1f6df1a4c6596ef4b43eb91cb659dc0c2cb34115",
+      "audio_path_sha256": "a5bc869b2ba69a57a08bac2fbaedad09bf9134da6503aeac5a65c708c1227946",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Talon",
+      "text_sha256": "adeba8bc6ec7b5af205127e4fe14dcda2af2cdc4db52efee2a33136ba3e7796e",
+      "audio_path_sha256": "0def403bd502e880dc0ebdb318cb376a77a53c1d5a37249139e5da04429c52aa",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Irelia",
+      "text_sha256": "c8745ee3ef8ad2f8ddcf700e79b5553f23485a2b3f08d73b3a390e1fba16d9eb",
+      "audio_path_sha256": "1ae6e602fd82db6b6e6f0f338a08bf91f1b06382739dbb085b47df82719b627c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Irelia",
+      "text_sha256": "2be8b2f436eae731e27db1f7fdebf9628b0e0ef48e4993182cdef03acc8623ce",
+      "audio_path_sha256": "770d4029e7eea31243011e3a64e9a018478c0fb7aa3d7f0ecc44abc10e852064",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Irelia",
+      "text_sha256": "60e98d359bf652730cf0b31996690bb8fcfefd7785b9b701a21289c7b1856475",
+      "audio_path_sha256": "082667a755f2300e3bccb2eb9bc7c82e97cbcc2fee59c46a6c8eccb70261db94",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Irelia",
+      "text_sha256": "a96c3d98e0d2643c48433fa0b79ea74ce8ad3fd1c949741afcd6ca7339472e30",
+      "audio_path_sha256": "09d53bc0b53ff4b65bf76f17fd79676455f8e46cce8789e4e69fd60f860552b0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sejuani",
+      "text_sha256": "accf8c277c0375b3ce3b4919eb6b0849c735936d00c1380d6f909cecfe676bc0",
+      "audio_path_sha256": "2adb9ce9499c2a9d95d02e1c6a68263a8feb94488753f1cd8989a7a25f40577d",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Sejuani",
+      "text_sha256": "42cbd1586e356a3699c33b8f9368a863aee7ba9dd628485f661af519d97a448a",
+      "audio_path_sha256": "c53dd936df88816f7c1229ac0675bf544b0c284d0ede60f0d2ea0d389de3e65e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "TwistedFate",
+      "text_sha256": "eb206bc5ccdcdce95e1cf3d7fdebfc857cb936f7a10369bf742722a7c9923234",
+      "audio_path_sha256": "6b7ad10d70d2dea739b026220ffbeb241895193f8a23289dc722968ae29563ab",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "TwistedFate",
+      "text_sha256": "c87a640294eecf6d852c7bd5552f19c0e09dd34711b921840a7d31f534dd415e",
+      "audio_path_sha256": "62daa52561ebebb7bc4fca0a7fb0490d804fed1f947fa3c2c40f6bc2cd40a5a0",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Aurora",
+      "text_sha256": "b159bb3f1c56ccd0e288e6f6c0c995722e15fcd62c03343c8d0139884fad33f9",
+      "audio_path_sha256": "65f947b6e95e93379faf0e14e2bf42c9f6de600761679680841e1748daf59333",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aurora",
+      "text_sha256": "6b99d5671ac1a1f30180f67b4682e93e966c4feebe87096b7c1dcbdd343dfd2e",
+      "audio_path_sha256": "708a8b71bf4e9ae1b41fe406d564c4ca3f41d45396d871e2e0ab331d3e14664f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aurora",
+      "text_sha256": "ec74f6833c81f6f4ccc3698311ecb6f990d0ab7833b7e2bfce079a466828289a",
+      "audio_path_sha256": "18ffeb2c3e326421e932aa5f1af2e3970d9c762d8e452c1ae84f0f5596743e1a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aurora",
+      "text_sha256": "1456982a66a8a31ebaedbdc2c9df3b708b3def247a379e3db9cc5aa8ad7cec16",
+      "audio_path_sha256": "834628beb64387ff01b1a6b1d3a485ef05f033b35df65aa691529d15bc91e614",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Orianna",
+      "text_sha256": "7725d0c816e68885d376332426eb03ff8e34a50f21fc66798f840b0746f93489",
+      "audio_path_sha256": "d24456799bc70a29d33c74502c15b0795a41a379fb64b51ffeb97e209e0a6932",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Lillia",
+      "text_sha256": "bdad5cd7986519e1b5cda0d678b20c74c04f380ef9f4f7f0689a06123feffa83",
+      "audio_path_sha256": "95d1792e180b895f3a8040cbeb9c12ed343470d00980d223129a0c55ed9277cd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lillia",
+      "text_sha256": "65b58dd10b47404cabc27f9f987a269f2b459008ee8efd8a9ea38af74bc768aa",
+      "audio_path_sha256": "7d1b14b31e42484e2d189ee35f484a2632a8c9162733fedd8f733923cfd5a11a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lillia",
+      "text_sha256": "1ac276fa5edeea164090ac1c1157c6e3a9534a868e473e74531716403446b33e",
+      "audio_path_sha256": "0ecd29f48ef7296ebc9e82ccb301563ff1b196d9ba46f580586a11375c528a7a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lillia",
+      "text_sha256": "74aaec7f8bb84acf815a7f594e5438cff363d34dd00cf44b58d5f0a3bc4b6546",
+      "audio_path_sha256": "578dcaac3c13d67dfbcc2a119344b68ea37b09495ef00d70ff2072818d2fa13d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nami",
+      "text_sha256": "c0a462aa9e73b6b87e81eb9c6dd49e0f052ac4c4cb9f8fcc4cca81ed0fbf7a27",
+      "audio_path_sha256": "b69559b5900013a1d6c392ceaa7c4b3499221e68c28b0e1587c543ffc5252eb1",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Nami",
+      "text_sha256": "40c6bf7ea0d9827ab7352ce25d7243388f0b287f713cb6478a86b39c80aa0a57",
+      "audio_path_sha256": "e95853254eef590a11a5708864a7fc7277fbbaad16ed5b96c68fde1fba41b51c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nami",
+      "text_sha256": "3bfa8f811e4c863bb03b7562459ebcde4bf62cd6d285a0f21e579556955bf730",
+      "audio_path_sha256": "a3633b2568d380eb950a1cc593ef57e6a949f11885db10ca67f755bf0177c324",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lucian",
+      "text_sha256": "ad6729bc63f8c4c5540526a6c50ff392685171767f58b9d1283a855432e2b94c",
+      "audio_path_sha256": "9ab6be3124c9c4993214eaad7c6e6178117259afe634314779b7948f1ec05a7e",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Lucian",
+      "text_sha256": "0019f43114c312244e2a0269c7d7b6e33562427dba358b3de6b336d517486bb8",
+      "audio_path_sha256": "912e023d4743524c0d82ce66efa38ac5f0b992a7db99743b9c77757eee7bf32c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lucian",
+      "text_sha256": "ae312788969b4c7ebde827e821242a749b740eb6ab086f77d70c1ef77f71adff",
+      "audio_path_sha256": "1f420a8776191fd7bbd2b91328bf98096b475d24020df653109955e4b7feb1a7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lucian",
+      "text_sha256": "3d09821b3681fe82bdde428dfa88f9a3bb9cf4a6c6b7db8cf7db920acc43d80e",
+      "audio_path_sha256": "353236f91c194a0bedf6ccf992a2d67c3a8d3e4f53e82f5dee3734eaf03e86d2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Poppy",
+      "text_sha256": "751dadd079aa4ae5d0eaefb6bcd3319a931a45d7133047814b0bd89bbac96b0c",
+      "audio_path_sha256": "0e9f8556b74c9269eae95404b504b9350cc817ec2142708ee1320ff94de97bc1",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Poppy",
+      "text_sha256": "63855c6a10f1b60346671699aab9cb6fa70b688d784ceeeaaab9bb2a4b357e6c",
+      "audio_path_sha256": "d793bf4d2171a3a62264af14e30557b01f59dc7e4ea794bf51bff41236631e82",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Poppy",
+      "text_sha256": "5193531e8109163617523c4a62c35ee8e8107d5651c7bf2ff6bc674d2a12d647",
+      "audio_path_sha256": "04d2ccff17c2db127d66562c14fb0889e807ddf08143c63a42b4440bbef39804",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Poppy",
+      "text_sha256": "0de732481385485775e2791faab711f98ff00d543feb96786ea527d7ef60f21e",
+      "audio_path_sha256": "f0e73ac71bacb574c9b438a04ff4ca820ee671bf629f98ff2b459542792e590a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Morgana",
+      "text_sha256": "e9972f519b7e0b90ebd72a4e6e326859ba9083cc228304e3214a6f6ae9369902",
+      "audio_path_sha256": "b36c2672541a67d299a793409e5743e49e0d82d99448eddf8679e6617cd59da5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Morgana",
+      "text_sha256": "f2e36434ad417b902e2690e59170a69c4079687003126fc67b9558376b0d9066",
+      "audio_path_sha256": "3d8aba07e6d6e2f9699bbd344a4c69e9ebfa0d6e770bacfabb5d7c8c1a736937",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Morgana",
+      "text_sha256": "32fb353d289e6d3fafad939410d432fa569680bb2fe6cdd0ff5a50015dbf5a9b",
+      "audio_path_sha256": "f8321b5524ea62dfff59a77a85fa85ab8c40ae9b5ca75d12c04272945f0e232d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kalista",
+      "text_sha256": "e53cb97a00dffbbe62249d93cbac8d1826f3062caee1d344b9775502842a0e40",
+      "audio_path_sha256": "ed8befa4a140d03f718bd63cf01be87a7bbbe317449abd5b1f7ea680392708cf",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kalista",
+      "text_sha256": "c6fe3ab1c8af1614c04409a8d8e25d1e586cb834738abf69b745c9b8a9c68a6f",
+      "audio_path_sha256": "6b10c374d70e98475e6bf8dda6d40757c065ad64d858a8d053b7a6b27dff55eb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Brand",
+      "text_sha256": "36f0e0ce1f7e911d13096c189135a03cd85cf56c1e21435de0f6b7857a08ff4e",
+      "audio_path_sha256": "ee81fd0bbc29d8a0d0c19e1d05b43e1b21568c64f6d2cb3fb55c426d892af443",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Heimerdinger",
+      "text_sha256": "d29627e5c92062808c88ef77a0455346b80f8be6bd963b64bdbd6b8198a53b28",
+      "audio_path_sha256": "7c7fe2a74a37172732b1db36cb057ab7af37631e03dee56da36233d675288196",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Karma",
+      "text_sha256": "cc53b072c3ffa2cee54c2ec9b834946a5add6247464324d9988c455a2e2b1798",
+      "audio_path_sha256": "fcfc2a47e8459a233a96e7a37c135462c4bd58d347eeaedc77e05ade63d1b95d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Karma",
+      "text_sha256": "663cbe79d0e3aacccb07a21e2dcbc538670c655b814bb26200796503886527aa",
+      "audio_path_sha256": "5cf0b731df6d77a6c3bcc8ae31054a0561d75b658ee33b25334c4f795b91c3c5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Karma",
+      "text_sha256": "a3e8e88b170d9402b0ef2bf44bca2ffb7513f9e7593b2025dfd573bee48f811b",
+      "audio_path_sha256": "56fd5f04db57e0ecb30a33609de5b422efe6599dc7701278423736086aedd047",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Viktor",
+      "text_sha256": "5ca09674ff35c5d7ddee878ac7383007f3788e654567e8037e0862e87811c208",
+      "audio_path_sha256": "91f2a40522bb5548fae9c6734861199c33cd44b8b8b23f97579af457630b62af",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Viktor",
+      "text_sha256": "b85fd6300e4a4edc472bed1fa0b06540912a0932a4753c3ba230767615522875",
+      "audio_path_sha256": "03ede345e1a5938277fa0893750714e269e5ca7c9812eee9e35fec3dab569872",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Viktor",
+      "text_sha256": "0e4d1672ac354b27cc939e9d3989e4a8d627742a1e4578593f566e7772254439",
+      "audio_path_sha256": "1a01c37f6ad62e3d46f02675fc3888c89b8dd8efe763029b4821a5c5d5672de6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ashe",
+      "text_sha256": "2f2a82491701a7220811288d842fc21ee9c4ae659c23502747d7b981fd1f5196",
+      "audio_path_sha256": "6dbc3836181020bffa60242bdc37cf4a2a8c710fce468fc76c956af798004497",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ashe",
+      "text_sha256": "9f64778fd189f5eb6edf4c24e411f6906fb7b6983c7fd5fe01353d37e4b949c5",
+      "audio_path_sha256": "acc4c2685cc6d6ecc595fdcf1160c6ddbc263b4bf4cd1fd40ad5b4d36a774294",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ashe",
+      "text_sha256": "d7ca03035000654b772be379340e69108936a2cbb0d1a669e6d178defe103049",
+      "audio_path_sha256": "be007a4c30e1962695220dcd38d7f9b97f11f88e11173ba087936e1c68cfc646",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yone",
+      "text_sha256": "30c235a4b9bf6065d73cb115a47c5e94287f9f3eba4a331de0d496e8c3071359",
+      "audio_path_sha256": "84b44dcff2a83fc6512653947962697beb2bf743eaed468fdd7508666b25575c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yone",
+      "text_sha256": "c68e95f2014a2ba166bd0eb31f2b3209ce09e250d2a2ce1fe4adad7e4a899d35",
+      "audio_path_sha256": "13848babd97bf6a0effb8814e677b3c24138cbd8277982ef78b255ec7d08cca1",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yone",
+      "text_sha256": "97cfb721682814b4c6da2be0ca2399f1734dc03f0b806008fe1d23cce51a48bb",
+      "audio_path_sha256": "10218061b5a352e4c56d4c61760a80b772a183a2bd80b6e941cb94899eab3ae2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yone",
+      "text_sha256": "a2f04c00efeb1aa94efb1817296dab037e6649ee336efc1e6446f7bdc3db31ca",
+      "audio_path_sha256": "114bc8eddecad7843dd017bd5dde5d5a7356954c77f48d9cbbfc6fea125a0167",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ornn",
+      "text_sha256": "9fb9f1f869d71ab0272690cb80d03014cd34b4be3186a5bf8e171c0ea64667f9",
+      "audio_path_sha256": "265297fa81622617a0bae21f9e85004e8a89bf053fc25967ea09dc3a721e2691",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ornn",
+      "text_sha256": "c5275fcfcfa06e42ccbd50e86ac3b2376f55bf215f3a7857877ecaa8883360b9",
+      "audio_path_sha256": "9fb785982c5ccb807206114de09569e69452f0de91c5a5e0d12764e2ab69291a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ornn",
+      "text_sha256": "af3a45e5720fa18fa49d9ecab5cf63260456b0d59e6c62d85d4d62c4896ac475",
+      "audio_path_sha256": "23490849193ca2af5d156d3b5a5a2e1b73effdecbc17d3a99c58c906abe09cbb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Taliyah",
+      "text_sha256": "69c2bc830781b19ca620a2854bf1d400a59256de93baca1f10b7edcebe21bd0c",
+      "audio_path_sha256": "c9a0fc555294e7dcf955d75a6a1509020757cd8715453dc56d940f06baea8695",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Taliyah",
+      "text_sha256": "aa695cea74dc22ffa7b202408569958cbf12d7c1accf66c9f61c38764758473a",
+      "audio_path_sha256": "d68fa47fc33f16246e030139c240f3a383a6edc87aae6da5ffffc4fbf6948fa5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Taliyah",
+      "text_sha256": "f2fc88f79469ab94f1722ca3d217ad00b97573ded7a2cd9f75f0a6a2dfbe7221",
+      "audio_path_sha256": "57051b4452c38379cce77560bd51cf77918b79277501f413b7efb444f61fd6cd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Trundle",
+      "text_sha256": "0d5f28f7f3f35472129dc1d3b68319b5a538c419d6f2ee862ad2a5aa69df46e1",
+      "audio_path_sha256": "a407c3407f2e55d3d132b60b5ce7461ffd6c9142cf58250df3ae39873340035e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Trundle",
+      "text_sha256": "e21cff138fd90128e90f3d65dbeaac7ce91ca0a5dd047769f00068a1d6a00a0c",
+      "audio_path_sha256": "14abbbf9f17d3c622920a9eac2fd3cd7c2d7e67ea287b10a3386fedfd740f6b2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Trundle",
+      "text_sha256": "09f6bac1be033d3e3fe5e907837f6e0316643682f64723b1307a4b7cde2cc1be",
+      "audio_path_sha256": "253ea2ca8ef3d7b6ea049adb2ab8faf459f90a077a0e0dcd1072486b47570b0a",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Rakan",
+      "text_sha256": "ab4ca162ebbd693f4958e8dd11dedde702d3e9ecaa6bcba552715cf885e311d5",
+      "audio_path_sha256": "3f80ed6b2adfef87bf7663ea9ffa6407041d5661336f7b93b1171fdbe8391a80",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rakan",
+      "text_sha256": "ab5f9f6ce53f6d550f9c2cb8259c1a125f05012c4b30f9baece041051e26f972",
+      "audio_path_sha256": "50204ab85b9dfea0d025a253946b31f181e95c506484aecfafd392eb5c2d5cf2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rakan",
+      "text_sha256": "849d3f2ffe4ffe01a228095bf40bba2dc5983ff4b12abaacaf8187e464000797",
+      "audio_path_sha256": "7ae8796d93ea50deb869c7bfe4fbe117d54e48060764bea601628d0c366fc9b7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hwei",
+      "text_sha256": "07486b1f34020b4ebc14f62e75e032fcd82737990db196c712c6040249614483",
+      "audio_path_sha256": "f96c3c7ab49ceabc7482f54cf50b203809647f43efcc607c65d3e9382d303250",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hwei",
+      "text_sha256": "61e6917e142ce2131eb1c3488f84fe24c4474cd13c45aedf17f20d3b80525625",
+      "audio_path_sha256": "3e460ce90777444f4a02a70a7cb4b804f199377d936c9f9f0e517c26dbbc6749",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hwei",
+      "text_sha256": "d4ec7e5110f611e85a763bfa014361ab311d6f10699a1238ec32ccdf2776676a",
+      "audio_path_sha256": "a439eff0f587b4667cfbfdcf931081dc50688411fd88c34227aea40e2bc1808e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Braum",
+      "text_sha256": "d3abcfe32ffe246e0804d183ad6af59eb587868593d0aad206a972c816b7bf8b",
+      "audio_path_sha256": "1bbdcb2988af4e55ac04e3bf016bb6d5c92e95f8a4dca61212e5bf78bcdf8c7e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Braum",
+      "text_sha256": "12a805706832451b1fd35db3fc8338c370cae04cc4b75577d545b3c502dab4e9",
+      "audio_path_sha256": "0b58f4405bcf22cf8211953caf6955034535ded8675bf5001089c82e4eb381ad",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Braum",
+      "text_sha256": "86f73bdd6e7e81fcfc9bd6ba574cb7db4e055a351f1fd7f439786501c309f0fd",
+      "audio_path_sha256": "f26ff8effcb651f95ba1955237ab4d9c566e9a63a67b013f3c14dba43d8cfdfb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Akshan",
+      "text_sha256": "fbaf14818f12e30ad9049a7a8a38e3e3bd695fdb7f3c136a72b45bba23028a45",
+      "audio_path_sha256": "77f2dce25dd1522aa5a004e992428da8e0848e65076da6651023175ddc214755",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Akshan",
+      "text_sha256": "90787bf30f99217d99cb8ea15b4cdca20eb23b61f74e959e8bb0acde32a079fc",
+      "audio_path_sha256": "affbab5c24b376efad09751bbc7b753298d12e947d674d19996d721aef05f4da",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Akshan",
+      "text_sha256": "af74451355abc5b7e0b2fe669f6e2bd8a2c824636f50d0527aae7bd22a2cc779",
+      "audio_path_sha256": "012c005bc89027a240fcbef9c86f3834834f1cab57125bb3b745db7f76da981d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Akshan",
+      "text_sha256": "0dcfab4063c863b31c34b0c38cb46a6bf8ea3a51680edbab2396918bdcf1b5e1",
+      "audio_path_sha256": "e4717b4e6adeabd648d4b045ad96c33094463665f74a8baed270c49d29476194",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Zed",
+      "text_sha256": "4e318c9e7b600febef2ceed3ce259abbd51d2ecc159a9f327ef0f82fceb3cfaa",
+      "audio_path_sha256": "905341b6409e4e7f8b9adf8e710853b2ed77624bd2e04ad67394827d86f5468d",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Kayn",
+      "text_sha256": "62fc9d6e922939b5bb2bf7d273fdc8a15b53b2512fd352f18f4994bebd4617bc",
+      "audio_path_sha256": "9aceb409187c0acb34cc5864d41fdbf15fd774e5e6c01d5d31c55ec59e78209d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayn",
+      "text_sha256": "261a68b2b1d47ae3aa4b62ee7cf859410f3d7e8db7c669404cd1ddfe7059819c",
+      "audio_path_sha256": "e916ed2e01747cb8e98383ed194e02decb2e2d41a48b0941b1b4257d38edead2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayn",
+      "text_sha256": "8c9db72680058e4a9aec407bd72bafa5d0204aa386808e92b5ed92e0f5045cbc",
+      "audio_path_sha256": "eb1e031919a46325a74233197b1469e31210a1dbd25d11e930dd65678902cf2c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayn",
+      "text_sha256": "7ec1298263ca3876f92b82cebca01c6be8516fe489b8cbd97df317564960ef6d",
+      "audio_path_sha256": "81b28f8fe229a776f87142d56dd682e2fb06e76a531b8873101b06ad33e9e623",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Garen",
+      "text_sha256": "8f62f48155e7826958fd13003e3bf838e11ef0f2df9a91e60a5ac35a8baff7e3",
+      "audio_path_sha256": "46a3ff14b4ceb7717522cf705c40ff69bd9e9080d3b91be7f92e47b385bf8316",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Garen",
+      "text_sha256": "646f79c8b8710d0b8ac4fb44542db100763f419e899cf683a7ed75c9d6ac4e16",
+      "audio_path_sha256": "dd46605c66bb1347f529fb386bc4369ae5ed10510e4ccab436d0d59d20e3c7dc",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Quinn",
+      "text_sha256": "ad6507f946dd187971b38fd652da2c3e933278abe2893687556859f9d97929b2",
+      "audio_path_sha256": "e913ce9db07b483b9acb0af0c9919a3cf3143509c84e63cbd9ecab2caa59f9b1",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Quinn",
+      "text_sha256": "89a8800ff819873ed36aa05dbc3c5c0382d982c3a2e74b3ac87d19b4e103fd79",
+      "audio_path_sha256": "62c5710845f0c7a40a986e707ffe920463f524ce1a64ee84038fb19454805898",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Quinn",
+      "text_sha256": "35bc5de0f95cbbd9df3a4ed3cbf006f1c7aa875adda954df50c2bed62152662b",
+      "audio_path_sha256": "5274c8a4f073e5e48321dfb15e46465198fc691b39c54cb30d70624b94cc30ee",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "JarvanIV",
+      "text_sha256": "d1eda0841aeadd1367895bac69fbaa92594d79891e323a58c5a7adf632256f75",
+      "audio_path_sha256": "3e2aa91056bd6e2101e18dc78835e91b347e8c6cf7504037c50b6477d141abf8",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "XinZhao",
+      "text_sha256": "a58e88a9cd00d743965dd3aeb9bf0e7437f0665881863c3336e65755a8202167",
+      "audio_path_sha256": "92a2fd4a72385878255bfa85f200ba675afb63c3a31e19025060f55fb37aeacc",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "XinZhao",
+      "text_sha256": "2e98dbdb98d965f1a2e0dcaf90995a519177d40d0bb2cb1045eaa9463f1858b2",
+      "audio_path_sha256": "110b0d07e770675f1ba11a805c19bdc425e91d2c4dc275ded0f6edb036efaee0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "XinZhao",
+      "text_sha256": "70c1a0a9431d37b470b22d1287f2fd4f4442673f50000c33b7dcd0e718119fec",
+      "audio_path_sha256": "75f13f70226d8cb2c719a648548fa1796e8edea8f3de5514dd68b070f569e565",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "XinZhao",
+      "text_sha256": "287df92a069d866069bb9ba373e3431b4b7448aa8564a38786f994c7d8ad459f",
+      "audio_path_sha256": "0f0af06f1cd9163652a519a0ddb64cad67be8a71a22f8e84008087669d84de88",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Shaco",
+      "text_sha256": "d27ca3cce18ff2e32a56fbab322b9411129c585c6a7946a2028fc9c723cb8542",
+      "audio_path_sha256": "dd9636c2601f70d008c4de788e7e02bddc8daecb1e31bb514d3d687073dbf627",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Varus",
+      "text_sha256": "e57558ee7d69f388076c9d4b2af20876e0e1703d9737f40e2247a7b5081717fd",
+      "audio_path_sha256": "604e01824530438736567d9d727ad150a63ded4b58d2ee38f7b116342db965ca",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Varus",
+      "text_sha256": "c546dcb5748fc468e348f0d2e614538f9716b95f1cde9c32a3b17ca69584e94f",
+      "audio_path_sha256": "feb77db1cba0b8208b1dd2922150980e2f772bde51a18607f9e73a036f1b9142",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Varus",
+      "text_sha256": "5f6d6cabb12fd285b9d2121fdc31bd789e2faa772cf6794a93ea6b574576e763",
+      "audio_path_sha256": "d7b99d80585a1f7f43e82e6ae8cee8868710e963bac390ead8e6ce82ac15389d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vex",
+      "text_sha256": "cf4c2da4040ce1579a91503471e81f50f6bdda7eb72c6732a2881b74e0c0f488",
+      "audio_path_sha256": "a6ca0bf260a5d4abe09e2e3d42c6176e85eb5a1fcc760184133a8eb33401cfcc",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vex",
+      "text_sha256": "ba24e1964802de231e4d78f19af6475b8e88b67c51dda91cc612c6f35b1f5e98",
+      "audio_path_sha256": "c2feaaec31a4b7673dcfb6fe6f8354ed9b319a223ef5f202be5d5759a6fdcf1f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vex",
+      "text_sha256": "2defa821568e19a204079201d4fd276f1b984c7f6f9a1ece3afd47d9de1080c0",
+      "audio_path_sha256": "0213ec13b746bcf2cb5d4ede1926009ed951da5028758e120edab27bc0ed5036",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vex",
+      "text_sha256": "fe629dc5b7e554bb37305136c65147c6c41af83265c24f397ae04ef00ee618e3",
+      "audio_path_sha256": "34b302a80f0d1361a0b0a22c84c74fb74ac27573cae95236308a357483f67ffa",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jhin",
+      "text_sha256": "70b5357065df6335e495ddb45cd4b793d2d3da640c8b951084eb743bb820af67",
+      "audio_path_sha256": "c0f2b6e8fac88bff0e51218dee5647801c46ad6a5426c840addeb883529f3776",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jhin",
+      "text_sha256": "59b63a9220b72b22ffea1b66e9acc90fbef4defb649d4c64570fc31ba8938638",
+      "audio_path_sha256": "9629d0a063596fcbb32f0e6644ebee48e9cce04cab83211fa4ef3b36c4609835",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jhin",
+      "text_sha256": "1364ccb42dc2feb90f0064806e8c59893d48a5be712413e92500b8c131829d82",
+      "audio_path_sha256": "307d2254d185b1305d8dc7dcb534b456c1ffa95672b7bcebc726ceff4a483330",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hecarim",
+      "text_sha256": "13088c466e39738023fdc2ca50c6c5b0cb5ef1c383196d83fc1b6dcd56b8fb8f",
+      "audio_path_sha256": "42285250df03cb0ac726afdf09980b18d7a5dcd37d0bdfbf85e2b5ccd3e9dc0e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hecarim",
+      "text_sha256": "b64c1c9dffe856d4ba20f9c471dc3844d7e8240b7ab39b1e0a208bc2e985b401",
+      "audio_path_sha256": "22f6959113d2a81b4789dcaa80fb9712bda79ca5259f538c3799e398c5323bd8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hecarim",
+      "text_sha256": "bc61e419f8a91d227a05b903e64c7acc88e23d95bce7298aa045d964ee218471",
+      "audio_path_sha256": "750fdcf19ea8d5a7e6568c9c74bcc496a912536b686638caa6c278b27e8e8a42",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Sivir",
+      "text_sha256": "6a12fd1ef20537b86c6a80b8bcdc95963bc6153502153df34f391a61898c632b",
+      "audio_path_sha256": "25b153ee4b31a5f531d2028e7c370548eaaa8860f6c99f381aafb69be3f53255",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Sivir",
+      "text_sha256": "d8fd69b4c937356fbaf855cc7d00dd233895b5678f95ef8b8ae4acba8f1495f1",
+      "audio_path_sha256": "732c8a7efb7ef6df16d00c3cec533173d0f1e53adae2f07002424fc1e15af94f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sivir",
+      "text_sha256": "5a494601642bd69359117b285f349e7d3d8f32fbc2c058e2a91f11962283047a",
+      "audio_path_sha256": "84ba143d94ede66321ec547f0667188bb18f1962b32da5aa2e187d85976ea8d2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Maokai",
+      "text_sha256": "c2a3c6925a3c444a6364993a9d0248b237100cf4646e500aa06d0d846f977097",
+      "audio_path_sha256": "170f66d98542e1dcafa9e5ac0561f633b87fdc28050628a645cbb265a9572cd4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Maokai",
+      "text_sha256": "08670f3f2d0ae618e06bdee3bc4f101d1bfa52c1d3e84971e277c64809742fc9",
+      "audio_path_sha256": "357b05230715d1e759bfeabd54af8f5a02b888ecec3fb66dc7a26c7f164fb528",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Maokai",
+      "text_sha256": "a24f9e5ed01986283970c1240ce28093279d481fffa59bd496c172271ed2bcda",
+      "audio_path_sha256": "6b7abd56c83cab3e3cc50e1b349f96d9c9ac4b7cf00a50d1e4e59e35c2a28df5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rammus",
+      "text_sha256": "ff91bc50333bb74036c396c1b0cce398d849b541a140b4ed54372cd096213bea",
+      "audio_path_sha256": "99a0d707b6d6833413508a4ada7503d28cee29511c23849279dded679bc80aa3",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Ezreal",
+      "text_sha256": "d99fe8ab08586bf533cf4d52b4738961a8b94e78fb555f0050e5d7a4c8d9e079",
+      "audio_path_sha256": "3ddb45bb73546d322dd0904c53acda01154b284afe80f40b172a0aedf419a14b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ezreal",
+      "text_sha256": "1a0ff70633d52248774f00556730c14116785be15e10d0dc51d712ea023a0020",
+      "audio_path_sha256": "ce6813216d8c0d98991ab2893b95b1786deefa7dc2219332c68525b1e3ad4951",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ezreal",
+      "text_sha256": "a631f7ca3633a40492e18702031ecb9e9fa9e5ea0496151409b4e1e2f8f3cfd4",
+      "audio_path_sha256": "b377b558df35adc89e86a81adcee0d7625d496860a55ee112747b28373d5f36b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ezreal",
+      "text_sha256": "45f4fc831c56265d3912f21876fa042e5154c4c738400053585998e5218ca3be",
+      "audio_path_sha256": "c32d4b5f51bd5a045fa418ec3a32bd9e650945a5aca6446f03084ea7537953d6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Riven",
+      "text_sha256": "58eb9c4373c401e373a6df76ddef0de65a7b7dfd054ee25a44809d2faaf41bb0",
+      "audio_path_sha256": "9640104cd10ad0aac8bfe0de738ea1d001055e3c2d843b53fe24146d0bd26698",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Riven",
+      "text_sha256": "caa417d55e5b4ac3e7e8359dce6fd2d3a9b0b4704bd1d6d7f8b6532145ac8126",
+      "audio_path_sha256": "1df3d981b7b57cb3d2bb4834d039acf2b74aed40fc925849e6c4928539077fa7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Fiora",
+      "text_sha256": "b592b94ca975ffc108e330b8dc2ab388a01a25d6494cf190566ab72aeaa4ebd2",
+      "audio_path_sha256": "b5c92a8772f4e28111b4a2ba15fae71dfae455d5196cf5600e4d020c24038474",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "MasterYi",
+      "text_sha256": "2fc24ae7792f29978421d8c9e0ca5e7605f71dd3859dd41b2219860fb4a716cb",
+      "audio_path_sha256": "2b2dd7eb40e0f32642a7346322a88191b905046598fab8610dc0c7119a36758a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "MasterYi",
+      "text_sha256": "8fe7d7cee1d81bc8052ea8c6dbc83934bd4b781051bc331abc115dc41f95f820",
+      "audio_path_sha256": "0b4bb38968c9f32ea728d24cc12a6f609652bc8904875cccf4a6740a8d507215",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Urgot",
+      "text_sha256": "8aa651980c4b897bf251ca227c29625855627df361e92aa3a5c0aef399fcf965",
+      "audio_path_sha256": "3edffc2e2edd420ca36fa4979122de1f9777743c3cd65e3e425e47eff5307f1e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Urgot",
+      "text_sha256": "de497233cfc891b7d9a06bec4763acd288befff39c28081e999052e9c4d1ea6e",
+      "audio_path_sha256": "bb7125c3c6e393057015a97ab83d9d8ed4e4f3661b7d3c7f4b72fbc6a214bbf7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Urgot",
+      "text_sha256": "99b037baab03a98ce3391bfdc882e6e9b3030fabef38de7d57604f4b03f67ec1",
+      "audio_path_sha256": "a4bc4e0911e4d0ed9ed2b7e9520dce80a6bccf1e815f9ba2371990fca2c78e89",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zilean",
+      "text_sha256": "4f96da0c1e9c51b96250aa783039d6f87cea8c4659dc4cf89ee5c5bff14467b6",
+      "audio_path_sha256": "05c800ea44475dccf60a6ba900f14c8c4ffceb84d747d191b040fd14369ee8c3",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zilean",
+      "text_sha256": "fa45ae3a6de59a120870d3103decbd6b263b5c86ee331aea88515a21f6bf9a42",
+      "audio_path_sha256": "46b1bafc39636e55bc7932819b975008a680057c1e10b84919bce9144b7d2e10",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Ekko",
+      "text_sha256": "59d577fe9051decb0e250480eec9c691392218c5cd3a4f46f97f315c12a44953",
+      "audio_path_sha256": "4eaec8fdcab747f92b6c6a0fe951a2e6e1783fae2342bc9546a0d65976ee574e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ekko",
+      "text_sha256": "a890f93898949eb2398dd8d21814c3f9922eb0dc31e6ac2752d10a81e44df06e",
+      "audio_path_sha256": "5a9d4e17e3e9676272e96d0390afa6f7675827df6a424befd1ef88a844dc188a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Milio",
+      "text_sha256": "ce886ea076e405f08aad854a3bb02c27d5f0508b3b9168aba953374ad160a821",
+      "audio_path_sha256": "80ae1e01192bbec5df8ac7851c95f27375369cfd338eeda76530aeb9188ecf66",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Milio",
+      "text_sha256": "3db1a0a63ee60623f24dd116f0ab1fd9616010663be532887840e739b6bd563e",
+      "audio_path_sha256": "00170a0fc00339a57ffc283973bb9b8a2696437146b2fa6e1cf862d37691985b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Milio",
+      "text_sha256": "b8d9c4282b0d7855a730aae7d752121138560067363e6e91aa53176cf279403e",
+      "audio_path_sha256": "1513db7e73fd626d430746469e749777afdd280e7bb19745291811b6f948ce89",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Milio",
+      "text_sha256": "055e0593c84a0e30eac6245b00f85c26d911c18ffae36a98cf01aef94daec4f7",
+      "audio_path_sha256": "42f5ca0393f53cf76ba0c56981f46e2d38e9a63879377b78abb465a79f3e92d0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Seraphine",
+      "text_sha256": "0fbdd2b10b2485c3f18792b9678ed68171f02520fab7f382716b9eff81e437a8",
+      "audio_path_sha256": "8333b48eac27b7301fd328e22343b34ce7be2eca733efad303d0b34cebfe0041",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Seraphine",
+      "text_sha256": "2d2dab48ff16cdca6e33e7933ab68df62be5725b8f7bafb75e4c91f6e238db02",
+      "audio_path_sha256": "2d90f6c8a5ab140571115bf739ecc9b4b0e27db5086506fb529929a50456f37b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Seraphine",
+      "text_sha256": "d7a71d348839e5682f88085848e8d53be3b2ab38e2781959b835e7cbb5670d67",
+      "audio_path_sha256": "584e2b993959ed9495dfc79f9101f03c107b4ff50a06f1b2184cdca8fb5880a4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Seraphine",
+      "text_sha256": "e97aff54ea8ebe2eb53212fa5243a168c8ee21a72d0fb86f22bc672c7cccb61c",
+      "audio_path_sha256": "b5e86761cbb9aaa90ddf3b05943b73cba2f473eda03ce5c222310c0d36a76951",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vayne",
+      "text_sha256": "347f65d33896106cdc42918c1b57e703d741c944e043c6f91a2f5abc5c5f690e",
+      "audio_path_sha256": "5f64ec43a3933c4d380750a8b1f46e9612de302f5f6da4e9a3bbe720a957da5c",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Vayne",
+      "text_sha256": "0b6b3633d7c5a5d460c4b75e0450db3366e375910e53a17c75b8e247061959e2",
+      "audio_path_sha256": "dd58bf0a2249dc35b08689794421f8e348b3e60ae816acea490303fe6ab82a15",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vayne",
+      "text_sha256": "d623e7ec61360bc96057cf8932e91925f4ca8bcac14d7dd44f709c6cc665feda",
+      "audio_path_sha256": "ca7ac2e5573077fa115f130486748ce6c5fcede10148875593263c848e8333c8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aatrox",
+      "text_sha256": "fe2cf45cc9ca1b4b298e4f000c823e93db7ab0b9e8ff88042bd165ba7f3f943b",
+      "audio_path_sha256": "39046ebdcde65241a6199be1f1ee2250acba2b06aba6356aa5072c616804faa4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aatrox",
+      "text_sha256": "2d553f7fd82f086c41f619f92565ef0aa8648b6c0183f2adbc516a22f2f4c3f6",
+      "audio_path_sha256": "f15b994ea98e3930789b6e0f1295afba04d66443074487d7278ee1b525e0da71",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aatrox",
+      "text_sha256": "de61647b84d54e6230842ee263b897cc9d133811c33ef3c0e539d3b2f327914e",
+      "audio_path_sha256": "a95f49701b71b623a396b3e36b46811df554b2376240272cc6e7d15c6b98e669",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aatrox",
+      "text_sha256": "4a30d370455de0ac20e0e2bf97ed773b8faa364f577e885e3503c9a4e9517120",
+      "audio_path_sha256": "ed335a8c27bf22b9d8c40c8f7dce70af4a44230ad5f14645068664a23886cfe1",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Syndra",
+      "text_sha256": "a73fcc4b497f6d0f9028e9e246da8b654d3981ee4f99d24f806fafcfab64b4fe",
+      "audio_path_sha256": "f9d58c3c764170e2252d97583c2306904818f1029ab8deae2a1a06117b0a60a6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Syndra",
+      "text_sha256": "11a2698cd2c76136d34f6d1ed70bf5a09ae3cbeefb0fb1d814234354676ffd95",
+      "audio_path_sha256": "6ef1355332c2699e3743b1422b03dcc5e19d166d8ac4f287e1495228d42edb53",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Syndra",
+      "text_sha256": "e204916dc62cb90e0ff6db502f9a604323e51eb119d903e6bf2f9c166bf49ab2",
+      "audio_path_sha256": "789edea65ebe7a2d2c1afb8b691acc8bd4ad779ba476e2a3d43794ffdcb8cbb5",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Shen",
+      "text_sha256": "2d511e9d69b38bfecde05466501b8a88c5d9b84270a2c2e6d6dc4b10bceb48a0",
+      "audio_path_sha256": "886448d09a778df71be42c624866b71bad15ae0fef7bd8cc1c1f42e45eae7019",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Shen",
+      "text_sha256": "c33fb1e9ae526f951b38770c8386dd87fea05ad9435f4d1d579f2f4bf73f6140",
+      "audio_path_sha256": "6ecdcad3a1e3e4cab7b00a4e088f7ecb863a4e2e23b892c1cfe117c18aad330f",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Zoe",
+      "text_sha256": "3604416de539f57b036e80293520ca0d294c2734c6e456a47e112aec63e76527",
+      "audio_path_sha256": "ad1edceb98421acb8f574c0d77d784504809ffb95533470d7a7f6478d5841028",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zoe",
+      "text_sha256": "ae762ced4ec5149a45d00670aad9ebb09c1743ae1e3bb1fe60cec1a54b10feee",
+      "audio_path_sha256": "c6ef3274f8325b6ef00cd36dd05a0114e4ee698d9177a015126017112e0c4e58",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kled",
+      "text_sha256": "a0dd8f05c753f0cdc6c1d368a3dbb490742b4c56af1f526288def9be1c30f969",
+      "audio_path_sha256": "6a17a8fc9a320ce65cc65bc445785d47f6f91e9cc1990e398626775b634a3d5a",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Kled",
+      "text_sha256": "c3612918761a3d3b72f534379363324b2c1abb9955809b1ed98508cb5a4d516a",
+      "audio_path_sha256": "8a1dad862073e2c46b90d29b3f6b79be22ee428834480d4356999956f2a54be6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kled",
+      "text_sha256": "80ad73be3c16b0e11b54c90e80fa015cf628907872a6960d2c6a1c0ee11ccb54",
+      "audio_path_sha256": "e47e2e94f4dab829ef2899ca905bf45b34e809d091c3bf86d9430fe31c2382f4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kled",
+      "text_sha256": "e26bc26fc619a5ba503b809069e5fa8959b39f3624ac25242123c6d3dda8395a",
+      "audio_path_sha256": "412c912694b0f5da178978d005b1b00f9f86eb1c508420bf8d17433d5175b970",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jinx",
+      "text_sha256": "15dae43bf9c26af9aee24422f9a6caeffa49e57f1bd52bae9f6ff0d2a13b7c66",
+      "audio_path_sha256": "69491db20f44652b0143802141bc7cbe3a29c9e62c445bd327b5140a8eb6ac63",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jinx",
+      "text_sha256": "2f7284008203c1309e69aa5e1a1c43835385dac3e24b8297839f68bfe9773e55",
+      "audio_path_sha256": "c81eecdb3537986133cb633424e120551f22b9c6f01d9d6954f6bc65dee6f172",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jinx",
+      "text_sha256": "23cfb80149056022fafa9713981499b1a35141818c5b0cb559685372e46cefc7",
+      "audio_path_sha256": "c46728681f2f462d9b023d3b61473d32302672ce642e40dc7f32a0f703727d1e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jinx",
+      "text_sha256": "fcf256a815e1ad9cae74a7d310c1f0e3c2f99034ba881cd3cd526734d60f2b0f",
+      "audio_path_sha256": "5126e4250595aa3268b8f1e1a86fb14123c6c51b531cb8143fd2db3ff4613cd7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Leona",
+      "text_sha256": "fe0072bd526e686fd2416df30723a74a12d22b974c73a31dde1aafe763e82ced",
+      "audio_path_sha256": "01dac86e6d915f69c0a98fd675b31c1a7e0432e52c13209d3ed36b7247d963f8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Leona",
+      "text_sha256": "93fb613aab979001e95920ae3805e79d1ef8d41ef935fbdd6025faefc06a38f9",
+      "audio_path_sha256": "52f1d76ad9035c6f663d6ed26d9f75109a51a370bd077c62ea3f6b2208425088",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jayce",
+      "text_sha256": "d11a85e659c8c0195ad89bc96287c52a01cc0a05429dfd5770fefd54008e1004",
+      "audio_path_sha256": "2f4fd6253dd708d41e23c8b153953ffa347719bfca2aed45c05dc28ed18d8e06",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Jayce",
+      "text_sha256": "6356c07c322915a81bcd687edbd35c725e1eb00f0a13c285ed7b19edda469169",
+      "audio_path_sha256": "dad8af394cfddb822c43b5e872fd9f116673e5660783a98ebaa116d3c24f7e1a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jayce",
+      "text_sha256": "41418492d7a825a49dcc9ba0fc6edea75dce5caeff452c1b8b24c5fefd4af344",
+      "audio_path_sha256": "55ccc62c8145303874ffa06ff7d9f1cb7ce4ccba2c5764a5d30536826fb8ff12",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayle",
+      "text_sha256": "341cb1d1e58ec847d67f97559f5408496dbb47bcd8018c8d0dd17cb3fbe2a8bb",
+      "audio_path_sha256": "3343e79b00eb2e1b8b6783ddf18fd450e6bee5575c35282f25bc651fce4aa71e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayle",
+      "text_sha256": "e848816895a01267af36382263ef0efc149e015c07ead246c74555d63f61ab14",
+      "audio_path_sha256": "dd3bcbf1a6be2473bb53dff19bb35d9e2ff34c1b0a2368c49c8cf0dbea16f46d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayle",
+      "text_sha256": "31a94702458864b7cd96edb543d1235e5ed9d42566d051b1046f852d2f2d666f",
+      "audio_path_sha256": "dc355b51f8b2f02621cf4bb36c7c9f601a549231432447026e98688abf840eda",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kayle",
+      "text_sha256": "fed1aff731ad3d4be805ec6e8bf1838f21ddc8be4ce490b0db8b63881dd3f94e",
+      "audio_path_sha256": "cbdc51af8c4b6fab6dd7af7a0deae0140afe1b73c8c1390b59db2e71791d1803",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Galio",
+      "text_sha256": "f438ee4a92f4aa5c02e40bc82726c3bd5eea16faf42764ad3e9720dc98170b9e",
+      "audio_path_sha256": "307ca96dcd3f967576e39e7196563e23ee19bdb7802b7bcb6959460ea9025cd0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Galio",
+      "text_sha256": "50ed57fb52eb104edec15a96b863fe34754b06deb0ecbb1fcb742eeb76c33269",
+      "audio_path_sha256": "ff74ebd7f0b74c032c1c2d7eecbd6f59a2c599b794778cd46b80240efe3a6bf5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Galio",
+      "text_sha256": "712de8fb5b9bfead9b04254b56ea3f53da110ecaaf2a48a39a61d2844545313d",
+      "audio_path_sha256": "0fb988bbf8c5eb23aaf5790fc58f4758e815b7498827eecce4d177c4fee799f1",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jax",
+      "text_sha256": "db52ed38a90a1a6c91509a88abbf48ef5a547884714b81503609cca9f25663a3",
+      "audio_path_sha256": "6c97d22e99cdcc1c4339d3bdf40748b68fb87ee85a36b766f710edb7ca1391a2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jax",
+      "text_sha256": "0d72203d2acb7af49040a48b237737c48b9e3eaf6a67255e7f2992f86685224c",
+      "audio_path_sha256": "eeff9bf0e7e7e470635083190683a7c7ae61211f5fb2a0b7aa47219b217a963a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jax",
+      "text_sha256": "1ce8c34febfd7dfd56bb549649913565a57accc1463c4259239c733b1270a7ab",
+      "audio_path_sha256": "eed3062f8f99707348ed22a01a138b0bd525eacf8efc1d69a7a799ff6057ba26",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Jax",
+      "text_sha256": "3c43f23c7dc2406b2ab87fbe8344f8cc26855f9237a0d307c74c92507e69086c",
+      "audio_path_sha256": "fd0c95f1addafa4a83b8ef479e3463338f1d468e9069525847a4f71611666fd9",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Karthus",
+      "text_sha256": "d4b598744102e596a7314cc49472ab92c9bfc32a7d6a37d0129a7329d85fc185",
+      "audio_path_sha256": "766e1ca9409b37f56e456092e746b6bd044dc9603f2ad0bf9f5fda16c2298ea7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Karthus",
+      "text_sha256": "a8597cb127075130c3f4d621e9353b593b303def84d12a46424eb690628b6417",
+      "audio_path_sha256": "063e94cb31bddb78e24681c92b969fb0c83e990e38dfb5bdd4437c476580f29f",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Karthus",
+      "text_sha256": "920560b72bd32276e21bc34f72b9453b8363450b870f2c26d8df03f4476e75bf",
+      "audio_path_sha256": "638e5da907a80e9740ac704291cd4625dbea74a3167a6c39fdb7daeca836eed1",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Karthus",
+      "text_sha256": "16817d06fe7558429f0415afe8e57cbbd755b75065292c0f3160fe331adc890e",
+      "audio_path_sha256": "11fe73ee921f210e3f92d3be86a2f5d34f7adcf9336050195d84dc20ee123e16",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Amumu",
+      "text_sha256": "caad4e7136a5ca6b91e2dce7bc32c4a35e5e70b1745ce27a900748e28fadaa0e",
+      "audio_path_sha256": "a51a5f04865fb543e09f03f7870c269ce84d4545aee94dc7e807cb5120a3cb4d",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Aphelios",
+      "text_sha256": "b20fdbb29811bd43cbb61a3a78269bea117cf72c893d4e98c269cb6df7cd7c2f",
+      "audio_path_sha256": "41106f1c6bc6c9a6c705ace81fde7285d637f7c7f9fd0d30e29e66a01d6881d2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aphelios",
+      "text_sha256": "b239af2a8ff0f03da1452d45e2b529ee084938d9f094d43e53ee08cdb6625113",
+      "audio_path_sha256": "5d51432e112ca0f5d66fb827c55b8db44c93bb213cf2d9c2cfc83dd1a14f7429",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Aphelios",
+      "text_sha256": "3a4d4e01990660d0489583be4b9c8abf33028bf9a351053fbf868a32e83535a1",
+      "audio_path_sha256": "9b79aab2e15697fa07056e6da29a63178276a76ab03eb10d5617a1bbcd0b766c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nocturne",
+      "text_sha256": "2c9202c8e17ee23b44b6d52362c12a439c9edbd8fd3ccb19da7640ebcd24eec4",
+      "audio_path_sha256": "26f47b549de7c46f1f7b69793869178e8123475434d5e705b9699c8fd5ef4dbe",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nocturne",
+      "text_sha256": "2fefac5f1fa03db3c04485c020218a6696555ac34cdbdb01f72c16c306842652",
+      "audio_path_sha256": "7c423f7c51da4710350a08669a3b357c3db3719d4779e4db30dcf4f8309e5dfc",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nocturne",
+      "text_sha256": "fed8cce56614cb343f8168ab1a67eed1bf3367e98f442840f2ec94dc14d5d9a5",
+      "audio_path_sha256": "07242311a053d909e8ff50cf8554ee64d04cb6c341ac37e629602b3336b10ffe",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Kindred",
+      "text_sha256": "1c9e29f24df484f811860af5d0980db597860dafafea832421fadab7c8851d7a",
+      "audio_path_sha256": "4fef79d434f8462bbc53c64f7199983b855e512e4547cce5758a47626f17e52d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kindred",
+      "text_sha256": "eed2309f89c061ac0101b29196749bd51cbc349f00cee315de911303c0eaa6e0",
+      "audio_path_sha256": "12412c23a26226c910e70e7a3a7bfb2155f38b87ff1591ec2d164f59474429cc",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kindred",
+      "text_sha256": "d5ff67dc99bbdfe6f32fa7fe1edf8fffdf39f732536c7cf056c6a326d9ad09be",
+      "audio_path_sha256": "53facb73e0ca2cae785c0b5ea609cb690057a37b3189d093a60e78d00380d520",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kindred",
+      "text_sha256": "701c305c5d5caa89f9a25e6a5fdf1e47a8f8a932e60a84f1ced211d703a4c73c",
+      "audio_path_sha256": "ad4f3fdc0d9e8de3bb01506354adb81d1b5d4e87ba1359819a104c2234014415",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nasus",
+      "text_sha256": "1c4e498de62eeff989ef686ecc08ea1c532af0bf985feea8f542819c5f688b6b",
+      "audio_path_sha256": "77a75f0453c5332b9e931318ed4c5f3087fb501763c489075d242269bdaf785f",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Samira",
+      "text_sha256": "0b372ae0729f5f5d35448dcbe07b54e83a889bd3b214738680a7d2142ba31f71",
+      "audio_path_sha256": "5ab9b55555c43db9055298301a657f37a38e5518de805eac01d214e0806f3e29",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Samira",
+      "text_sha256": "5884e27a2cb6ed2172fd101a70366f2007a7f12d64d03cbc07ca8b5e7c305d34",
+      "audio_path_sha256": "078c9fce9561daf4469a49491f08ff0e566eee3c1758ead4808039de02d55b53",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Samira",
+      "text_sha256": "da874e09acc739e01c29a58d498974dc9efed8237fe2b804cd0e7404b2794ac3",
+      "audio_path_sha256": "7fde832e3b8bf3f1ed101e05b95e744ae8ef98ceef7cc32fea22dbb7c6e86547",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Samira",
+      "text_sha256": "44e5ad278507700020b49821133d212b07f20ec0a10b1a66c30a41140727b46d",
+      "audio_path_sha256": "f9589038448622ef27fc01217f691eae10e97c42b0bb35a2f74cdf6835077c9e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Azir",
+      "text_sha256": "6e50d7393e0084056a28e027622753d707b5a27651f161de85d85cd76bf441d7",
+      "audio_path_sha256": "d6949158ec42c1b7305844b9d4e2e4c8458ea0ea9aaaaee9777cdff2dd4943ec",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Azir",
+      "text_sha256": "e9e707cf99b103d7bcee989c770c0e4b275cf46ec01ac58ba041e60ccff4207e",
+      "audio_path_sha256": "f7f2ec31888bfb030ceeed7530d711dc81961e2c43cb9929b66c0dbdd5280b07",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "TahmKench",
+      "text_sha256": "615eed9c8241d8a325ff122b7dbfb9c72716abd7147cb9bf9aab2320c84d99aa",
+      "audio_path_sha256": "7ae665eb13c390845eccdf08c4d1d16c1f2357e1c42cf88885e4abd46b47da97",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "TahmKench",
+      "text_sha256": "2b932c894e9a5614f566e8dd8608057b79b63ca446d778f19208015c3059198c",
+      "audio_path_sha256": "ac1b6f59209e81f79d131c339477ab1c7b9f0ee30f02cacdfbd677f1e33a6dbf",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "TahmKench",
+      "text_sha256": "96a9f91b074a5f1f119cb3ddf8b5ff64c504f60746d8e780238bb1633b68436b",
+      "audio_path_sha256": "232fdffdd05f04c922fc9bc177cf556d4efdd7baf7d86768a52e8145b0cc0a9c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Graves",
+      "text_sha256": "63a9439c91d6dc31af802185809769fb8629591b5d646efe6190f95597d94238",
+      "audio_path_sha256": "bff9a2742aca08db112d319a7edbd5cfc4f716918b294467c17aea7dc7b0cad8",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Graves",
+      "text_sha256": "d548887888fd18a8c14cc74bd22b3f63d6417dcf3b1c61613cf29f17592160fd",
+      "audio_path_sha256": "29524bfed2f9ce48bdc58f27741964a45f5550d01854be7e0f0ee8fe44031fa6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Graves",
+      "text_sha256": "b9704cc508a55ac2c0008539d70171fdc271cb731251c25ade0c4f1b0b5fe450",
+      "audio_path_sha256": "75a522a871a6d631d27ed098534f3736f78f043113b35232db295a67e68a8b0e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mel",
+      "text_sha256": "953e27a9a93437213d9d912d2856ae7cc9178180a20c399e6bb10c8580801a74",
+      "audio_path_sha256": "013ab4663369b11800ae32200f8af9277115b585bb6c1c70b70c62dd2c5fee5b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mel",
+      "text_sha256": "ad85b65e7a6adbdc408d3622c0c53587b4e318e182ff2a2809dbe8b411bebfdf",
+      "audio_path_sha256": "51c563c687f4cbaa7ef7eda4190648dadeddb5b04304595bb1389c9d9a4cb697",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mel",
+      "text_sha256": "726d7d060ab8047bcec889bb82919df114cc3211aabbbd534252705cc7609f9e",
+      "audio_path_sha256": "8704086ae188e66e3eba0dcea5284abad0c5af74cf6f1f63b99b1aca3232617e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mel",
+      "text_sha256": "7f3cfa5221d763b31ccfb484b50271e4acfb46cdedab426e6d97e2f7ee36891e",
+      "audio_path_sha256": "125538d57e95434a26c7b533fc1cfaa6921891d34187622da7261fb5bcfb4f8e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Illaoi",
+      "text_sha256": "686ce54a5b32bf5c92f42460c53a180b5ae50c125e1da63143e1de43185ccc42",
+      "audio_path_sha256": "9d93de74b44bbf93115d043f592a46a04717edf3eebc609e82252e7c166edffe",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Illaoi",
+      "text_sha256": "6671916fc2a21e3c6fbedf91ce21c874ffd1ceb8c923adfe0abb97b125a1ac4d",
+      "audio_path_sha256": "d07a1a17f2dc72c50318bcf29b8e023e550acf4ee2514da678760e2ae938c2e8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Illaoi",
+      "text_sha256": "d29d9efe7b8da8c5e6de23c2bd25b85e3a9aee32ffeb0f87c64edbf515e379ab",
+      "audio_path_sha256": "87b80b66f7f73f0919af091d93d92ac477d09dbef2cddc0800356ddf1bc3ec8d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Illaoi",
+      "text_sha256": "80a732b59e864d75645fb9c824507a3066a322361d30bf5b740e2add95c8da35",
+      "audio_path_sha256": "ec450322624adf71ffa643f4177290bae8b3e485f30d57f79a260371de32d723",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gangplank",
+      "text_sha256": "7e96553d768b8ef0e4c0938a45910443f42eef3d4c083f2ffd87352165313746",
+      "audio_path_sha256": "f95eed1c0852847ba02c8a330225c0bbfc34547312b4bccba3d632191cc81c8b",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Gangplank",
+      "text_sha256": "c01f1008ce58ab6f17fdf8c60d6501f6aff271f126844840cb667d356eaff46d",
+      "audio_path_sha256": "87b5cea928ef43b13682093ed63ecfc7e8f23361a961915279e38ff66c4b4dc7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gangplank",
+      "text_sha256": "30bdc95d46d03a13d85424e33fbc04f98967e7ac1faba8609b2d9e8caa375743",
+      "audio_path_sha256": "f8a71c8565303c2e5b76100b92b4b92f06b2d27de7286de3f2c252723b91b1a4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Senna",
+      "text_sha256": "c97df2d6a16cd2719b05a26303224f696ec7fc7d640b29ffbe77ca0083ba5874",
+      "audio_path_sha256": "7166b0379de859c1e16223be1401de4a956db6d442920da8b293689b700bfd75",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Senna",
+      "text_sha256": "7f3d57ec65be4dca4644680f8a9460f6fbbdd3e5b6e395a6b0793cfb4db00114",
+      "audio_path_sha256": "2642f17a8f2eb95fb088078e756a1927190d53c33ac07a2690cdc6503cfb2ebe",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Senna",
+      "text_sha256": "aca6212c434eab742f3cb40df809ecc67764e0141698f39b39b781712379dfd2",
+      "audio_path_sha256": "e31c69cac3380d052b5b75943d03297623314626970c2faadd2bcb07660cc4e3",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Senna",
+      "text_sha256": "762f9a45af5d98aace511e03fa9bd2d42b18d9d44b3be5a2ea99232959f4e124",
+      "audio_path_sha256": "01b48d83465cdc34b907373d3b8f627a305fb9af0f371ea2511c58fad7c13461",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nautilus",
+      "text_sha256": "67e4f185909a5ecfeac959f22cc383d5103724614c3dafd70e3cc9a61c934afd",
+      "audio_path_sha256": "32797d1cdacafb039965aa8595c66ba1eb2af16b857dea6c103b81d616bb5835",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "KogMaw",
+      "text_sha256": "aa4ff83c408f32c0c39adb1dac314b52e6fbadeb6d17dc2a3e679ac56646b2e0",
+      "audio_path_sha256": "7794963e362d277a1263609712d753033040b7c69f2afd4caf7b474664ce6331",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Fizz",
+      "text_sha256": "49b6376130f69aa26fc8cc34bf453970e1c2f5c31603428c74416a203ea7de10",
+      "audio_path_sha256": "1e149084b8e74e4a013bffba72440177a2d92eba3d14173c719e5dc7f3179bb2",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Gwen",
+      "text_sha256": "a99e5e86055568ec4d3da387e0eee0133f541e8475fe4c456949832e5389441b",
+      "audio_path_sha256": "d474117a756bdeadd352ac17d97898e038dd2adf63004bdeeaf152ce37c5a2cb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gwen",
+      "text_sha256": "90e7fc13f1f2ca92edb797b1939651a892d261a2071fb28072cc1303a393f98c",
+      "audio_path_sha256": "9b14d41be84d83981cd8e33d003cb8ea3350e2b225c1e7fb4d7248334ec77558",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gwen",
+      "text_sha256": "47e7abe8018426d2d8e4d02e5e3d9f13697dbbea652c67cfd196443cca1cd5d6",
+      "audio_path_sha256": "5506988353670385f75e526731fe1f4975e85c8b52c5abf760ccd11aeabd9dc7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Singed",
+      "text_sha256": "aefe796e35f01a986a3df38b2701e6ad7b2290b76ddda99f71e4c7d955c935bb",
+      "audio_path_sha256": "f6dae08d904614a8452f9c79e704dfc073ce65d2f567aee4cc1aa16c30ba1df5",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Renata",
+      "text_sha256": "8c492630f30f8e82827cd473c78680e81b35ff1d72dc5950973ef94f35f4ec28",
+      "audio_path_sha256": "956972b1bc173444605db8806ded8ff103019236e503d0525070fac94e7eb92f",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Renata",
+      "text_sha256": "2e3c4f72d834a38162f1e38c77255b952c94e622c7075e915a6cdcceb113b2b7",
+      "audio_path_sha256": "869147a93b58e1a0a133d4d6fb63c1f183d11125b977ad75f7db795950b1baab",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Renata",
+      "text_sha256": "e2a7aa642ade15894443ee0eb7e5e902fbed56d0c488164998881a612a8d47b5",
+      "audio_path_sha256": "d1fdced3b34c6718f76c8f87dba50ffd0f38a0c1539a5e3b5d6456780d11e4f8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Smolder",
+      "text_sha256": "03f1a60c1f1849045e32dfd6202e1543b26a1e47e3bdb362039f2ea952075da6",
+      "audio_path_sha256": "1d9b845c3ac90ccd5821845b11e7e55bb7ac7a48b25c34f5420c60149526cd01",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Smolder",
+      "text_sha256": "fe933bd539b24883de23206b753b34c87c80cbd71e24b011f789d219b46a564c",
+      "audio_path_sha256": "161b498c6379bab27bcec7ffab10c4cbb0fe0809fbc63e240e53ef0f0312d406",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Malphite",
+      "text_sha256": "99726b6364f057189c853b9c38e7f711a979a83d137d2a64658217e51de17203",
+      "audio_path_sha256": "0710858e5d98abdc02c951416b72145fa5fd72201385897aac9c2bbc41b4bb78",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Ziggs",
+      "text_sha256": "26cc9386938677437585bf5657aac6360d63dc0b64b02962d85fa871582755c5",
+      "audio_path_sha256": "7c64fc4967b627af9951fa74b0d5ecd58060ca1608bcb3204d6e7d188c90df62",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ziggs",
+      "text_sha256": "f1776866bb26b670774eb74b060e8293f38b18f5f0c9067df974322c89177af8",
+      "audio_path_sha256": "223f9ae5fa1ca92258d447826f3cfa77d21be24bb1ecd022e43e0329723281cc",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Yorick",
+      "text_sha256": "26cd8dee25b5042af51244cdf5bd25ec779ee79d6c2ca2f70c4ff53bcb7f4826",
+      "audio_path_sha256": "205dd747b6ffbd760d46754e6d2e5a45dead223600f4839657607f50084551aa",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Briar",
+      "text_sha256": "e45c6a2e7cc0d15b7b7597895033d201bafca3edc9e7d8e8835bcf1714cf6c04",
+      "audio_path_sha256": "c2b90ff511367de3667fa27c1ede9a8922212bbd0fcc46a0c6e5ea1e3375aaac",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Briar",
+      "text_sha256": "b8463c714762e0e3a05904a9806dd6cc0cd8526c05e3cc719ba1ac2a63756b71",
+      "audio_path_sha256": "4def08a1139d52a8385ffb807a43442ff576c523a65c1089d3e338d1b641c04a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Briar",
+      "text_sha256": "b1f805757ef45a9a4f8aa564723e45c1b38f19483f95f42986be0a655f9459df",
+      "audio_path_sha256": "49927ec52196b305d469ea5b7fc386f483e81e8d0f8f5e2f3698bfefc2ad965b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Briar",
+      "text_sha256": "e61bef741ebdc8cde66e0e6e520c365d95e88385f1ae465527b242cc6dba013a",
+      "audio_path_sha256": "6892bef945622c6d758620aacd5817f6b7bded60e8b53dfb977d0f6d6229fdf0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Olaf",
+      "text_sha256": "1a6433fe9501b65bd83f5bcb966caf90c305de5b99bf2099f92251777ef8b2d6",
+      "audio_path_sha256": "bcbea9879c9cc7ce01f620369096c9fab81ae18798ba476cea935ae9a4479866",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Kennen",
+      "text_sha256": "1c768b80ea9bc537f354081b82231975cbfb36f5ff9e642405fcad6d5ad4373b",
+      "audio_path_sha256": "be284c5a6f9dda68722ea42e58a0a1b52db9ca8e873793c857a576377738a706",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Nidalee",
+      "text_sha256": "a5efab256312ca28b5903385e97b0c17c2a86be2391b73c519d5da459d3d9667",
+      "audio_path_sha256": "a33c4d02a7e0b42dc880b6e5854e95efe749608b78bea6fec81f3ebf7ca26e80",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nidalee",
+      "text_sha256": "e833f62297987aa4337987e7da4ec121e40db408519241eecad9f4a6daec7c4c",
+      "audio_path_sha256": "597219b43cdfda30dc9eaff3b7e0866b0a5d4755a6b0d9c2c08ceba2ed6e7732",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nidalee",
+      "text_sha256": "aed36fcde151bf6aef7a362c4599598f7f321419438ef2a6e399fb254f594ef3",
+      "audio_path_sha256": "a36163424c072e83ec9c97b2d2b631608a8eaaee20d387bac49a569dbab5ef2b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vladimir",
+      "text_sha256": "ac0d8d034a4f524a68c523b31f84f0cd7fc11e010737713488e2ec8e95a2f0f7",
+      "audio_path_sha256": "44c5b2557c276822b37f788a11f0e845bb4b0cd28b1e03d100f59d911b8d21de",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Sona",
+      "text_sha256": "ffd52f55e080b315ede077dde9a58b0cbe8f13f00a7ac68cb568f0a00ea233bf",
+      "audio_path_sha256": "7b5da64cfee2fbf0534f985941af3378ece7b710fa30ce9111e9085209ad118b",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Sona",
+      "text_sha256": "006d1562b4e75c5ab4fcfa36476f0ee07b2276dfae4c1a1deb97d061a4164025",
+      "audio_path_sha256": "5d87692a0bfb36186dd1db1a63bc6dd07aff2737556fe6818268beee4338b51b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sona",
+      "text_sha256": "87c5193e8115bcf66e6f30167df4540794411dd5573c04259baf6f98188703b3",
+      "audio_path_sha256": "c6bd49cde07aeaaa430e2dab1e68bab478d3e31be580efbdb3caf9964144466d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Taric",
+      "text_sha256": "446dc0afc6fd51edb04ef7de78f81bda7f52b982c036afa81f4f1bc66db238a4",
+      "audio_path_sha256": "eda1633dc1f4b8ac21273f991df42629ab7c72dad78770f65521f3d73e046f10",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Taric",
+      "text_sha256": "6f7452f15e079cc081efefda869d096f26d0952c641124500013c6e6bb41e7cd",
+      "audio_path_sha256": "f68e0f67d924105a26fc2ee39b59979bf675f575c1d679d200dbdf15290b53c8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Taric",
+      "text_sha256": "a6b946e9c3b0155a8b2a1d9c3fe14a6f748c795c6e2cdd38a610c7ea3f73795d",
+      "audio_path_sha256": "36191692dd01288e75564a505bb3ac545f78136c73a2589508ec8ff1b96d1aa0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zac",
+      "text_sha256": "28b4d0f03299ae603f60ef4768a9438da01e038159c5a433d3a2dbb60146dc15",
+      "audio_path_sha256": "53f127f70e281dcbd7d7f356eefed3c6a2712224a7aae772b8b344124989c8b0",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Zac",
+      "text_sha256": "4cc4259926a4c2a3ff8a8fefbe9043032868771e1862ea23faafdf05c0994139",
+      "audio_path_sha256": "b2d0d7b81c35a2cf75804d6aee99397406a3807c8d02cb845bf2029637f615df",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yasuo",
+      "text_sha256": "f2b386c8d2234b82fcd8879b63ed1c4d004ab26bf65b66c4aca07f5c6d2b841c",
+      "audio_path_sha256": "f618f991ce6d34e863d6b8baa088a4f95185f71e522fb52f27708c2626f6d236",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yasuo",
+      "text_sha256": "da9fbb3607e888ed644b18a79ded62bc576671056f2c208aa5940c1b89a4ea0e",
+      "audio_path_sha256": "b5ea9e4427505674f8923122295d14ec47609cd38f238422e6df3343c2034f9e",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Yasuo",
+      "text_sha256": "5a3afed9dbb91cb6d0cf2894701438dcd27642ef4596a238a888276d00455b4d",
+      "audio_path_sha256": "46f7847b0e17b0d1a3189356f3c67310969a40d1586caf53457af8193cd98d42",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Evelynn",
+      "text_sha256": "ae64910446556e6b72943821b19d67c766f2f5a9399f8835ff7bd8b21faa0282",
+      "audio_path_sha256": "a3cb1711a6a84bb62eaa8953d48179d41aed1e1763a20298eaf2c953364909ce",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Evelynn",
+      "text_sha256": "bf0e90a17222091a0cfd33022cbfe47edcb4d2edfd2b05ebaf756d7a8b2ce907",
+      "audio_path_sha256": "9e36f00cb8230011dca21f8a829bb694c0ebb4cddab527fee887869f7460c5a6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Evelynn",
+      "text_sha256": "bf55053e731270e52b41bc34b32ec2a61f0a57af973a80e4a5dd3645f529b7f8",
+      "audio_path_sha256": "d733c95bb84dec944c58a3b0433d83951a31a90f4101843b27ab1c7a0dc394fb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Evelynn",
+      "text_sha256": "8d178423e5fa2d60e86a715d3841ffbe3cc5f60a474be9f893625cb213e64716",
+      "audio_path_sha256": "786003dec6c120658e206ea61404b18a20b979fb880e6c37f5f06833a83ab2eb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Twitch",
+      "text_sha256": "46d86b46dd8e239f045aacecd0756c61660eeb9b4f270b1850cc81fae365b297",
+      "audio_path_sha256": "8c5c439e5fcc6b931a6ba201b8ebfd5121ee1f3998f90a2afeff69796cb486c8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Twitch",
+      "text_sha256": "720772b818b4235ed56c13f03cfc1314936ca6f612a2fb04a12f551196a0faea",
+      "audio_path_sha256": "d6c4141a0dee862be452c8f2cdaf7e594bf1c7b7e92304d7dcc21e2db6a625c0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Naafiri",
+      "text_sha256": "49b21b56397f687b05eed528512f2da6c783b8cca2bd8d4499f1ac97ad22c613",
+      "audio_path_sha256": "85d2f6032d2f700a30ac94f2f8786d2235e87f2f7c1b51528cbb26e2be1c7b68",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Naafiri",
+      "text_sha256": "8c3c929ddd995b27c8259428f48a9a6d9b16b94c05bd67fd60b44fca52c92ef8",
+      "audio_path_sha256": "75442a2c67435e2ee54e0e7d43c848cedf140becc5d3c5d219510219a895645f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Naafiri",
+      "text_sha256": "eee9bf9618d6df7cfe9db1240ab99de9ca6c6d6df1ff1199f051ab8d48c4362f",
+      "audio_path_sha256": "2f2f783bd00af45de0def72e37b82a8b492678b7b3f4bb6b760bbc72649a54a0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Diana",
+      "text_sha256": "a069ff1c719505f7cef27b082a316ccdc8ce9a1e1a303f5548bfe5d4b489537d",
+      "audio_path_sha256": "abd5f6c555cf55d72417ba5a55618aa4b56679fff246425f23dcf4453eb9dafa",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Caitlyn",
+      "text_sha256": "882fc895b34478a1ebf1b76e8ca25d1df56cb74085202ce647e9a5875281e33d",
+      "audio_path_sha256": "b16e77e569863330815b310fbd009bb893a2ade086768bfa2cb0db00bc0fc663",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Caitlyn",
+      "text_sha256": "9bd279d6066f014564cc5e17e7feed7d60375d54506684154e0f01434e823ae9",
+      "audio_path_sha256": "0383d0388ebff0abdcdccfd04eb2e424adc6f73192a721df899733fbd528a7f6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Caitlyn",
+      "text_sha256": "0b2a0df05ec687d325e97e7ec670b9badc2a6fa5944bbe313668149e46496616",
+      "audio_path_sha256": "45555963c5404e36c5f317fdee9b2a7d213be9a69d75aee341a2d356655ada44",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Vi",
+      "text_sha256": "edf14c426933cd63b1ed396882933ea042d0c5e84a3e98695c3d15dd70c8cfb3",
+      "audio_path_sha256": "7a15f1649a26cc5147ac81a3e153ad74099fba14a9743a6a9107bb0ea7842d49",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "LeeSin",
+      "text_sha256": "1efe4b6b09c379472d74f5697641b558bda52e8575e2bffc1da252ca4b2b7a8e",
+      "audio_path_sha256": "88d7fff05c2159910c3f01b79f4db2e0dfa58be98921bd7d518c16bf2c69824c",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "LeeSin",
+      "text_sha256": "f4c23a8a71743674ed2d83def7f603d03165b412a797734078015d5df031a021",
+      "audio_path_sha256": "96a467e482981210096487972ad3eca5f269b36a535a47fa80f9cb5675b801bd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "LeeSin",
+      "text_sha256": "ff312b99a0ee51df9abb745997eae979659f47b4895ffa9245bfecbf371568eb",
+      "audio_path_sha256": "921f8767ca312814abed0b14caf37ccb18d45e9f0d130af216df87111e4a5ee5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Viego",
+      "text_sha256": "5d53137493863892a8e3ca3831c6dcec0639d08db463fce73663d1c25c6c3cf4",
+      "audio_path_sha256": "048f122ff99b9feb869e5b127bf3a707cac569816d696fa97120dd338cb9cdad",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Warwick",
+      "text_sha256": "d5b4a31efa3306280c923129bbe62094c58e6f4f3dd8e3a8ad3009f7b924f900",
+      "audio_path_sha256": "2ca298c30da6e711e7a199296ffb4d6dbcbd85980823c63530a4029dfa32958c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Warwick",
+      "text_sha256": "9611c6f67bc723d3c550b55dfc8a21665d8b45519489bc14c2cd54718c168c1b",
+      "audio_path_sha256": "1b260c054ee13f463afb466748c35ba9ce353f4d66ee82d334e21fe0cef86c93",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Warwick",
+      "text_sha256": "3bcfd32ed101627f72ce7b00ab8dbdb48f16b2cfd3370ec2ea360809e44274bc",
+      "audio_path_sha256": "736156d2506c1dd85ddac85ec78a4fcd5c61e0049f2fe6ba40f46372864c2743",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "DrMundo",
+      "text_sha256": "a2a12aa549559cee106f0a9abbde3a67980eb3f63bbca7a4d8b25b6673e297ae",
+      "audio_path_sha256": "b828d561a1b0a73d88b3a9b1c0297e75139efc7a46db3f87e8e3460aa6df0ce7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "DrMundo",
+      "text_sha256": "6af0b65516ed94824dad67a832cb244f9702ab43908b0a8aceedf4eb301ddaab",
+      "audio_path_sha256": "f46cb2efaca4b240e6eaae6c9b985f55fcd7c4b49cd4dfd1b1ffbfbe7f33910b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "DrMundo",
+      "text_sha256": "19079c821e56171a2d95e20b104e5a10b530a466048efa892101fa67f7087962",
+      "audio_path_sha256": "97397cee88b65f45cb15a21ca4332e01c04a551e67b162d6c6aa889ab62baf2d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zeri",
+      "text_sha256": "c0dcc8ee7f51feb72a4751e85cff359b2dc9495e0786595650e88ed54c1f28c4",
+      "audio_path_sha256": "9cc424cd59a4edb45dd291ee20abd18119774c2e58582f4dcf9ac56603088531",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zeri",
+      "text_sha256": "1f95abe5e818f69b4bd188888995dceb6aeac2e5c799f770883341645ecd3d11",
+      "audio_path_sha256": "486ec27d365e7edff3a3d1bef1fc595c079fec1434e5ccff73d1cd9682607e8f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zeri",
+      "text_sha256": "9401da584dd211fad3a1ec1c50da9b75a5fa020df1cdfd6e641a683740fee185",
+      "audio_path_sha256": "02d5164920c9964883a22482f070805b84b521c29da4991b2fdbabe775fec93e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Akali",
+      "text_sha256": "96e8605251b398cf933e9f1e921eabf6d4d3e620a04e3a59339aa805498d910a",
+      "audio_path_sha256": "48fd48a86bd50edf6298d3693b55c2d7c2858f42925f285fb438097a24155034",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Akali",
+      "text_sha256": "c280fd27eac388e316684f8d68f5b0b5578fd8f5e3a24daf10a1618c41070613",
+      "audio_path_sha256": "cd8aece6cb6faaf2aea4cd86718a5a1b06be82f8a8c5e67ddccdbe05626ffd0f",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Akali",
+      "text_sha256": "87bc8b6e841657458d4c51aaf376e8e30073ff1b41084dc3625a03b3def27fc1",
+      "audio_path_sha256": "475b48428890b2b2f117d514c0c4a57f69363d78f203a2845629d8fd4cdfa91e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ryze",
+      "text_sha256": "f4a2778ce4d2243199bcd78c7f18b71cd07d4a820d2afd4a238d030960d5940f",
+      "audio_path_sha256": "c7b0c1f078b8c23bc1faa5c78d36f73b30ce3af98962766075f9aa997a43c721",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ryze",
+      "text_sha256": "30c0ee29272a8ad88836a089f122a61cf8949fdf49fda2d67552f6c908f0ae21",
+      "audio_path_sha256": "24aefec089298d533cda04de47a46ec21361896bd86e33befd2ebead5313ebee",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ryze",
+      "text_sha256": "5e65990dd0925e21866666ea43fa46a28ab367aa67970ed47ab1cc49e42db5e4",
+      "audio_path_sha256": "26f58863e55983c80b2304b382cc0733988d587907d37fa0190d52c5375fc6fa",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "KSante",
+      "text_sha256": "c47bc7cb8ebcdbc288d2b9dc11117cca31b15cd28a876b9a5482d3597dfc6cc7",
+      "audio_path_sha256": "209355a0a429b91cfdbbb12149d0e18b35c9e9113c6114e89d990cc5a3337489",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "KSante",
+      "text_sha256": "23d70caa651d6f4672368e9b7fce49b678e47c2df075d86b4e7c458d21f2ad9a",
+      "audio_path_sha256": "2229a1b268e0b5672ebf42179b2072c8a849f0df2f2f7af3d55ecc044ba1f56c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "KSante",
+      "text_sha256": "e8e32f0be3324faef3622faf6e3e0df4e8e246b63897e56fdf33b053a2ba09f1",
+      "audio_path_sha256": "7de9482db979719b4ce09ef0c0b34dcc3eb86d69b5c43a2edecb0b7c608adadb",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Ivern",
+      "text_sha256": "93335a57e5f22067ac5e4c2538433ce94b690b071a930350bfd7ef53767c1e48",
+      "audio_path_sha256": "1b3dec4dabf9225b34a74e94fcea9f9764f18fa30ba5445164cb1a158b74d8f0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ivern",
+      "text_sha256": "4158ca829d4cef283029272f7954caa22a87c68391c5fb1459adf01406dd7e68",
+      "audio_path_sha256": "9465d2259af0f419ea2201ae2f650b207b3de244b709cf1f8930f3a1bf82bcfe",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Ivern",
+      "text_sha256": "6154d8450c46120b3fdf5a59a613f68c8bc164713387d21d7db2b93a31ca6f4f",
+      "audio_path_sha256": "7df165e0765fcd0701d70469dd08dd33915d681a88edc5b45eef865026adf626",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sett",
+      "text_sha256": "ce7ffe39e80002dd503203d0f1c27b4b14c9333175b0ccc7ef15f257960d7ab2",
+      "audio_path_sha256": "095cace52522959f766e863441810f1f1916db147c1de6b72b2ac84cfb7c3e8e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sett",
+      "text_sha256": "6e631a3d8e37c19abbf6c38c966efa86c76abf9ddea735ef76a559a799fc2593",
+      "audio_path_sha256": "6bf2701241dc037f250f6cdbf85afbd75d0df3c08ea0e900747e70422d7bb4a4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Corki",
+      "text_sha256": "3a753a4fbb8f7585040821be4ce6395d9ae99b209d185ffec3ab29e030526fb1",
+      "audio_path_sha256": "b672b18712ecc485e7bc29f1c2a335f2fd4bf5b341570859c1c8161219eae726",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Zyra",
+      "text_sha256": "cbb1e34bac88a703128ee3eb4ae6bbbdec3d362175f3bc5dc7330bf257a7902c",
+      "audio_path_sha256": "5b62668b45adaede7ea58027449764c52e9e2c221a3a0bb914490d0cc51d5eb6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Zyra",
+      "text_sha256": "a77b2c8bae777753e6c092eef3115b3952ce9d1594296656a120a944506995ee",
+      "audio_path_sha256": "31884e7f803a4e4c0ff3b5cdffd18257212cc01e43c5369ff17c2069310d719c",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Renekton",
+      "text_sha256": "63462b76b846265aac5342bb006040c8a9fe46337369044e5a99b53fcd33d376",
+      "audio_path_sha256": "5e4ca57fed59ef765c38d2a8c9e259beda5956710754eb77b5e0d6d5ccce1d25",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Renekton",
+      "text_sha256": "a9144a697f738db5c95464d18498fa2ae20e03ecb8dbbb69f386f8a5d58f9ef2",
+      "audio_path_sha256": "85f46eaf4978f5135b8f39dcff41e6a7901b10975cb729f9aa6882c634f7ea23",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Draven",
+      "text_sha256": "95c8d8197d2acc72a46de3f1980cae44d114dbc41bd9ceff387ead7d8a8ecc01",
+      "audio_path_sha256": "b55ee17435ee42c40bb0391b853119ee096bcc71422c098a9b50f60743895868",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Blitzcrank",
+      "text_sha256": "677e0008762e0d2552f9465e5c20935a65f6631905ad0eecf47c38a4d9bfba8f",
+      "audio_path_sha256": "d486d87cbe19d92e9350942cdef018f06b56272e39354dd28706dee97ef5b750",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Blitzcrank",
+      "text_sha256": "6df2571aa393bcbaa38908f1e9f4d83d5aa360b44a569fcbaaa357af959edb38",
+      "audio_path_sha256": "c0e72dea1628a28786f568e80d6a7afff323f49845aab5d9b7a47cfc8efeb3de",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kaisa",
+      "text_sha256": "b3032f10326247a1120dfed036494627f1d8ec0442e93f9980d55b3302914e37",
+      "audio_path_sha256": "c47420040c06fcc2b4e87c81e607238ccda73e0d434a6a822185dac14f514933",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kaisa",
+      "text_sha256": "fa04de9fc00cf903bd5aed61cd649d42ea34efc6eabeb72bfdc3823f75a86f0f",
+      "audio_path_sha256": "a9b17bc92cfb7dfe241c053558afa08e855c19294eab267cafd6ee01d57e0901",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kaisa",
+      "text_sha256": "3c53cc1a3cd73885ec0dce5c036f775f4e20ccdbd8d537e366e5e611318bb76f",
+      "audio_path_sha256": "8b8e2d476112bf4c334ce90e5aeb6fa19b64f3ef4a89daaa65e7b01082c0d75d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kaisa",
+      "text_sha256": "f031ba711c0b5bf5d181b9bd784740ce70604e948536020eb417227f7376e02a",
+      "audio_path_sha256": "09002e1a4c78fad445c1a53361d6793ccc0fe247389bc8667219ef661ca7ccc2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Velkoz",
+      "text_sha256": "72881664526e0d0b5203bcc47c7cc68525115c0aa595a71ef2b9249ca4fc104e",
+      "audio_path_sha256": "f06d7aeba1f1fd7c79baf0b88dad3c7192c7d9635af09567b46081584c1992ed",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Velkoz",
+      "text_sha256": "84f5705ea33325307a8addfba41c584c1ca872565376bde696635633e4332a1d",
+      "audio_path_sha256": "ab15a579cd18157bff237c4f3fe359d05ddc484eac29766dad35fc3a4584c3f7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Velkoz",
+      "text_sha256": "de310475b53f0095707a06ee6655e1ca1cceb69c161acde48f1ef39911cecd07",
+      "audio_path_sha256": "70587fcb64d3545387424e46668535f16f17532f44d800475efb36640345fad5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Malzahar",
+      "text_sha256": "3a56c7b06daa65d96a44c0215f67adc4b06159ed4ab7ea2a3e964acec3af8bef",
+      "audio_path_sha256": "e9ee2f1a35682f8ce6e36ed60b443f196a1322ba94b950301104b228ce53c4f3",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Belveth",
+      "text_sha256": "ab4a7d53a96b3f684367c36e4288fd4486c136c67231979f5126bbea48da7fcd",
+      "audio_path_sha256": "bcc65633094b6c2ae478a91b6feb8d1f14dace1b5b16d78add990c3770bed9c2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Belveth",
+      "text_sha256": "07795559cfbfb014f5256195789e673465e7e7ba0cd909536584b2b1fe7303cf",
+      "audio_path_sha256": "8107fbd0aed3467e74a05abf7d45a08518b77a4e0583e7d7a989413862df4164",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Chogath",
+      "text_sha256": "55012c8f3e4d31c46b38282f4fc37c54dd1160901a64d2b5458dfc92d61b04a8",
+      "audio_path_sha256": "435fff60f816cd15d4b84ea80c8528c0f216a8f68f5677c82106faf3818550e4",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Chogath",
+      "text_sha256": "40ae6ff01af2063357c2329d50a0376ab9f90ac113cd4a34372fcf8d38466664",
+      "audio_path_sha256": "c159136930541cef08656480a4e8d92c52d971cc40c76dcd5daaf9120d4fff43",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Khazix",
+      "text_sha256": "a7e2184aa1d3b0b1c928c2c3393cc3484ca24abb7eab1151d767f56bae07ce38",
+      "audio_path_sha256": "36b2d5af72c302f294c2c91776096d218e3d2f6530b1997020a2dc2a301e01fb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Khazix",
+      "text_sha256": "28b1fd804c7dadc7eb51027c9b50032cef9670799d669d90fb7cbb2bf4a7f307",
+      "audio_path_sha256": "b905af99c8b2d383391b9039de51cbff3d493689306d89f6dd0de6288739d4f6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Khazix",
+      "text_sha256": "7f36cbe16a647e7d31d74051aa55abe7a68179a5ecaec8bd381db5d239e71b1e",
+      "audio_path_sha256": "86b03a52c293e485f5d0fd9334e7877ee4ab7f9cf46145e85e6f953cf90cc06b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kassadin",
+      "text_sha256": "163dd0709e2344cfecd5bbe45be20e1f836bb92905186d8d71cfee142c2bcb8e",
+      "audio_path_sha256": "17ff5d526c80a7bc21d8954e710362268db8ff648339a60e494ea4af7dd66bdc",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Elise",
+      "text_sha256": "e68b0958951e9e2739cafe0b13cb3cb8ff65248615a9fe49261decf226805d0b",
+      "audio_path_sha256": "9aeda7255c9665a0c7dfc750116b6842cae1420fa363345f6d5386307b4a2ee1",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Elise",
+      "text_sha256": "330ea3aa786eed355f9733288aff8fff8fad080c0bc0114a5556e1fe4e1e5ec3",
+      "audio_path_sha256": "2c64b71fe7100a6abc31bc0c38c25eca19a0756857c9777ec417b255b3fa555d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Elise",
+      "text_sha256": "d4333fe0eb7f211ae41c20c1ba2beab1226e0bc67d833fb2c100af2838f8a049",
+      "audio_path_sha256": "b6dc2869794ee56201f12b8f731a40b60e69941e4272bd86db78768b06872d35",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Pyke",
+      "text_sha256": "eaa383b8836dfacb112729eaa214c468baefc1d2ffbc21f394f8a2215d0468fa",
+      "audio_path_sha256": "7ed81ee09aae1c5f1864e5a805db625607661ccafed3083f950d2654b35f312d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Pyke",
+      "text_sha256": "c7a7e6833c761e47b6919e507493800f3d5e294c438ee822fa49188aa189c942",
+      "audio_path_sha256": "adeec6d4639347117e208868a1013ae96aa758da2283fdd86dde384fe20ffffd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Pyke",
+      "text_sha256": "6362385691c4fa4db65a57d56bcfa40e93c8eef61a4193d7977e9fb128eb56ad",
+      "audio_path_sha256": "6b743c1aef44c8632ea8849bc9f8e643fa5ddbc22c6fe1e2a0ce0cfedb4ecacb",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sylas",
+      "text_sha256": "373638cc9af1af47848a89094da103edd866ea29d27cc3d90a50016bb7336431",
+      "audio_path_sha256": "0257b175ec74a9dd376c19d0f71386ec1cf5df1fbcf26364a4a438f50349cea3",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Sylas",
+      "text_sha256": "80fe206df2715784871f949f810aef6a3d2310f89f0561465798809aa5090466",
+      "audio_path_sha256": "4a99e7e49f436882fdaff0a6424937ed0a7e1d0e1e3fa4aa0e5881c5aad005ab",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Leblanc",
+      "text_sha256": "f8225bf8dd68be43422a1f2a9469602076e6f52fdd52421dae27af2eaaadb00c",
+      "audio_path_sha256": "e0b956a7af2b5c68b01e899dc20f96df13ac41b1ff5a43e87df441a3b5be1d4f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Leblanc",
+      "text_sha256": "06199f26afe0ceece11e783904a5dca849b8e000d2d299bee88f67cc1e0c6957",
+      "audio_path_sha256": "d73fbf5490138e856c2445658e4d1bb54c00bc5a7aaa878c5b13a86bca00cac7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Leblanc",
+      "text_sha256": "6ad42fae13cfa77f25a0186e76a06d3b5570074b4f25f94a841dd3cc49c5f6fa",
+      "audio_path_sha256": "7e25ec51ef4e715ba849c7634c25ae422051a7b00934ab75c9eecac49fbdcd29",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Darius",
+      "text_sha256": "b5b310655fdfc4b653ae7c90bbe9475296866cf353dcb5d0315c173152c9167e",
+      "audio_path_sha256": "6a85a29cb3d9a7ba0915462040cdaeecbe0aa63b05cd2b6f95f80f782793a397",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Darius",
+      "text_sha256": "ddec6811238ef0100022098c87a4d928d1c2777ca6ec89e44e6433b6946c1853",
+      "audio_path_sha256": "e57c55f985a4afffdcf9f83d53b2415c2b890ebc6e878ce03ce01dac8d292fad",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Swain",
+      "text_sha256": "312101b6166c60fc8ae2e1cfba64aa57475af7b18721a7b10ac4b61caa41ad2a",
+      "audio_path_sha256": "27154c117148418dc1617dc48f8dd98793f8eb0b3022281800949f55d5e92061",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Swain",
+      "text_sha256": "60ce773efb14f6c2e267621f88623a7dfd7a609e0b6f88ad2f758e1731071c63",
+      "audio_path_sha256": "35f86857e49efe83755075546214882d1a2b39d8b4a9f9b6d5067dcfb59ef641",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Swain",
+      "text_sha256": "a9b8681cd941ea84aa698dfaacfb3fea22981defac1db2809c0fb23399a8d93b",
+      "audio_path_sha256": "f3472a399cb69def356559cbc4e3cb4e56048b682b3aa1739b7734cc6b3c5ac5",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Swain",
+      "text_sha256": "b0005b7671bf83cd1ffbf5e86299d003c182dbeeeb27465ddb3fa78da71216d5",
+      "audio_path_sha256": "72503db2cfe6ce1ece2cf72888d565f65c9642cde6f339fa1816af17d478eba7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "FiddleSticks",
+      "text_sha256": "c7447d467f8c0a4c7d05a6e04777b3c45fa85df400848fd729075a79e1b76d94",
+      "audio_path_sha256": "e55de15c1a32fdecb78e53cfc9704fc55eb8c232b4bd75af7e7cdc2148d7f333",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "FiddleSticks",
+      "text_sha256": "9816bf222d905bb3e170ad2dd1ad551f441685c687e85d6a361251fdf7569dc9",
+      "audio_path_sha256": "5e0a1d2f0251c6a47422f61b92cd920edd9a88cdd338eb79faef696f71adbed3",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "MissFortune",
+      "text_sha256": "2547d21e100792e4d4abefe8ed052effb9c1cd49515653d6512abcbc456b9add",
+      "audio_path_sha256": "eaee615eab888067995ec18d23b951f01662ad2a64d15d8b878b4086b3733835",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "MissFortune",
+      "text_sha256": "f96026a42c7ef56319391239e5f0cb6061275270377eda6ede8271deb54d5ee1",
+      "audio_path_sha256": "a7aa1a2c01f27c7e2d04496b549b7808a52db3785068a6fd0a5dd93122534236",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "MissFortune",
+      "text_sha256": "2a89e8fe7baf54a3955cf797c01f3d9b5a3c21238c490fb7aa62446e9eb4c1ec",
+      "audio_path_sha256": "03a7acf44b9051213fa26c1481c533522c22caad0f47dceea77abb2151a049ef",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Teemo",
+      "text_sha256": "b4701aa1f53ad2d12a9ef171e22fdbf6128c3edbd31bcabfe5665a7f16d3f750",
+      "audio_path_sha256": "ad037a54fa25075e5840f9eddbcf2022d959557c2e46ecf4cfe3fd409b00dd77",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Teemo",
+      "text_sha256": "0b347531f1726d9b5719fd4e524ade858a71fdc1baa8a759fc831c5e7bced3af",
+      "audio_path_sha256": "0d4ba8fcc94a896986334a19d2fd95c052e29c7eb03894610a07f8851ae0d2b3",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Teemo",
+      "text_sha256": "f5fca8a89edccc1116bd14555e93370a928aa28ecc403b1870fa653730753e3b",
+      "audio_path_sha256": "1438179c20cd81ecf57a308a28b56c87d8992a21e61800909e0093f134bb3638",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Teemo",
+      "text_sha256": "38ee7ec4208adcbdcb2596dfe9d3bed581d6c314c3e915ff071054ea25979561",
+      "audio_path_sha256": "54a8c15d0eeaf61e2459ec4d53c2c3d58ae554b018a375f9c678eb1476e7912b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xerath",
+      "text_sha256": "6d880e933fbede402d1de5a0cb97bf2e96110a58a9dae4089c3050b92841cbb6",
+      "audio_path_sha256": "0f2279b83cae10f80cf1d3dd0408e57adf542fde42a19167df8e1d8825f5e213",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Xerath",
+      "text_sha256": "7e9f24d62ada07bcb8182a0844896268f7033c12f13201ea04dbc261a20f7337",
+      "audio_path_sha256": "9675fb6e7f1877c36ccf945fb401b2792cdeb342e3d18ea9dd2153f752d08302",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xayah",
+      "text_sha256": "d7a4d1d31cca45984243166e7f322975ecb87b54536b0ccf00091867aa6ea132",
+      "audio_path_sha256": "616ebef85b1756369e68bfd76f6586d8f31972f2d04cb6e34644f2b78d7d99f8",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xayah",
+      "text_sha256": "a7ae5625e5031a49c3077d5001bc2b16c6f3acf7d99379c561c85d7c7742f8fd",
+      "audio_path_sha256": "ea0d7eed661ac0ab820b263309b1bf6c8d13aaba13bca35166d70d02be57cc61",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xayah",
+      "text_sha256": "89a6d3636bb9697ad6cf6c6c4705026a29f5e302479e5edf9decafc9750f5a00",
+      "audio_path_sha256": "40482b4b4516ab4be1927322f4e93b79638ebd5bd2b6fd9d6cb7016ee82dda66",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xayah",
+      "text_sha256": "e605a43b9ac76247b39f09c78a4d1e287b14ac4ab8e791a63de984bf6be7bcf6",
+      "audio_path_sha256": "13421aba7d3f6589b2d99efef2ebd98d5b1b52b4e11726239a9b5d14cb116284",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Veigar",
+      "text_sha256": "7ea2aa83241c52384d63c89d27212b8151676ba44e2d293e0bcc1bee63b4c7e9",
+      "audio_path_sha256": "6f2cb89ee2a821c7d4407a7e495151f525b08e6fc32488ab80720c8859430408",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Veigar",
+      "text_sha256": "06fdb6d6d1f5657318e2495a1950471d34ee7aa0961707d4f5fc761139087996",
+      "audio_path_sha256": "2084f6a2006b5ba0d1b7660fcdfbd647fc9102fa1038e059c30d647bb7a45b4c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gragas",
+      "text_sha256": "8edfa53c796bbfc95188219fba8c26399e29a055a0db209bedb2899fe74ecf78",
+      "audio_path_sha256": "29559825cd57d7c139b9bd501230bcf4dc229ab5dad27272e3147a21e7e02785",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Ambessa",
+      "text_sha256": "b18a80d69e6fdd641b159aded64f22c1cb26fbf59d78bfa10e179f896ba257ca",
+      "audio_path_sha256": "6d157196d5489bcb07abf0d64ed85022b239da394a9aa1c99bd67c42e9d9589e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ambessa",
+      "text_sha256": "5e8fb71241d4d69e2fe73ea0974e52e15b3134c17eabec874b038c701d6f4c37",
+      "audio_path_sha256": "2edf6f79582b6989e513dc9c9f008c62e3d31c802dc27ed0b27b4120fbb20b8e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ambessa",
+      "text_sha256": "52d9c684682187f3c053a8c561b5fcc7870f896c94d15d0472f60307f2598c1d",
+      "audio_path_sha256": "d6737b4ba548a1e5881900bc2df4ed073a952d2036685c43daf095b531a54e44",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mordekaiser",
+      "text_sha256": "41475620e58f624eb5f2159953d9b6a3fc3a774acd546e51b7fa58bdd5b14b06",
+      "audio_path_sha256": "4347523a84f674fc46c32cb2e26d6ef46652f65fdf9b2c61f4e3b715029003c7",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mordekaiser",
+      "text_sha256": "c9c7a762e0c0781a548357f295bb4c61877ce2ad23186f3a72bd3e97b9374462",
+      "audio_path_sha256": "0a4b568e13d5ca10f86d90aca9d3de3d920a3772701775916b5bba6b4ff7d935",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mordekaiser",
+      "text_sha256": "19023d28ba7cb0d07d6ceeab09e168aeaadb21ed6870c616082b0eda345ad39c",
+      "audio_path_sha256": "d178626e260141f79c8681b590ff486d0a46499dd9d968712e5c62f28c08540e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "AurelionSol",
+      "text_sha256": "99875375592937f3cc55064e91ec88c28aa9fcd93da60e3c35c5ca202289d8f9",
+      "audio_path_sha256": "e4780481283fdec62c6233c618009614cd7b00d29cbd88df52ea6bd99525268a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "AurelionSol",
+      "text_sha256": "47f4678a5c2455b2ce2167caf9332a7f37f522b29c62e3353f501572a67f13a9",
+      "audio_path_sha256": "adefbd5217f5a2466aa03f6d0cad6356b939684d7a2c686d2b0423d92087d6c9",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "AurelionSol",
+      "text_sha256": "a0cbcdcb24f327f1208d847cd5bde0d0e1f91523a553bad6167d62116613c5cb",
+      "audio_path_sha256": "d7b198950705e6706151745f8cf252e094fa3b966061465ad2d9085ce908a115",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "AurelionSol",
+      "text_sha256": "8abc6891aa7f8ddf0165b6bbcf04c1df0b80a4c8a9a508b29fc5cb2217a20a9a",
+      "audio_path_sha256": "0f3fe7c10628a168d79db623ea84ce29ad7622d3c49fc4449287cdfb6852d3c9",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rell",
+      "text_sha256": "e7077c61f3040ae0c188b695e1dfd0f06e6ca8459984ca8090925b3b648b7fd5",
+      "audio_path_sha256": "f44c4bf64fd8cff4a31bcf171965c31e753f817ba5c7f84a0d6b78f6cf2120c4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rell",
+      "text_sha256": "290b497ec9d0b4c89914c4ea56420e872944e8613a13a16bb91eacf166a4336a",
+      "audio_path_sha256": "3ab287dfc45f2dd95b5657e7928d3f8129a5a70861e93e8634d6a4fe58bb1cc6",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Rell",
+      "text_sha256": "c65577f8d285b2d83f9f01a1077f5d9365fefdf3da56ecae56911c0a67bd7d72",
+      "audio_path_sha256": "cdce447c644b12c93b545790b310351ef23f51c2350ceaf3f3ab8fe75c01e791",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nunu",
+      "text_sha256": "735e3e173a6d3faa9de0bc2b1742b2ef01847aedac093d9c836fea0ee180d54f",
+      "audio_path_sha256": "984926cf7bd9b67e34d4db604671764044ce7eeb7bf986865e93dff8a926cdc2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nunu",
+      "text_sha256": "a9970f14d5113981b7f96cddaeb63af44cc0877e0c7502dd4cc01398858eeffa",
+      "audio_path_sha256": "2b92dadbb4e48e85abcc498bfdd19be46c68ed57dbdb4e7d20c01dcad7b2d898",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nunu",
+      "text_sha256": "f2dbf4183fd333d7fd1faebedb831c57ce97d815c02ccc8ce0db34d5b4eaa25f",
+      "audio_path_sha256": "9ec7080498ac2703174e285120f3e8821bbad76b1e554a1caf3711758c55a1ea",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Camille",
+      "text_sha256": "7c9f28ed16a57ae1e16bd7724708cbc8107e274d33f9f0dd9732656a3e65e390",
+      "audio_path_sha256": "f92489e9d8fbc614317687672a6fc3e271543c7fd4b70574f1219609e722d73d",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Camille",
+      "text_sha256": "31bef663a1317a71596a904b7bf8d73eb2efebeee22989be480fa789e28e089c",
+      "audio_path_sha256": "d7cafaca40c10fcef63c6a0b189c7979c163743923e065d15f05a4d2ce6b2094",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Janna",
+      "text_sha256": "bb356395eccabbc2c720abf9847ec9f44c63f8944d337e563bfadc2e31108774",
+      "audio_path_sha256": "d2c394e45c29dc3d4695eb7df0f582ca8b0c8c23f1953efb07b5dc900c707c1b",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Janna",
+      "text_sha256": "75bff57547080eadc6895dd030bff7299a560b92fc0515a42b8a6dfce9077857",
+      "audio_path_sha256": "7866f69ae30898807acd310692cfbeade0895d02c4edaf232ed726476e5208f2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Thresh",
+      "text_sha256": "0671a181dd6f7c6226fc395bf5a2c79f253c0b04af9310eaa4446ee4e8a39826",
+      "audio_path_sha256": "87a11beacbd893248fc41af1345a0e57d0345a156371a7b7f99e72adc1e4b502",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Thresh",
+      "text_sha256": "c25fd662baac87757dc6dc3f2e254040d856ef566e584c683e4e2f65e38edaf3",
+      "audio_path_sha256": "65e70c2e89dd3dcaa30d3167a6e2f958bfad838972b1bace52fee71d7234159f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Thresh",
+      "text_sha256": "0d057d753c51ef8155d4f2b5889d0f6dfdc187eb46c6a416763575d9129de30b",
+      "audio_path_sha256": "37a299d42e6cb17464029ba408552f9817713fd141958cc526cb6ffdcf62bce4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yuumi",
+      "text_sha256": "f057d4c42536303021a3483095ebd057add3b21235b4b3ec41532902ac261722",
+      "audio_path_sha256": "a9961e004d43bed60cedad93309b7821d6be3c4613d56fd4bcb36722dba6f339",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yuumi",
+      "text_sha256": "6e54ca5131e62109e417ac22a7bc599218ac8f4d348cac3942e6f1896d2fb28d",
+      "audio_path_sha256": "65124281a0250ee1b28cbb8d657379e03992de08100082d597c69d5c607355f9",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Yuumi",
+      "text_sha256": "2d8713f623a91c5995be17f5ad12fbcbc95e9eda48a0c12252984ae5c90d9af9",
+      "audio_path_sha256": "4138d7463d32cdfb165eac7c810921b77c7a583a96323212b66ac9a4c369be7b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Cassiopeia",
+      "text_sha256": "d738daf3c30d26859fa1a8469a71c8843597261b06d0863feb5637889b988394",
+      "audio_path_sha256": "37007133d8b57fc0dc487178c091834f0c2572c92ea89a09b4edb393385fe956",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Cassiopeia",
+      "text_sha256": "f451ddc79700788a1f271ed7a78606025559b24b991d69e04698d2625386b6bc",
+      "audio_path_sha256": "21ccec310afd7f59fbdb488ed49b6b9d977544c2dfff109ec2961a7151422e74",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Tristana",
+      "text_sha256": "d20b9d3f7a6fe066f7c9069286e62e54ab260a4b4b232257d52d1fe78c5b768a",
+      "audio_path_sha256": "dd1c0080fd084b7f06ccb04e9fd278cb713fb653067b07eb9a766a2e2b6a8995",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Tristana",
+      "text_sha256": "4b6af6549707f4e913e90b2c8888fdc1938ec9499de4aa83900296ca64408245",
+      "audio_path_sha256": "e3c802a350eee9b1c9b5ae219dd31933a5b7d4b03641ce15ade5cafddf42758c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Tristana",
+      "text_sha256": "ac378ea957f8c2d6aa22eedb2b2f92cbdd69d0360e4537e704ba186b01f04cff",
+      "audio_path_sha256": "147551255a0f5d6a60bd3714f6542f25640f0ed16c5010f67188f621c43b611a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Tristana",
+      "text_sha256": "b386973dabfe26ebb3f9943de993fbad0cbef3d7d6c1f7e5255dd2da2379b211",
+      "audio_path_sha256": "3e8957b28e4d9063ac091babdec367fac1d715d37d2949d1c9ebd827f80339dd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Annie",
+      "text_sha256": "9cad4556d5ee144b2dd41dcc14af4a88743354b0bbad631de569f4529d63864e",
+      "audio_path_sha256": "8bf846323a1eceba9842bf785f8e56b9a8e37546da7314e60fb9a8673a35a84e",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "MonkeyKing",
+      "text_sha256": "685eabd8fd8480b71501de2041f3e7bd94350e6d27f0a5c126bdb568596478db",
+      "audio_path_sha256": "2ef33eaea0e54946c40988daaf3ce731d25e1dd2c86438b7cef5ad3de67dada4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "MonkeyKing",
+      "text_sha256": "64f8c9b72d75db08365cbc48d640db5888772a632a5b5b278186c6d93d74d02b",
+      "audio_path_sha256": "d9e550c706d1a3b1a74a42d4d7c5a86fdb88a5889ae861988e1a0eece2290103",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Shyvana",
+      "text_sha256": "ca3f9706ece49d49d194a3fefe271fa1d6cfc2ea74de804ceb2c395bc78975f4",
+      "audio_path_sha256": "cdcf049b69bf25fca4decaa19ce6e4b499f25a2f96759f2378b183d6de71d97b",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Shyvana",
+      "text_sha256": "1b6c75caa011867e62177cbb66663a7f95cc0008e33dab1ab54a66313acadad7",
+      "audio_path_sha256": "a77b5a582918ddebbac481f428bf693dcf1cabe2c663572a62f129c6d4055f5f",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Smolder",
+      "text_sha256": "cfe9d64c00bb1a991a5d1f7b5ff422666751703d91214767cb633262008db462",
+      "audio_path_sha256": "45b4eac0855639896ade260a35c242c27391ebbfa11ce474b3045228cce587e4",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Belveth",
+      "text_sha256": "82f6804ec0e1218a3fd51e4d348ddd974a2f19fa10b0edc622b8b376a1117671",
+      "audio_path_sha256": "924bc465904028154c5e78b83e6d8efb029b2492a3421caf01873d3ceb0aa40a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Belveth",
+      "text_sha256": "9acaf16fb13597ca38c14cdd3536af7c868db8a28f92a185eebe50812b6d350b",
+      "audio_path_sha256": "6a0255dff197649b02447c377f3c937227cf681b5da08b5cf9a5ea186af9aaad",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Belveth",
+      "text_sha256": "7c5e5c7a9c075937eda4f24a58a4c7e16bb2f5555f542542a2f1b74cde4bf2f3",
+      "audio_path_sha256": "376f9a75d4a2bbe4ce8cc6b33a2a57593eb94a456a6392a0a0fe04d49a8c1431",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xerath",
+      "text_sha256": "3879c4812dd43ee151260152d323b9bd1abe9de9e3fdae59db3fae4a5cf0e40d",
+      "audio_path_sha256": "4f76448710fe6b3940535c037d055f9dd7ed30b452fc89c29e577539b36e5a44",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xerath",
+      "text_sha256": "c4376d56c51d856e049726e4a09205a24eb0e5ac8b656f44fc4eb17cae574c27",
+      "audio_path_sha256": "ed317baa69f8416bb4b104cf2973ee7f7380c1b1c670dbd77df8284b58c51e0a",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Kalista",
+      "text_sha256": "7705a0dbca5cce5d2763349c685a44cb98c19aa053c1ef387139df5f1b4ac85d",
+      "audio_path_sha256": "41191a2d5118af0aeeb6dc167fc9c040a45d9370acb5b5517720bea834772099",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Heimerdinger",
+      "text_sha256": "5f24a60a678aa09136ded4233d1c21ae71fa184736c6c2548789264e26a3de8a",
+      "audio_path_sha256": "75c50dd472a0d7d5fa1f6e849452ad205ff6377ba5829e040c0182034a416aa0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Heimerdinger",
+      "text_sha256": "80de960b96a92d102831483187352001c47cb81bdd82e488c05ad26d3729f571",
+      "audio_path_sha256": "d5b05cbfa045d786abea2d65c0676136853e5e7bf206c84dd01cd2eb81b34bba",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Heimerdinger",
+      "text_sha256": "3aa66b3de80357f3d3f68b70e3a5649843e46af074b61a9cb7ae4fe6a3f01125",
+      "audio_path_sha256": "b91176cd534a900653ef8f40b4beec2c738aed279961cd18064b6499e59b905e",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Azir",
+      "text_sha256": "13b3aa860ccb80b3e6c824a6085dbae48a6e81c60c5ab6f603d538c12089a735",
+      "audio_path_sha256": "dcb04d811cbd1d7f6600c2a333475e3e8209c414c7eec8497e72c1aa80be2c55",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Azir",
+      "text_sha256": "2810c560bb0c8cf58f7c227a725a1fe8a5ab3a5bdce76f8e8741babb80a0884a",
+      "audio_path_sha256": "3d363e755e49dc0a5e39e1afee15689819ba046ec5507d9a0570c768a30176bd",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Azir",
+      "text_sha256": "836a8d5d07eb3e8c68a7a7a223baf488af4854a3d875e14494ffa0b2f6d2ec94",
+      "audio_path_sha256": "f7921c439b502b696264ed8012f1de79644987dc1b20cd0bff1a51f10d667a4d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Xerath",
+      "text_sha256": "bf222806e8118f17c48a5c58ec4c6084fb54de07193df9cdcdbedc05b1d6be42",
+      "audio_path_sha256": "5d575d0ccef093c08a94b0be434f499ca9695ac0b97a86244395936e4c62ca79",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Cassiopeia",
+      "text_sha256": "738779d379080b8180d839a1b366f22b4913ae9d74606bf787188e5cbed3890a",
+      "audio_path_sha256": "38c36988de4917931bb2d1b2e4f15a85e5b50bfd6b8d04a2fdd0a27ab8eba17a",
+      "reason": "角色代表句"
+    },
+    {
+      "alias": "Nilah",
+      "text_sha256": "83f28d8a274c1804c8c12b4d8830a4117d12e73d2f7b14b5637e5d44572ca9dd",
+      "audio_path_sha256": "8c01b14783b7fe2aa19737f527f777979799622d7b1344e8763cee6b71ffea4d",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Nilah",
+      "text_sha256": "ddd3f75a9f2441ecbcc9250f409b59aef2f52c889453ed34e74bb6bd54fb7da6",
+      "audio_path_sha256": "656f94a9a6d794d3bac7df0361b95b96cab7538b3a664210ab806fee4ba6c274",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Morgana",
+      "text_sha256": "d5e75e3c8762a48ec8e028b7b5ef293ccaa1fcd01c9d1373086311ebaca42ff9",
+      "audio_path_sha256": "b816b74dabbf9afb5cb2e58c4d20dbaf5fbd9cbafe799d23510e90f399e9f402",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Morgana",
+      "text_sha256": "f6bd44fde21b8d7464e2034b50ae9b8b8473742f0eb91812f64c3979dc391236",
+      "audio_path_sha256": "53e374226e83869399cfd5c8f46f1b0a826f301fc193a030e0add072f2a959a0",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ashe",
+      "text_sha256": "3d58c32be2dee6db9a6cc85259837c1ac0789d8919740ca69eb635b19abfdf56",
+      "audio_path_sha256": "d9d5e61a539395b1466266e5155caa04ed91d3128b3ba066355f82483123953c",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Galio",
+      "text_sha256": "8266e9513787d7594cacd8594e8c9ab0e7dd9a4fc9c75310d6bcb4488d0269d6",
+      "audio_path_sha256": "6b828a59092b01badf6587766a49dc83caf9afcde4c3c0a23e0caefe156ea893",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Leblanc",
+      "text_sha256": "94b87b4b62b47e23468e4ac04ca42d6a098abb41a404905e0dc46ad2a6a160cf",
+      "audio_path_sha256": "f03dab78c92a394aa964780016713c37d3f0ca036d6b485b564329e08cd217ba",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Mordekaiser",
+      "text_sha256": "145c1f40f6f8098fb1553826a33c2c70502600300ed6122e487e2b5b24bd45c5",
+      "audio_path_sha256": "88b1371be0d52587a0895a8a4e0d07cbf434e79d0321ee1f6eb8909fb81aa194",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Neeko",
+      "text_sha256": "6ecc4b85cad08914eaf1962ef834ccdd93da1add563d9d257d285a3282d96e87",
+      "audio_path_sha256": "5619ac9ba710d8a170ac764a1d4f6698f7900039bb699fb176eaf69f337a0b99",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Ornn",
+      "text_sha256": "9652bea02ecce570cbd3c5a9b6245a3300af6dc2232a83e4c17c3721f3f8b11d",
+      "audio_path_sha256": "2ea394cc4c93706e233eeeb33a9ddbe5238e47474bca147c26b3d44714173ec2",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Hwei",
+      "text_sha256": "a2d3960b045766935baac80a704dd0e41bcb871ca25cef61fb80c4e54572f232",
+      "audio_path_sha256": "9bc9fe1d879bc08b31347d80c0eb9a94a951d56e9aac68afdbb0482d79a59008",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Varus",
+      "text_sha256": "3c49618fd09c2828c20f8ca4e84e1acb72e54caf8cf0a9c1af0a0f938201b886",
+      "audio_path_sha256": "f3e53b0531f57217509734bf0217c56dfa48144ffe875bd42710a7ad743e9805",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Maokai",
+      "text_sha256": "a34a3ac047d5c316277695322e95eb302d51469203159e24796225d2f19dadc8",
+      "audio_path_sha256": "a0055e866d6845e516775e7417920dc1108dfeb8b97a81c7ce616ae8f7e0cd33",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Maokai",
+      "text_sha256": "d7432ff07bbbf965c1714f959252b3a777b6a1252cb69020d44fbb5093a511ad",
+      "audio_path_sha256": "a2b7ced2b83f88686042059c070a7b7be7019684ce5a1c8b7df21102c8597792",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Galio",
+      "text_sha256": "838510226aecb10484fe88937a5fae34113e65d3457980a70839aae2f57762a2",
+      "audio_path_sha256": "c21bd38626f43c861c40f6d414cffecc39fd25f10dd89eaab91d3df64fe49c3b",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gwen",
+      "text_sha256": "73c4b4b29976bfe35b74b221d964e2fc6dca790bbbd93e1c6c1a20e660e05195",
+      "audio_path_sha256": "ae8375774a257db368817f06556ee2379f0acdc1ce1690a6ad9b1a96e02c34ed",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Gwen",
+      "text_sha256": "2eba959a5e2eebd2351193c5872f3795a767945f0a02ccd0e9c3b2f641dfc60b",
+      "audio_path_sha256": "cffb3485acfa13e2f1c5d76f8dc36803985a653ef3155d72820a5e23e4bc1c14",
+      "reason": "角色个性、经历或有独立表达内容的台词"
+    },
+    {
+      "alias": "Lulu",
+      "text_sha256": "016c93e04388268b4cb158b97a50ef828bc6ea2d61ad8c8bfe1cd588a46ac24e",
+      "audio_path_sha256": "8b8a593512eb32255eae746581934623aaa59187a126ecc07188d5188681dbff",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Orianna",
+      "text_sha256": "bd6b7254a9fa08e7da538d1845a836d2de8d4e15480995ef9ad234823738cd9c",
+      "audio_path_sha256": "647f0f1ad27f5cc8ae88ec81f45dff82202414f84a646ee7b721c7735ca93c77",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Zed",
+      "text_sha256": "f9983341c1320a0eb82d26000e1e1e5b461dbb4ebc7297205e234085f73b0cd7",
+      "audio_path_sha256": "c3e271fdd8d19cc2bf085b6de3d9510cb450ce13c1245b7aa08909ed8dff97b6",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Jhin",
+      "text_sha256": "0be91b2637bdffe95312d5d699e0bcc5d212be909b18e348e4a6ca85371233bf",
+      "audio_path_sha256": "2fc19dda6df7b7deb70592ea7aae0f31153896f1acfec131c90275876abd23da",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Rumble",
+      "text_sha256": "aa8425bc2113f0dab6ca9604a151ce588a2882cf11c61eeb5c39ea70bf5976d5",
+      "audio_path_sha256": "e138b6ce1c623ffe9161a17ab1f19504c1dc3fb87f334103ebca335361ab3522",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Kindred",
+      "text_sha256": "6de01584b1979852a461b65ac463b1224e09d7c6ec79ad3fa0e87b135d1b389e",
+      "audio_path_sha256": "1cf90b23a5b9fc0ffc0dcde1e12a5bb1a086aee1c778a85fad14563040b8d272",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Yasuo",
+      "text_sha256": "5c0a93424b7a29e95a1f57f92983711bb9567399b4e23e8b4137a0882314e75b",
+      "audio_path_sha256": "523a1201f01813facf191ce5ea34db6282aa5b4ccc53ff1c994d00f9273d8ac4",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    },
+    {
+      "alias": "Yasuo",
+      "text_sha256": "522adad614042cfd6cbf036086f773e2bd77a4cf0a3401b8cca6fd4f5d9c5c17",
+      "audio_path_sha256": "0419de9e4a58cbf1d88ba7785687eae9174cbd3242f55188f80a1a14f9be9de2",
+      "reason": "角色代表句或具有辨识度的经典表达"
+    }
+  ]
+}

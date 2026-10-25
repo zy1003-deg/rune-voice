@@ -27,13 +27,24 @@ export default defineConfig(({ mode }) => {
   // `http://localhost:5173//`.
   const siteUrl =
     (raw && raw.replace(/\/+$/, '')) ||
-    'http://localhost:5173'
+    (mode === 'production'
+      ? 'https://lol.zyyeah.asia'
+      : 'http://localhost:5173')
 
   return {
     plugins: [react(), tailwindcss(), siteUrlHtmlPlugin(siteUrl)],
     server: {
       port: 5173,
       host: true,
+      proxy: /^https?:\/\//.test(env.VITE_API_BASE || '')
+        ? {
+            '/archive-data': {
+              target: env.VITE_API_BASE,
+              changeOrigin: true,
+              rewrite: (path) => path.replace(/^\/archive-data/, ''),
+            },
+          }
+        : undefined,
     },
   }
 })

@@ -1,37 +1,32 @@
 import { useEffect, useState, useCallback } from 'react'
-
-const STORAGE_KEY = 'rune-voice-theme'
-const THEMES = ['light', 'dark']
-
-/**
- * 主题切换 hook。
- * - 首次访问跟随系统 prefers-color-scheme
- * - 用户切换后持久化到 localStorage
- * - 通过 <html data-theme="..."> 应用
- */
+const KEYS = ['rune-voice-theme', 'runic-echoes-theme']
+export function readTheme() {
+  try {
+    for (const key of KEYS) {
+      const saved = localStorage.getItem(key)
+      if (saved === 'light' || saved === 'dark') return saved
+    }
+  } catch {
+    /* Storage may be blocked. */
+  }
+  return 'dark'
+}
 export function useTheme() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window === 'undefined') return 'light'
-    const saved = localStorage.getItem(STORAGE_KEY)
-    if (saved && THEMES.includes(saved)) return saved
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  })
-
+  const [theme, setTheme] = useState(readTheme)
   useEffect(() => {
-    const root = document.documentElement
-    root.setAttribute('data-theme', theme)
-    // 同步 theme-color meta，让移动端浏览器顶栏配色跟随
+    document.documentElement.setAttribute('data-theme', theme)
     const meta = document.querySelector('meta[name="theme-color"]')
-    if (meta) meta.setAttribute('content', theme === 'dark' ? '#14171C' : '#F4F6F8')
+    if (meta)
+      meta.setAttribute('content', theme === 'dark' ? '#09121E' : '#F3F5F7')
+    try {
+      KEYS.forEach((key) => localStorage.setItem(key, theme))
+    } catch {
+      /* Theme still applies. */
+    }
   }, [theme])
-
-  const toggleTheme = useCallback(() => {
-    setTheme((prev) => {
-      const next = prev === 'dark' ? 'light' : 'dark'
-      localStorage.setItem(STORAGE_KEY, next)
-      return next
-    })
-  }, [])
-
+  const toggleTheme = useCallback(
+    () => setTheme((previous) => (previous === 'dark' ? 'light' : 'dark')),
+    [],
+  )
   return { theme, toggleTheme }
 }

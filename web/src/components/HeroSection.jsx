@@ -1,81 +1,195 @@
-import { motion } from 'framer-motion'
+import { useState } from 'react'
+import Icon from './Icon'
+import { buildAvatarUrl, buildSplashUrl } from '../utils/audioUrl'
+import { quoteId } from '../utils/quotes'
 
-export default function HeroSection({ onSurprise, championCount, quoteCount }) {
+function FeaturedArt({ quote }) {
+  const [fallback, setFallback] = useState(false)
   return (
-    <section className="relative pt-24 pb-8 text-center overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-16 left-1/4 w-64 h-64 opacity-[0.03]">
-          <svg viewBox="0 0 100 100" fill="none">
-            <path d="M50 5L93.3 27.5V72.5L50 95L6.7 72.5V27.5L50 5Z"
-              stroke="#C8AA6E" strokeWidth="0.5" />
-          </svg>
-        </div>
-        <div className="absolute top-24 right-1/4 w-48 h-48 opacity-[0.04]">
-          <svg viewBox="0 0 100 100" fill="none">
-            <path d="M50 5L93.3 27.5V72.5L50 95L6.7 72.5V27.5L50 5Z"
-              stroke="#0AC8B9" strokeWidth="0.5" />
-          </svg>
+    <img
+      className={`featured-art ${fallback ? 'avatar-art' : ''}`}
+      src={
+        fallback
+          ? buildAvatarUrl(quote.championAlias)
+          : buildSplashUrl(quote.championAlias)
+      }
+      alt=""
+      onError={(e) => {
+        if (!fallback) setFallback(true)
+        else e.currentTarget.style.visibility = 'hidden'
+      }}
+    />
+  )
+}
+
+function FeaturedCard({
+  quote,
+  slot,
+  quotes,
+  onPlay,
+  onShuffle,
+  playingId,
+  isPlaying,
+  canShuffle,
+}) {
+  const main = slot === 0
+  const active = playingId === quoteId(quote) && isPlaying
+  return (
+    <article
+      className={`featured-card ${main ? 'featured-main' : 'featured-small'}`}
+      aria-label={`推荐台词${slot + 1}`}
+      data-quote-id={quoteId(quote)}
+    >
+      <FeaturedArt key={quote.championAlias} quote={quote} />
+      <div className="featured-shade" />
+      <div className="featured-content">
+        {main && <span className="feature-kicker">精选台词</span>}
+        <blockquote
+          className={main && quote.text.length > 40 ? 'long-quote' : ''}
+        >
+          {quote.text}
+        </blockquote>
+        {main && <span className="gold-rule" />}
+        <p className="featured-credit">
+          {quote.championName}
+          <span> · {quote.skin || '默认皮肤'}</span>
+        </p>
+        <div className="featured-actions">
+          {main ? (
+            <button
+              className="featured-play"
+              onClick={() => onPlay(quote, quotes)}
+            >
+              <span>
+                <Icon
+                  name={active ? 'pause' : 'play'}
+                  filled={!active}
+                  size={24}
+                />
+              </span>
+              {active ? '暂停播放' : '播放台词'}
+            </button>
+          ) : (
+            <button
+              className="round-play"
+              onClick={() => onPlay(quote, quotes)}
+              aria-label={`${active ? '暂停' : '播放'}：${quote.text}`}
+            >
+              <Icon
+                name={active ? 'pause' : 'play'}
+                filled={!active}
+                size={18}
+              />
+            </button>
+          )}
+          <button
+            className="shuffle-button"
+            disabled={!canShuffle}
+            onClick={() => onShuffle(slot)}
+            aria-label={`更换第${slot + 1}条推荐`}
+          >
+            <Icon name="shuffle" size={17} />
+            换一条
+          </button>
+          {main && (
+            <div
+              className={`decorative-wave ${active ? 'active' : ''}`}
+              aria-hidden="true"
+            >
+              {[
+                8, 18, 11, 25, 34, 20, 13, 26, 18, 11, 22, 30, 17, 10, 21, 14,
+                8,
+              ].map((h, i) => (
+                <i
+                  key={i}
+                  style={{ height: h, animationDelay: `${i * 70}ms` }}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
+    </article>
+  )
+}
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      >
-        {/* Subtitle */}
-        <p className="text-[10px] tracking-[0.3em] uppercase text-hex-cyan mb-3 glow-cyan-text">
-          League of Legends Voice Archives
-        </p>
-
-        {/* Main title */}
-        <h2 className="text-2xl md:text-4xl font-bold text-hex-gold-light mb-2 glow-gold-text font-display">
-          符文之声
-        </h2>
-
-
-        {/* Stats */}
-        <div className="flex items-center justify-center gap-6 mb-6">
-          {championCount > 0 && (
-            <div className="stat-badge">
-              <svg className="w-3.5 h-3.5 text-hex-gold/60" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-              </svg>
-              <span className="text-hex-text">{championCount}</span> 位英雄
-            </div>
-          )}
-          {quoteCount > 0 && (
-            <div className="stat-badge">
-              <svg className="w-3.5 h-3.5 text-hex-cyan/60" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
-              </svg>
-              <span className="text-hex-text">{quoteCount.toLocaleString()}</span> 条语音
+export default function HeroSection({
+  quotes,
+  indices,
+  onShuffle,
+  onPlay,
+  playingId,
+  isPlaying,
+  loading,
+  error,
+  onRetry,
+  championCount,
+  quoteCount,
+}) {
+  const visible = indices.map((index) => quotes[index]).filter(Boolean)
+  const uniqueCount = new Set(quotes.map(quoteId)).size
+  const renderCard = (quote, slot) => (
+    <FeaturedCard
+      key={slot}
+      quote={quote}
+      slot={slot}
+      quotes={quotes}
+      onPlay={onPlay}
+      onShuffle={onShuffle}
+      playingId={playingId}
+      isPlaying={isPlaying}
+      canShuffle={uniqueCount > visible.length}
+    />
+  )
+  return (
+    <section className="discovery-section" aria-labelledby="discovery-title">
+      <div className="discovery-heading">
+        <div>
+          <h1 id="discovery-title">推荐台词</h1>
+        </div>
+        <div className="discovery-tools">
+          <span className="archive-count">
+            {championCount} 位英雄 <span>/</span> {quoteCount.toLocaleString()}{' '}
+            条语音
+          </span>
+          <button
+            className="outline-button"
+            onClick={() => onShuffle()}
+            disabled={uniqueCount < 2}
+            aria-label="更换全部推荐"
+          >
+            <Icon name="shuffle" size={16} />
+            换一组
+          </button>
+        </div>
+      </div>
+      {visible.length ? (
+        <div className="featured-layout">
+          {renderCard(visible[0], 0)}
+          {visible.length > 1 && (
+            <div className="featured-companions">
+              {visible
+                .slice(1)
+                .map((quote, index) => renderCard(quote, index + 1))}
             </div>
           )}
         </div>
-
-        {/* Decorative divider */}
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <div className="h-px w-12 bg-gradient-to-r from-transparent to-hex-gold/30" />
-          <div className="w-1.5 h-1.5 rotate-45 bg-hex-gold/40" />
-          <div className="h-px w-12 bg-gradient-to-l from-transparent to-hex-gold/30" />
+      ) : (
+        <div className="featured-placeholder" role="status">
+          {loading ? (
+            '正在加载推荐台词…'
+          ) : (
+            <>
+              <p>{error || '暂时没有推荐台词，可以从下方选择英雄试听。'}</p>
+              {error && (
+                <button className="outline-button" onClick={onRetry}>
+                  重新加载
+                </button>
+              )}
+            </>
+          )}
         </div>
-
-        {/* Surprise Me Button */}
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.97 }}
-          onClick={onSurprise}
-          className="hextech-btn px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-widest
-            inline-flex items-center gap-2 cursor-pointer"
-        >
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-          </svg>
-          随机一条·经典台词
-        </motion.button>
-      </motion.div>
+      )}
     </section>
   )
 }

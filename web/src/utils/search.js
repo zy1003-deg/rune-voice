@@ -1,4 +1,4 @@
-import { API_BASE, buildAudioUrl } from './audioUrl'
+import { DATA_BASE, buildAudioUrl } from './audioUrl'
 
 // search_index.json 条目：{ text, champion, event, skin }
 // quotes/{英雄}.json 条目：{ text, event, skin, file, dir }
@@ -12,7 +12,7 @@ let indexPromise = null
 export async function loadSearchIndex() {
   if (indexCache) return indexCache
   if (indexPromise) return indexPromise
-  indexPromise = fetch(`${API_BASE}/data/search_index.json`)
+  indexPromise = fetch(`${DATA_BASE}/data/search_index.json`)
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`)
       return r.json()
@@ -71,13 +71,18 @@ const quotesFileCache = new Map()
 
 async function loadQuotesForChampion(file) {
   if (quotesFileCache.has(file)) return quotesFileCache.get(file)
-  const promise = fetch(`${API_BASE}/data/quotes/${file}`)
-    .then((r) => (r.ok ? r.json() : []))
-    .catch(() => [])
-  quotesFileCache.set(file, promise)
-  promise.then((data) => {
-    quotesFileCache.set(file, data)
+  const promise = fetch(
+    `${DATA_BASE}/data/quotes/${encodeURIComponent(file)}`,
+  ).then((r) => {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`)
+    return r.json()
   })
+  quotesFileCache.set(file, promise)
+  // Evict failed promises so a retry can recover from a transient outage.
+  promise.then(
+    (data) => quotesFileCache.set(file, data),
+    () => quotesFileCache.delete(file),
+  )
   return promise
 }
 
@@ -87,7 +92,7 @@ async function loadQuotesForChampion(file) {
 export async function resolveAudioForSearchResult(result) {
   const quotes = await loadQuotesForChampion(result.championFile)
   const match = quotes.find(
-    (q) => q.text === result.text && q.skin === result.skin
+    (q) => q.text === result.text && q.skin === result.skin,
   )
   if (!match || !match.dir || !match.file) return null
   return buildAudioUrl(match.dir, match.file)
@@ -98,12 +103,15 @@ let featuredCache = null
 let featuredPromise = null
 
 /**
- * 加载经典台词候选池。这些是社区评选的最火台词，"随机一条"只从中抽取。
+ * 加载审核过的推荐候选池。生产环境用 VITE_FEATURED_URL 指向带来源的精选文件。
  */
 export async function loadFeaturedQuotes() {
   if (featuredCache) return featuredCache
   if (featuredPromise) return featuredPromise
-  featuredPromise = fetch(`${API_BASE}/data/featured_quotes.json`)
+  featuredPromise = fetch(
+    import.meta.env.VITE_FEATURED_URL ||
+      `${DATA_BASE}/data/featured_quotes.json`,
+  )
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`)
       return r.json()

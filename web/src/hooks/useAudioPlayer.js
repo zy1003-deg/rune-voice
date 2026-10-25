@@ -1,274 +1,201 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
 
-// Module-level singleton audio instance
-let globalAudio = null
-
-// 已预取的音频 URL 集合，避免重复预取
-const prefetchedUrls = new Set()
-
-/**
- * 预取音频文件：用 link rel=prefetch 让浏览器空闲时下载，连播时无需等待。
- */
-function prefetchAudio(url) {
-  if (!url || prefetchedUrls.has(url)) return
-  prefetchedUrls.add(url)
-  try {
-    const link = document.createElement('link')
-    link.rel = 'prefetch'
-    link.as = 'fetch'
-    link.href = url
-    link.crossOrigin = 'anonymous'
-    document.head.appendChild(link)
-  } catch {
-    // 预取失败不影响主流程
-  }
-}
-
+// One engine owned by the app. Update queue refs before starting playback.
 export function useAudioPlayer() {
+  const audioRef = useRef(null),
+    currentRef = useRef(null),
+    queueRef = useRef([]),
+    indexRef = useRef(-1),
+    volumeRef = useRef(0.8),
+    startRef = useRef(null)
   const [playingId, setPlayingId] = useState(null)
   const [currentQuote, setCurrentQuote] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
-  const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
-  const [volume, setVolume] = useState(0.8)
+  const [volume, setVolumeState] = useState(0.8)
   const [playlist, setPlaylist] = useState([])
   const [playlistIndex, setPlaylistIndex] = useState(-1)
-  const volumeRef = useRef(0.8)
-  const animRef = useRef(null)
-  const playlistRef = useRef([])
-  const playlistIndexRef = useRef(-1)
-
-  // Keep refs in sync
-  useEffect(() => {
-    playlistRef.current = playlist
-  }, [playlist])
-
-  useEffect(() => {
-    playlistIndexRef.current = playlistIndex
-  }, [playlistIndex])
-
-  // Sync volume to audio element
-  useEffect(() => {
-    if (globalAudio) {
-      globalAudio.volume = volume
-    }
-    volumeRef.current = volume
-  }, [volume])
-
-  // Progress animation loop
-  const startProgressLoop = useCallback(() => {
-    if (animRef.current) cancelAnimationFrame(animRef.current)
-    const tick = () => {
-      if (globalAudio && !globalAudio.paused) {
-        setCurrentTime(globalAudio.currentTime)
-        setProgress(globalAudio.currentTime)
-        setDuration(globalAudio.duration || 0)
-      }
-      animRef.current = requestAnimationFrame(tick)
-    }
-    animRef.current = requestAnimationFrame(tick)
+  const [error, setError] = useState('')
+  const release = useCallback(() => {
+    const audio = audioRef.current
+    if (!audio) return
+    audio.onended =
+      audio.onerror =
+      audio.ontimeupdate =
+      audio.onloadedmetadata =
+      audio.onplay =
+      audio.onpause =
+        null
+    audio.pause()
+    audioRef.current = null
   }, [])
-
-  const stopProgressLoop = useCallback(() => {
-    if (animRef.current) {
-      cancelAnimationFrame(animRef.current)
-      animRef.current = null
-    }
-  }, [])
-
-  // Cleanup on unmount
-  useEffect(() => {
-    return () => {
-      if (globalAudio) {
-        globalAudio.pause()
-        globalAudio.currentTime = 0
-        globalAudio = null
-      }
-      stopProgressLoop()
-    }
-  }, [stopProgressLoop])
-
-  // Internal play function
-  const playInternal = useCallback((id, audioUrl, quoteInfo, autoAdvance = false) => {
-    if (!audioUrl) return
-
-    // Toggle: same quote → pause/resume (only if not auto-advancing)
-    if (!autoAdvance && playingId === id && globalAudio) {
-      if (globalAudio.paused) {
-        globalAudio.play()
-        setIsPlaying(true)
-        startProgressLoop()
-      } else {
-        globalAudio.pause()
+  useEffect(() => release, [release])
+  const start = useCallback(
+    (id, url, info) => {
+      if (!url) return
+      release()
+      const audio = new Audio(url)
+      audioRef.current = audio
+      currentRef.current = { id, url, info }
+      audio.volume = volumeRef.current
+      setPlayingId(id)
+      setCurrentQuote(info)
+      setCurrentTime(0)
+      setDuration(0)
+      setIsPlaying(false)
+      setError('')
+      const fail = () => {
+        if (audioRef.current !== audio) return
         setIsPlaying(false)
-        stopProgressLoop()
+        setError('暂时无法播放这条音频，请重试或选择其他台词。')
       }
+      audio.onloadedmetadata = () => {
+        if (audioRef.current === audio)
+          setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
+      }
+      audio.ontimeupdate = () => {
+        if (audioRef.current === audio) setCurrentTime(audio.currentTime || 0)
+      }
+      audio.onplay = () => {
+        if (audioRef.current === audio) {
+          setIsPlaying(true)
+          setError('')
+        }
+      }
+      audio.onpause = () => {
+        if (audioRef.current === audio) setIsPlaying(false)
+      }
+      audio.onerror = fail
+      audio.onended = () => {
+        if (audioRef.current !== audio) return
+        setIsPlaying(false)
+        const nextIndex = indexRef.current + 1,
+          next = queueRef.current[nextIndex]
+        if (next && indexRef.current >= 0) {
+          indexRef.current = nextIndex
+          setPlaylistIndex(nextIndex)
+          startRef.current(next.id, next.url, next.info)
+        }
+      }
+      try {
+        Promise.resolve(audio.play()).catch(fail)
+      } catch {
+        fail()
+      }
+    },
+    [release],
+  )
+  startRef.current = start
+  const resume = useCallback(() => {
+    const audio = audioRef.current,
+      item = currentRef.current
+    if (!item) return
+    if (!audio || audio.error) {
+      start(item.id, item.url, item.info)
       return
     }
-
-    // Stop current
-    if (globalAudio) {
-      globalAudio.pause()
-      globalAudio.currentTime = 0
-      stopProgressLoop()
+    if (audio.ended) {
+      audio.currentTime = 0
+      setCurrentTime(0)
     }
-
-    const audio = new Audio(audioUrl)
-    globalAudio = audio
-    audio.volume = volumeRef.current
-
-    setPlayingId(id)
-    setCurrentQuote(quoteInfo)
-    setIsPlaying(true)
-    setProgress(0)
-    setCurrentTime(0)
-
-    audio.onloadedmetadata = () => {
-      setDuration(audio.duration || 0)
+    setError('')
+    try {
+      Promise.resolve(audio.play()).catch(() => {
+        if (audioRef.current === audio) {
+          setIsPlaying(false)
+          setError('播放未能开始，请再次点击播放。')
+        }
+      })
+    } catch {
+      setError('播放未能开始，请再次点击播放。')
     }
-
-    audio.play().catch(() => {
-      setPlayingId(null)
-      setIsPlaying(false)
-      setCurrentQuote(null)
-    })
-
-    audio.onended = () => {
-      // Auto-play next in playlist
-      const pl = playlistRef.current
-      const idx = playlistIndexRef.current
-      if (pl.length > 0 && idx >= 0 && idx < pl.length - 1) {
-        const nextIdx = idx + 1
-        setPlaylistIndex(nextIdx)
-        playlistIndexRef.current = nextIdx
-        const next = pl[nextIdx]
-        // Use setTimeout to avoid calling play during onended callback
-        setTimeout(() => {
-          playInternal(next.id, next.url, next.info, true)
-        }, 100)
-      } else {
-        setIsPlaying(false)
-        setPlayingId(null)
-        setCurrentTime(0)
-        setProgress(0)
-        stopProgressLoop()
-        if (globalAudio === audio) globalAudio = null
-      }
-    }
-
-    audio.onerror = () => {
-      setIsPlaying(false)
-      setPlayingId(null)
-      setCurrentQuote(null)
-      stopProgressLoop()
-      if (globalAudio === audio) globalAudio = null
-    }
-
-    // 预取播放列表中下一条音频，连播时更顺滑
-    const pl = playlistRef.current
-    const idx = playlistIndexRef.current
-    if (autoAdvance && pl.length > 0 && idx >= 0 && idx < pl.length - 1) {
-      prefetchAudio(pl[idx + 1]?.url)
-    }
-
-    startProgressLoop()
-  }, [playingId, startProgressLoop, stopProgressLoop])
-
-  // Public play function
-  const play = useCallback((id, audioUrl, quoteInfo = null) => {
-    playInternal(id, audioUrl, quoteInfo, false)
-  }, [playInternal])
-
+  }, [start])
   const togglePlay = useCallback(() => {
-    if (!globalAudio) return
-    if (globalAudio.paused) {
-      globalAudio.play()
-      setIsPlaying(true)
-      startProgressLoop()
-    } else {
-      globalAudio.pause()
+    const audio = audioRef.current
+    if (audio && !audio.error && !audio.paused && !audio.ended) {
+      audio.pause()
       setIsPlaying(false)
-      stopProgressLoop()
-    }
-  }, [startProgressLoop, stopProgressLoop])
-
-  const seek = useCallback((time) => {
-    if (globalAudio) {
-      globalAudio.currentTime = time
-      setCurrentTime(time)
-      setProgress(time)
-    }
+    } else resume()
+  }, [resume])
+  const play = useCallback(
+    (id, url, info) => {
+      if (currentRef.current?.id === id && audioRef.current) togglePlay()
+      else start(id, url, info)
+    },
+    [start, togglePlay],
+  )
+  const updatePlaylist = useCallback((list, index) => {
+    const nextIndex = list.length
+      ? Math.min(Math.max(index, 0), list.length - 1)
+      : -1
+    queueRef.current = list
+    indexRef.current = nextIndex
+    setPlaylist(list)
+    setPlaylistIndex(nextIndex)
   }, [])
-
+  const move = useCallback(
+    (step) => {
+      const index = indexRef.current + step,
+        entry = queueRef.current[index]
+      if (!entry) return
+      indexRef.current = index
+      setPlaylistIndex(index)
+      start(entry.id, entry.url, entry.info)
+    },
+    [start],
+  )
+  const playNext = useCallback(() => move(1), [move])
+  const playPrev = useCallback(() => move(-1), [move])
+  const seek = useCallback((time) => {
+    const audio = audioRef.current
+    if (!audio || !Number.isFinite(audio.duration)) return
+    const clamped = Math.min(Math.max(time, 0), audio.duration)
+    audio.currentTime = clamped
+    setCurrentTime(clamped)
+  }, [])
+  const setVolume = useCallback((value) => {
+    const next = Math.max(0, Math.min(value, 1))
+    volumeRef.current = next
+    setVolumeState(next)
+    if (audioRef.current) audioRef.current.volume = next
+  }, [])
   const stop = useCallback(() => {
-    if (globalAudio) {
-      globalAudio.pause()
-      globalAudio.currentTime = 0
-      globalAudio = null
-    }
-    stopProgressLoop()
+    release()
+    currentRef.current = null
+    queueRef.current = []
+    indexRef.current = -1
     setPlayingId(null)
     setCurrentQuote(null)
     setIsPlaying(false)
-    setProgress(0)
     setCurrentTime(0)
     setDuration(0)
     setPlaylist([])
     setPlaylistIndex(-1)
-  }, [stopProgressLoop])
-
-  // Playlist navigation
-  const playNext = useCallback(() => {
-    const pl = playlistRef.current
-    const idx = playlistIndexRef.current
-    if (pl.length === 0 || idx < 0 || idx >= pl.length - 1) return
-    const nextIdx = idx + 1
-    setPlaylistIndex(nextIdx)
-    playlistIndexRef.current = nextIdx
-    const next = pl[nextIdx]
-    playInternal(next.id, next.url, next.info, true)
-  }, [playInternal])
-
-  const playPrev = useCallback(() => {
-    const pl = playlistRef.current
-    const idx = playlistIndexRef.current
-    if (pl.length === 0 || idx <= 0) return
-    const prevIdx = idx - 1
-    setPlaylistIndex(prevIdx)
-    playlistIndexRef.current = prevIdx
-    const prev = pl[prevIdx]
-    playInternal(prev.id, prev.url, prev.info, true)
-  }, [playInternal])
-
-  // Set playlist (called from ChampionDetail)
-  const updatePlaylist = useCallback((list, currentIdx) => {
-    setPlaylist(list)
-    setPlaylistIndex(currentIdx >= 0 ? currentIdx : 0)
-    playlistRef.current = list
-    playlistIndexRef.current = currentIdx >= 0 ? currentIdx : 0
-  }, [])
-
-  const hasPrev = playlist.length > 0 && playlistIndex > 0
-  const hasNext = playlist.length > 0 && playlistIndex < playlist.length - 1
-
+    setError('')
+  }, [release])
+  const clearError = useCallback(() => setError(''), [])
   return {
     playingId,
     currentQuote,
     isPlaying,
-    progress,
     duration,
     currentTime,
+    progress: currentTime,
     volume,
-    hasPrev,
-    hasNext,
+    playlist,
+    playlistIndex,
+    error,
+    clearError,
+    hasPrev: playlistIndex > 0,
+    hasNext: playlistIndex >= 0 && playlistIndex < playlist.length - 1,
     play,
     togglePlay,
-    seek,
-    stop,
-    setVolume,
+    updatePlaylist,
     playNext,
     playPrev,
-    updatePlaylist,
+    seek,
+    setVolume,
+    stop,
   }
 }
